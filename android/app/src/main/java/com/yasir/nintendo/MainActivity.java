@@ -12,7 +12,7 @@ import java.io.*;
 import java.util.concurrent.*;
 import org.json.*;
 public final class MainActivity extends Activity {
- private WebView web;private final ExecutorService executor=Executors.newSingleThreadExecutor();private NintendoClient client;private boolean secureReady=false;
+ private WebView web;private final ExecutorService executor=Executors.newSingleThreadExecutor();private volatile NintendoClient client;private volatile boolean secureReady=false;
  private ValueCallback<Uri[]> fileChooser;private String saveText=null,saveId=null;private String initialCallback=null;
  private static final String HOME="https://appassets.androidplatform.net/assets/www/index.html";
  @Override public void onCreate(Bundle state){
@@ -38,7 +38,7 @@ public final class MainActivity extends Activity {
    }
   });
   web.addJavascriptInterface(new NativeBridge(),"AndroidBridge");
-  executor.execute(()->{try{client=new NintendoClient(new SecureVault(this));secureReady=true;}catch(Exception e){secureReady=false;}});
+  executor.execute(()->{try{client=new NintendoClient(new SecureVault(this),null,this::notifyUpdate);secureReady=true;}catch(Exception e){secureReady=false;}});
   if(getIntent().getData()!=null)initialCallback=getIntent().getData().toString();
   web.loadUrl(HOME);
  }
@@ -46,12 +46,15 @@ public final class MainActivity extends Activity {
  private void openExternal(Uri uri){if(("npf"+NintendoClient.CLIENT).equals(uri.getScheme())){receiveCallback(uri.toString());return;}if(!"https".equals(uri.getScheme()))return;try{startActivity(new Intent(Intent.ACTION_VIEW,uri).addCategory(Intent.CATEGORY_BROWSABLE));}catch(Exception ignored){}}
  private void reply(String id,JSONObject data,String error){runOnUiThread(()->{if(web==null)return;try{JSONObject result=new JSONObject().put("data",data==null?JSONObject.NULL:data).put("error",error==null?JSONObject.NULL:error);web.evaluateJavascript("window.__yasirNativeResult&&window.__yasirNativeResult("+JSONObject.quote(id)+","+result.toString()+")",null);}catch(Exception ignored){}});}
  private void notifyUpdate(){runOnUiThread(()->{if(web!=null)web.evaluateJavascript("window.dispatchEvent(new Event('nintendo-native-update'))",null);});}
- private void receiveCallback(String url){executor.execute(()->{try{if(client==null)throw new Exception();client.complete(url);runOnUiThread(()->{android.widget.Toast.makeText(this,"تم ربط Nintendo. اختر تحديث الآن.",android.widget.Toast.LENGTH_LONG).show();notifyUpdate();});}catch(Exception e){runOnUiThread(()->android.widget.Toast.makeText(this,"تعذر إتمام التفويض. أعد محاولة الربط من الإعدادات.",android.widget.Toast.LENGTH_LONG).show());}});}
+ private void receiveCallback(String url){executor.execute(()->{try{if(client==null)throw new Exception();client.complete(url);notifyUpdate();runOnUiThread(()->{android.widget.Toast.makeText(this,"تم ربط Nintendo وبدأ جلب بيانات اللعب.",android.widget.Toast.LENGTH_LONG).show();notifyUpdate();});client.autoSync();}catch(Exception e){runOnUiThread(()->android.widget.Toast.makeText(this,"تعذر إتمام التفويض. أعد محاولة الربط من الإعدادات.",android.widget.Toast.LENGTH_LONG).show());}});}
  @Override protected void onNewIntent(Intent intent){super.onNewIntent(intent);setIntent(intent);if(intent.getData()!=null)receiveCallback(intent.getData().toString());}
  @Override protected void onResume(){super.onResume();if(executor!=null)executor.execute(()->{if(client!=null){client.autoSync();notifyUpdate();}});}
  public final class NativeBridge {
   @JavascriptInterface public void request(String id,String path,String raw){
    if(id==null||id.length()>100||raw==null||raw.length()>21*1024*1024)return;
+   // Read-only status/snapshot must remain responsive during long network synchronizations.
+   if("/status".equals(path)||"/snapshot".equals(path)){try{if(!secureReady||client==null){reply(id,null,"secure_storage_unavailable");return;}reply(id,"/status".equals(path)?client.status():client.snapshot(),null);}catch(Exception e){reply(id,null,NintendoClient.safeError(e));}return;}
+   if("/sync".equals(path)&&client!=null){try{if(client.status().optBoolean("syncing")){reply(id,new JSONObject().put("syncing",true),null);return;}}catch(Exception ignored){}}
    executor.execute(()->{try{
     JSONObject body=new JSONObject(raw);if(!secureReady||client==null){reply(id,null,"secure_storage_unavailable");return;}
     switch(path){

@@ -21,4 +21,40 @@ public class NintendoProtocolTest {
   assertEquals("nintendo_operation_failed",NintendoClient.safeError(new Exception("private-token-or-response")));
   assertEquals("nintendo_auth_required",NintendoClient.safeError(new NintendoClient.AuthError()));
  }
+
+ static class MemoryStore implements NintendoClient.Store {
+  JSONObject value;MemoryStore() throws Exception{value=new JSONObject().put("session","test-only-session");}
+  public synchronized JSONObject read() throws Exception{return new JSONObject(value.toString());}
+  public synchronized void write(JSONObject v) throws Exception{value=new JSONObject(v.toString());}
+ }
+ @Test public void totalsArePublishedBeforeSlowDaysAndStatusRemainsResponsive() throws Exception {
+  MemoryStore store=new MemoryStore();java.util.concurrent.CountDownLatch dailyStarted=new java.util.concurrent.CountDownLatch(1),finishDays=new java.util.concurrent.CountDownLatch(1);
+  NintendoClient.Transport transport=(url,method,body,type,token)->{
+   if(url.endsWith("/api/token"))return new JSONObject().put("access_token","test-access").put("expires_in",900);
+   if(url.equals(NintendoClient.API))return new JSONObject().put("playHistories",new org.json.JSONArray().put(new JSONObject().put("titleId","01001").put("titleName","Mario").put("platform","HAC").put("totalPlayedMinutes",121)));
+   dailyStarted.countDown();if(!finishDays.await(5,java.util.concurrent.TimeUnit.SECONDS))throw new Exception("test_timeout");
+   return new JSONObject().put("playedDays",new org.json.JSONArray().put(new JSONObject().put("playedDate","2026-10-20T00:00:00Z").put("minutesPlayed",30)));
+  };
+  NintendoClient client=new NintendoClient(store,transport,()->{});java.util.concurrent.ExecutorService pool=java.util.concurrent.Executors.newSingleThreadExecutor();
+  try{java.util.concurrent.Future<JSONObject> result=pool.submit(()->client.sync(false));assertTrue(dailyStarted.await(5,java.util.concurrent.TimeUnit.SECONDS));
+   assertTrue(client.status().getBoolean("syncing"));assertEquals("days",client.status().getString("phase"));assertEquals(1,client.status().getInt("titles"));
+   assertEquals(121,client.snapshot().getJSONArray("titles").getJSONObject(0).getInt("totalPlayedMinutes"));
+   String accountId=client.snapshot().getString("accountId");finishDays.countDown();JSONObject finished=result.get(5,java.util.concurrent.TimeUnit.SECONDS);assertEquals(accountId,finished.getString("accountId"));assertEquals(1,finished.getJSONArray("titles").getJSONObject(0).getJSONArray("days").length());assertFalse(client.status().getBoolean("syncing"));
+  }finally{finishDays.countDown();pool.shutdownNow();}
+ }
+ @Test public void dailyFailureKeepsOfficialTotalsAndReportsIncompleteHistory() throws Exception {
+  NintendoClient client=new NintendoClient(new MemoryStore(),(url,method,body,type,token)->{
+   if(url.endsWith("/api/token"))return new JSONObject().put("access_token","test-access").put("expires_in",900);
+   if(url.equals(NintendoClient.API))return new JSONObject().put("playHistories",new org.json.JSONArray().put(new JSONObject().put("titleId","01001").put("titleName","Mario").put("platform","BEE").put("totalPlayedMinutes",122)));
+   throw new NintendoClient.HttpStatusError(404);
+  },()->{});
+  JSONObject result=client.sync(false);assertEquals(122,result.getJSONArray("titles").getJSONObject(0).getInt("totalPlayedMinutes"));assertEquals(1,client.status().getInt("dailyFailed"));assertEquals("nintendo_http_404",client.status().getString("dailyError"));
+ }
+ @Test public void unknownPlatformIsReportedInsteadOfAnEmptySuccess() throws Exception {
+  NintendoClient client=new NintendoClient(new MemoryStore(),(url,method,body,type,token)->{
+   if(url.endsWith("/api/token"))return new JSONObject().put("access_token","test-access").put("expires_in",900);
+   return new JSONObject().put("playHistories",new org.json.JSONArray().put(new JSONObject().put("platform","NEW_PLATFORM")));
+  },()->{});
+  try{client.sync(false);fail("Unknown platforms accepted as empty library");}catch(Exception expected){assertEquals("unsupported_platforms",client.status().getString("lastError"));assertEquals("NEW_PLATFORM",client.status().getString("platforms"));}
+ }
 }
