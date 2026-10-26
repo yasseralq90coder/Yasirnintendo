@@ -1,3 +1,7 @@
+## تطبيق Android دون خادم
+
+أضيف تطبيق Android بنفس الواجهة، بربط Nintendo أصلي وتخزين مشفّر داخل الجوال. [دليل Android والتنزيل](android/README.md). يبني GitHub Actions ملف APK تجريبيًا ويفحصه على محاكي قبل رفعه إلى Release باسم Android Preview. لا يحتاج خادم Node أو كمبيوتر أثناء الاستخدام. نسخة PWA تظل متاحة، لكن الربط المباشر خاص بتطبيق Android.
+
 # Yasir Nintendo — رحلة نينتندو
 
 تطبيق عربي RTL مستقل لتنظيم مكتبة Nintendo Switch / Switch 2 وكلاسيكيات NSO، يعمل كتطبيق PWA على GitHub Pages. مشروع محبّين غير تابع لشركة Nintendo.
