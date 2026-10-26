@@ -24,8 +24,8 @@ export function hideCompletion(state,id){if(!events(state).some(e=>e.id===id))th
 export function completionLedger(state,gameId){
  const g=state.games.find(g=>g.id===gameId),t=nintendoTitle(state,g);if(!g)return [];
  const list=events(state).filter(e=>e.gameId===gameId).sort((a,b)=>a.date.localeCompare(b.date)||a.id.localeCompare(b.id)),dateCount=new Map();for(const e of list)if(e.date)dateCount.set(e.date,(dateCount.get(e.date)||0)+e.count);
- let previous=null,number=0;return list.map(e=>{const from=e.startedAt||previous?.date||t?.firstPlayedAt?.slice(0,10)||'',sameDay=(dateCount.get(e.date)||0)>1,valid=!!t&&!!from&&!!e.date&&from<=e.date&&!sameDay;
- const minutes=valid?t.days.filter(d=>(e.startedAt||!previous?d.date>=from:d.date>from)&&d.date<=e.date).reduce((n,d)=>n+d.minutes,0):null;
+ let previous=null,number=0;return list.map(e=>{const requestedFrom=e.startedAt||previous?.date||t?.firstPlayedAt?.slice(0,10)||'',from=previous?.date&&requestedFrom<=previous.date?previous.date:requestedFrom,includeStart=!previous||(e.startedAt&&e.startedAt>previous.date),sameDay=(dateCount.get(e.date)||0)>1,valid=!!t&&!!from&&!!e.date&&from<=e.date&&!sameDay;
+ const minutes=valid?t.days.filter(d=>(includeStart?d.date>=from:d.date>from)&&d.date<=e.date).reduce((n,d)=>n+d.minutes,0):null;
  const row={...e,number:number+1,lastNumber:number+e.count,previousDate:previous?.date||'',gapDays:previous?.date&&e.date?daysBetween(previous.date,e.date):null,from,dailyMinutes:minutes,timeComplete:valid&&t.historyComplete,sameDay,sourceMinutes:e.imported?e.minutes:null};number+=e.count;if(e.date)previous=e;return row;});
 }
 export const totalOfficial=state=>(state.nintendo?.titles||[]).reduce((n,t)=>n+t.totalPlayedMinutes,0);

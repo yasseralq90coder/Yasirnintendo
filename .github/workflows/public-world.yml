@@ -15,7 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Fetch official public Nintendo headlines and catalogue
-        run: python3 tools/refresh-world.py
+        run: |
+          python3 -m unittest discover -s tests -p '*_test.py'
+          python3 tools/refresh-world.py
       - name: Save public snapshot and deploy Pages
         env:
           GH_TOKEN: ${{ github.token }}

@@ -56,13 +56,50 @@ def news(text,stamp):
   out.append({'id':hashlib.sha1(url.encode()).hexdigest()[:16],'title':title,'date':date,'url':url,'cover':cover,'category':category,'source':'Nintendo US'})
  if len(out)<3:raise ValueError('Nintendo news shape changed; preserve previous successful headlines')
  return sorted(out,key=lambda x:x['date'],reverse=True)[:30]
+def extra_catalogue(text,platform,url,region,stamp):
+ tree=Tree();tree.feed(text);out=[]
+ def walk(n):
+  yield n
+  for child in n['children']:yield from walk(child)
+ def entry(title,cover=''):
+  identity=platform+'|'+title
+  return {'id':'nso-'+hashlib.sha1(identity.encode()).hexdigest()[:16],'title':title,'platform':platform,'genre':'أخرى','cover':cover,'tier':'expansion','sourceUrl':url,'sourceRegion':region,'verifiedAt':stamp}
+ if platform=='SEGA Genesis':
+  marker=re.search(r'Included games:?</h2>',text,re.I)
+  if not marker:raise ValueError('No Genesis title list')
+  section=text[marker.end():];section=section[:section.find('</ul>')];covers={}
+  for m in re.finditer(r'<img[^>]+src="([^"]+)"[^>]*>.*?<h2[^>]*>([^<]+)</h2>',text,re.S):
+   if m[1].startswith('https://assets.nintendo.com/') and len(m[2])<150:covers[html.unescape(m[2]).casefold()]=html.unescape(m[1])
+  for item in re.findall(r'<li[^>]*>(.*?)</li>',section,re.S):
+   title=html.unescape(re.sub('<[^>]+>','',item)).strip()
+   if title:out.append(entry(title,covers.get(title.casefold(),'')))
+ else:
+  sections=[n for n in walk(tree.root) if 'teaser-carousel-virtualboy' in n['attrs'].get('class','')]
+  for section in sections:
+   for n in walk(section):
+    title=n['attrs'].get('data-nt-item-title') if n['tag']=='li' else ''
+    if not title:continue
+    images=[x['attrs'] for x in walk(n) if x['tag']=='img'];cover=next((x.get('data-xs') for x in images if x.get('data-xs','').startswith('https://www.nintendo.com/')),'')
+    out.append(entry(html.unescape(title),cover))
+ if len(out)<3:raise ValueError('No verified '+platform+' entries')
+ return out
+
 def main():
- args=argparse.ArgumentParser();args.add_argument('--local-source',type=Path);opt=args.parse_args();path=ROOT/'nintendo-world.json';data=json.loads(path.read_text()) if path.exists() else {};stamp=datetime.datetime.now(datetime.timezone.utc).date().isoformat();errors=[]
+ args=argparse.ArgumentParser();args.add_argument('--local-source',type=Path);opt=args.parse_args();path=ROOT/'nintendo-world.json';data=json.loads(path.read_text()) if path.exists() else {};stamp=datetime.datetime.now(datetime.timezone.utc).date().isoformat();errors=[];previous_catalog=list(data.get('catalog',[]))
  for key,url,parser in [('catalog',NSO,catalogue),('news',NEWS,news)]:
   try:
    text=(opt.local_source/('nso-official.html' if key=='catalog' else 'news-official.html')).read_text() if opt.local_source else fetch(url)
    data[key]=parser(text,stamp);data[key+'UpdatedAt']=datetime.datetime.now(datetime.timezone.utc).isoformat();print(key,len(data[key]))
   except Exception as e:errors.append(key+': '+str(e));print('Warning:',errors[-1])
+ for platform,filename,url,region in [('SEGA Genesis','sega-official.html','https://www.nintendo.com/us/store/products/sega-genesis-nintendo-switch-online-switch/','US'),('Virtual Boy','vb-official.html','https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Virtual-Boy-Nintendo-Classics-2915432.html','UK')]:
+  try:
+   text=(opt.local_source/filename).read_text() if opt.local_source else fetch(url)
+   extra=extra_catalogue(text,platform,url,region,stamp);data['catalog']=[g for g in data.get('catalog',[]) if g['platform']!=platform]+extra;print(platform,len(extra))
+  except Exception as e:
+   errors.append(platform+': '+str(e));old=[g for g in previous_catalog if g['platform']==platform]
+   if old:data['catalog']=[g for g in data.get('catalog',[]) if g['platform']!=platform]+old
+   print('Warning:',errors[-1])
+ data['catalogScope']='مختارات رسمية من مناطق AU وUS وUK؛ التوفر يختلف حسب المنطقة والاشتراك. ليست كشفًا شاملًا لحسابك.'
  if not data.get('catalog') or not data.get('news'):raise SystemExit('No valid public data: '+str(errors))
  data['version']=1;data['refreshErrors']=errors;path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':main()

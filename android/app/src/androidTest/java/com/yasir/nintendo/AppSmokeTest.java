@@ -36,6 +36,14 @@ public class AppSmokeTest {
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='achievements';",r->badgePage.countDown()));assertTrue(badgePage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
    CountDownLatch badges=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.badge-card').length===52",r->{value[0]=r;badges.countDown();}));assertTrue(badges.await(5,TimeUnit.SECONDS));assertEquals("52 tiered badges must render on the factory WebView", "true",value[0]);
+   CountDownLatch museumPage=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='history';",r->museumPage.countDown()));assertTrue(museumPage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
+   CountDownLatch eras=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.era-rail button').length===17 && document.documentElement.scrollWidth<=window.innerWidth+2",r->{value[0]=r;eras.countDown();}));assertTrue(eras.await(5,TimeUnit.SECONDS));assertEquals("Nintendo museum must load all eras inside the mobile viewport", "true",value[0]);
+   CountDownLatch newsPage=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='news';",r->newsPage.countDown()));assertTrue(newsPage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
+   CountDownLatch headlines=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.news-card').length>=3 && document.querySelectorAll('#bottom-nav a').length===4",r->{value[0]=r;headlines.countDown();}));assertTrue(headlines.await(5,TimeUnit.SECONDS));assertEquals("Bundled news and Android navigation must work offline", "true",value[0]);
    // Request through the exact exposed bridge; reply contains no Nintendo token.
    CountDownLatch called=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("window.__nativeSmoke=null;window.__yasirNativeResult=function(id,result){if(id==='smoke')window.__nativeSmoke=result;};AndroidBridge.request('smoke','/status','{}');",r->called.countDown()));assertTrue(called.await(5,TimeUnit.SECONDS));
