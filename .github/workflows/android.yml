@@ -39,6 +39,7 @@ jobs:
           key: yasir-android-preview-signing-v1
       - name: Test web logic and package bundled assets
         run: |
+          npm ci --ignore-scripts
           npm test
           npm run check
           node tools/package-android.mjs

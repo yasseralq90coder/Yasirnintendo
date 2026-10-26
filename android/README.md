@@ -25,6 +25,7 @@ PKCE state/verifier ومحاولة التفويض (10 دقائق) والرمز �
 Java 17، Android SDK 35، Gradle 8.11.1، AGP 8.9.1. لا يلزم تنزيل Gradle Wrapper إلى المستودع؛ GitHub يثبت إصدار Gradle المحدد.
 
 ```sh
+npm ci --ignore-scripts
 node tools/package-android.mjs
 cd android
 gradle testDebugUnitTest lintDebug assembleDebug

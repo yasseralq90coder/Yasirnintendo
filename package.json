@@ -8,5 +8,8 @@
     "check": "node --check app.js && node --check core.js && node --check sw.js && node --check nintendo-sync.js && node --check server/start.js && node --check server/nintendo.js && node --check server/launch.js",
     "bridge": "node server/start.js",
     "bridge:start": "node server/launch.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
   }
 }
