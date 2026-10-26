@@ -22,7 +22,7 @@ jobs:
       - name: Package public application only
         run: |
           mkdir dist
-          cp index.html app.js core.js native-android.js nintendo-sync.js sync-ui.js legacy-library.js styles.css sw.js manifest.webmanifest catalog.json library-seed.json dist/
+          cp index.html app.js adventure-ui.js journey.js core.js native-android.js nintendo-sync.js sync-ui.js legacy-library.js styles.css journey.css sw.js manifest.webmanifest catalog.json library-seed.json dist/
           cp -r assets dist/
           touch dist/.nojekyll
       - uses: actions/configure-pages@v5

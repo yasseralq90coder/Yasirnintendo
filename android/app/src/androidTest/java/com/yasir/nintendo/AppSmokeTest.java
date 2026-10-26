@@ -28,6 +28,14 @@ public class AppSmokeTest {
    CountDownLatch ready=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.body.textContent.includes('حساب Nintendo على جوالك') && !document.querySelector('#bridge-key')",r->{value[0]=r;ready.countDown();}));
    assertTrue(ready.await(5,TimeUnit.SECONDS));assertEquals("true",value[0]);
+   CountDownLatch statsPage=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='stats';",r->statsPage.countDown()));assertTrue(statsPage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
+   CountDownLatch calendar=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.calendar-day').length>=365 && document.documentElement.scrollWidth<=window.innerWidth+2",r->{value[0]=r;calendar.countDown();}));assertTrue(calendar.await(5,TimeUnit.SECONDS));assertEquals("Annual calendar must render without horizontal page overflow", "true",value[0]);
+   CountDownLatch badgePage=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='achievements';",r->badgePage.countDown()));assertTrue(badgePage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
+   CountDownLatch badges=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.badge-card').length===52",r->{value[0]=r;badges.countDown();}));assertTrue(badges.await(5,TimeUnit.SECONDS));assertEquals("52 tiered badges must render on the factory WebView", "true",value[0]);
    // Request through the exact exposed bridge; reply contains no Nintendo token.
    CountDownLatch called=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("window.__nativeSmoke=null;window.__yasirNativeResult=function(id,result){if(id==='smoke')window.__nativeSmoke=result;};AndroidBridge.request('smoke','/status','{}');",r->called.countDown()));assertTrue(called.await(5,TimeUnit.SECONDS));
