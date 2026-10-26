@@ -4,3 +4,7 @@ dist/
 *.private.json
 *backup*.json
 *recovery*.json
+
+server/private/
+.env
+.env.*

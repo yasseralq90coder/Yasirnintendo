@@ -1,3 +1,4 @@
+import {validateSnapshot,nintendoTitle,datedActivity} from './nintendo-sync.js';
 export const SCHEMA = 1;
 export const STATUSES = {backlog:'لم أبدأ',playing:'ألعب الآن',beaten:'ختمت القصة',complete:'مكتملة 100٪',paused:'متوقفة',wishlist:'أتمناها'};
 export const OWNERS = {physical:'فيزكال',digital:'رقمي',both:'فيزكال + رقمي',nso:'اشتراك NSO'};
@@ -9,7 +10,7 @@ export const localDay = (date=new Date()) => `${date.getFullYear()}-${String(dat
 export const monthKey = (date=new Date()) => localDay(date).slice(0,7);
 export const blankState = () => ({schema:SCHEMA,profile:{name:'ياسر',subscription:'none',monthlyHours:12},games:[],sessions:[],challenges:{},timer:null});
 export const finished = g => ['beaten','complete'].includes(g.status);
-export function minutes(state,id){return (state.games.find(g=>g.id===id)?.baseMinutes||0)+state.sessions.filter(s=>s.gameId===id).reduce((a,s)=>a+s.minutes,0);}
+export function minutes(state,id){const official=nintendoTitle(state,state.games.find(g=>g.id===id));if(official)return official.totalPlayedMinutes;return (state.games.find(g=>g.id===id)?.baseMinutes||0)+state.sessions.filter(s=>s.gameId===id).reduce((a,s)=>a+s.minutes,0);}
 export function totals(state){
  const games=state.games.filter(g=>g.status!=='wishlist');
  const total=games.reduce((a,g)=>a+minutes(state,g.id),0), beaten=games.filter(finished).length;
@@ -54,7 +55,7 @@ export function generateChallenges(state,catalog,month=monthKey()){
  return {month,createdAt:new Date().toISOString(),items:list};
 }
 export function challengeValue(ch,state,month){
- const sessions=state.sessions.filter(s=>s.date.startsWith(month));
+ const sessions=datedActivity(state).filter(s=>s.date.startsWith(month));
  if(ch.kind==='hours')return sessions.reduce((a,s)=>a+s.minutes,0);
  if(ch.kind==='finish'){const g=state.games.find(g=>g.id===ch.gameId);return g&&finished(g)&&g.completedAt?.startsWith(month)?1:0;}
  if(ch.kind==='discover'){const ids=state.games.filter(g=>g.catalogId===ch.catalogId).map(g=>g.id);return sessions.filter(s=>ids.includes(s.gameId)).reduce((a,s)=>a+s.minutes,0);}
@@ -77,7 +78,7 @@ export function validateState(input){
   if(g.ownership==='nso'&&!['standard','expansion'].includes(g.tier))fail('حدد فئة اشتراك لعبة NSO.');
   if(g.completedAt&&!dateOK(g.completedAt))fail('تاريخ التختيم غير صالح.');
   ids.add(g.id);
-  return {id:g.id,catalogId:str(g.catalogId,200)?g.catalogId:'',title:g.title,platform:g.platform,genre:g.genre,ownership:g.ownership,status:g.status,baseMinutes:g.baseMinutes,baseSource:Object.hasOwn(SOURCES,g.baseSource)?g.baseSource:'import',rating:g.rating,progress:g.progress,notes:g.notes||'',completedAt:g.completedAt||'',cover:safeURL(g.cover,true),sourceUrl:safeURL(g.sourceUrl),tier:['standard','expansion'].includes(g.tier)?g.tier:'owned'};
+  return {nintendoKey:str(g.nintendoKey,310)?g.nintendoKey:'',ownershipConfirmed:g.ownershipConfirmed!==false,id:g.id,catalogId:str(g.catalogId,200)?g.catalogId:'',title:g.title,platform:g.platform,genre:g.genre,ownership:g.ownership,status:g.status,baseMinutes:g.baseMinutes,baseSource:Object.hasOwn(SOURCES,g.baseSource)?g.baseSource:'import',rating:g.rating,progress:g.progress,notes:g.notes||'',completedAt:g.completedAt||'',cover:safeURL(g.cover,true),sourceUrl:safeURL(g.sourceUrl),tier:['standard','expansion'].includes(g.tier)?g.tier:'owned'};
  });
  const sessionIds=new Set();
  const sessions=input.sessions.map(s=>{if(!s||!str(s.id,100)||!s.id||sessionIds.has(s.id)||!ids.has(s.gameId)||!num(s.minutes,1,1440)||!dateOK(s.date)||!str(s.note||'',2000))fail('جلسة غير صالحة: تحقق من التاريخ والمدة واللعبة.');sessionIds.add(s.id);return {id:s.id,gameId:s.gameId,date:s.date,minutes:s.minutes,note:s.note||'',source:Object.hasOwn(SOURCES,s.source)?s.source:'import'};});
@@ -91,7 +92,7 @@ export function validateState(input){
  }
  let timer=null;
  if(input.timer){if(!ids.has(input.timer.gameId)||!num(input.timer.startedAt,0,Date.now()))fail('المؤقت غير صالح.');timer={gameId:input.timer.gameId,startedAt:input.timer.startedAt};}
- return {schema:SCHEMA,profile:{name:p.name,subscription:p.subscription,monthlyHours:p.monthlyHours},games,sessions,challenges,timer};
+ return {schema:SCHEMA,profile:{name:p.name,subscription:p.subscription,monthlyHours:p.monthlyHours},games,sessions,challenges,timer,...(input.nintendo?{nintendo:validateSnapshot(input.nintendo)}:{})};
 }
 export function parseCSV(text){
  const rows=[];let row=[],value='',quoted=false;
