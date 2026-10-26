@@ -1,4 +1,4 @@
-const CACHE='yasir-nintendo-shell-v2';
+const CACHE='yasir-nintendo-shell-v3';
 const ROOT=new URL('./',self.location).href;
 const SHELL=['./','./index.html','./styles.css','./app.js','./core.js','./nintendo-sync.js','./catalog.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)));});
