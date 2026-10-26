@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.openai/
+*.private.json
+*backup*.json
+*recovery*.json

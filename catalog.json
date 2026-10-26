@@ -1,0 +1,222 @@
+[
+  {
+    "id": "super-mario-odyssey-switch",
+    "title": "Super Mario Odyssey",
+    "platform": "Switch",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "the-legend-of-zelda-tears-of-the-kingdom-switch",
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "platform": "Switch",
+    "genre": "مغامرات",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000063714/fb30eab428df3fc993b41c76e20f72e4d76d49734d17d31996b5ab61c414b117",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "super-mario-bros-wonder-switch",
+    "title": "Super Mario Bros. Wonder",
+    "platform": "Switch",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000068688/87e8aa5f1fdc950b88eae7d7c62ed185c8a6373c845090bbdb2e2cf039b38da1",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "kirby-and-the-forgotten-land-switch",
+    "title": "Kirby and the Forgotten Land",
+    "platform": "Switch",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000046405/d1cf83dea46094b85247f40ca30ea4557730a319be0bfe544a4fa929144cf6c2",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/kirby-and-the-forgotten-land-switch/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "metroid-dread-switch",
+    "title": "Metroid Dread",
+    "platform": "Switch",
+    "genre": "أكشن",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000042924/4f2c683f0196210ec212a2ab8bf6952223c0b88e827b820953407a2ba61c9cb2",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/metroid-dread-switch/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "mario-kart-world-switch-2",
+    "title": "Mario Kart World",
+    "platform": "Switch 2",
+    "genre": "سباقات",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000095431/0485f410193ca12f92a2f615ea608bb437540f321bd05e464593c33fefa09bf2",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "donkey-kong-bananza-switch-2",
+    "title": "Donkey Kong Bananza",
+    "platform": "Switch 2",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000096809/3c8219fbdcd3bdd0ebd6239cf32c651fe10f2157aa7730fcc6a7d96cd27460e5",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/donkey-kong-bananza-switch-2/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "animal-crossing-new-horizons-switch",
+    "title": "Animal Crossing: New Horizons",
+    "platform": "Switch",
+    "genre": "محاكاة",
+    "cover": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000027619/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
+    "sourceRegion": "US",
+    "verifiedAt": "2026-10-26",
+    "tier": "owned"
+  },
+  {
+    "id": "nso-1",
+    "title": "Super Mario Bros. 3",
+    "platform": "NES",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739510571/gh0yclcvwahj53nifglu",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "standard"
+  },
+  {
+    "id": "nso-2",
+    "title": "Super Mario World",
+    "platform": "SNES",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739940300/m2vzdpjmqwfokdrd4zsy",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "standard"
+  },
+  {
+    "id": "nso-3",
+    "title": "The Legend of Zelda: A Link to the Past",
+    "platform": "SNES",
+    "genre": "مغامرات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739940301/uerx1reegxipwq3qsuw1",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "standard"
+  },
+  {
+    "id": "nso-4",
+    "title": "Super Metroid",
+    "platform": "SNES",
+    "genre": "أكشن",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739940300/po9pnk6y5mnuwonymupp",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "standard"
+  },
+  {
+    "id": "nso-5",
+    "title": "Donkey Kong Country",
+    "platform": "SNES",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739940301/lscfk7rdwffy1c1hpj8c",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "standard"
+  },
+  {
+    "id": "nso-6",
+    "title": "Tetris",
+    "platform": "Game Boy",
+    "genre": "ألغاز",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739941195/vqjykkhbncqdx1esfph6",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "standard"
+  },
+  {
+    "id": "nso-7",
+    "title": "Kirby's Dream Land",
+    "platform": "Game Boy",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739941193/sad3acrfvmshhofdawyk",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "standard"
+  },
+  {
+    "id": "nso-8",
+    "title": "Super Mario 64",
+    "platform": "Nintendo 64",
+    "genre": "منصات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739941557/ktmzoukqsccfnxotjc0a",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "expansion"
+  },
+  {
+    "id": "nso-9",
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "platform": "Nintendo 64",
+    "genre": "مغامرات",
+    "cover": "https://img-eshop.cdn.nintendo.net/i/8507e0aad9ed021b24bb3ae45209e71be675557d3579f1577f4127fd965b9dd9.jpg?w=1000",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "expansion"
+  },
+  {
+    "id": "nso-10",
+    "title": "Metroid Fusion",
+    "platform": "Game Boy Advance",
+    "genre": "أكشن",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1739941962/gs8ku4yuzl6y0fgphvbi",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "expansion"
+  },
+  {
+    "id": "nso-11",
+    "title": "The Legend of Zelda: The Wind Waker",
+    "platform": "GameCube",
+    "genre": "مغامرات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1768788039/hnrlt5fi1do5bnzhbvnn",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "expansion"
+  },
+  {
+    "id": "nso-12",
+    "title": "F-ZERO GX",
+    "platform": "GameCube",
+    "genre": "سباقات",
+    "cover": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/c_scale,dpr_1.5,w_357/v1768788038/ldzfustsbnaxuuaizauy",
+    "sourceUrl": "https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/",
+    "sourceRegion": "AU",
+    "verifiedAt": "2026-10-26",
+    "tier": "expansion"
+  }
+]
