@@ -10,7 +10,7 @@ export const localDay = (date=new Date()) => `${date.getFullYear()}-${String(dat
 export const monthKey = (date=new Date()) => localDay(date).slice(0,7);
 export const blankState = () => ({schema:SCHEMA,profile:{name:'ياسر',subscription:'none',monthlyHours:12},games:[],sessions:[],challenges:{},timer:null});
 export const finished = g => ['beaten','complete'].includes(g.status);
-export function minutes(state,id){const official=nintendoTitle(state,state.games.find(g=>g.id===id));if(official)return official.totalPlayedMinutes;return (state.games.find(g=>g.id===id)?.baseMinutes||0)+state.sessions.filter(s=>s.gameId===id).reduce((a,s)=>a+s.minutes,0);}
+export function minutes(state,id){return nintendoTitle(state,state.games.find(g=>g.id===id))?.totalPlayedMinutes||0;}
 export function totals(state){
  const games=state.games.filter(g=>g.status!=='wishlist');
  const total=games.reduce((a,g)=>a+minutes(state,g.id),0), beaten=games.filter(finished).length;
@@ -47,10 +47,10 @@ export function generateChallenges(state,catalog,month=monthKey()){
  const available=state.games.filter(g=>eligible(g,state.profile));
  const pool=available.filter(g=>!finished(g)).sort((a,b)=>hash(month+a.id)-hash(month+b.id));
  const nso=pool.find(g=>g.ownership==='nso'); const main=pool.find(g=>g.ownership!=='nso');
- const list=[{id:'hours',kind:'hours',title:'رحلة النجوم',description:'ساعات من جلسات هذا الشهر فقط',target:state.profile.monthlyHours*60}];
+ const list=[{id:'hours',kind:'hours',title:'رحلة النجوم',description:'دقائق اللعب من Nintendo لهذا الشهر',target:state.profile.monthlyHours*60}];
  if(main)list.push({id:'finish',kind:'finish',title:'راية جديدة',description:'اختم '+main.title,target:1,gameId:main.id});
  if(nso)list.push({id:'retro',kind:'finish',title:'رحلة عبر الزمن',description:'اختم '+nso.title,target:1,gameId:nso.id});
- else {const choices=catalog.filter(g=>g.tier!=='owned'&&(state.profile.subscription==='expansion'||(state.profile.subscription==='standard'&&g.tier==='standard'))&&!state.games.some(x=>x.catalogId===g.id)); if(choices.length){const pick=choices[hash(month)%choices.length];list.push({id:'discover',kind:'discover',title:'اكتشف كلاسيكية',description:'العب ساعة في '+pick.title,target:60,catalogId:pick.id});}}
+
  if(available.length>1)list.push({id:'variety',kind:'variety',title:'جولة في العوالم',description:'العب أنواعًا مختلفة هذا الشهر',target:Math.min(3,new Set(available.map(g=>g.genre)).size)});
  return {month,createdAt:new Date().toISOString(),items:list};
 }
@@ -62,7 +62,9 @@ export function challengeValue(ch,state,month){
  if(ch.kind==='variety')return new Set(sessions.map(s=>state.games.find(g=>g.id===s.gameId)?.genre).filter(Boolean)).size;
  return 0;
 }
-export function safeURL(value,image=false){try{const u=new URL(value); const ok=['nintendo.com','nintendo.co.jp','nintendo.com.au','nintendo.co.uk','nintendo.sa'].some(d=>u.hostname===d||u.hostname.endsWith('.'+d));return u.protocol==='https:'&&ok ? u.href : '';}catch{return '';}}
+export function safeURL(value,image=false){try{const u=new URL(value); const ok=['nintendo.com','nintendo.net','nintendo.co.jp','nintendo.com.au','nintendo.co.uk','nintendo.sa'].some(d=>u.hostname===d||u.hostname.endsWith('.'+d));return u.protocol==='https:'&&ok ? u.href : '';}catch{return '';}}
+export function safeCover(value){if(typeof value==='string'&&value.length<=500000&&/^data:image\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/]+={0,2}$/.test(value))return value;if(typeof value==='string'&&/^\.\/assets\/library\/[a-zA-Z0-9_-]+\.(jpg|png|webp)$/.test(value))return value;return safeURL(value,true);}
+function safeHistory(value){if(!Array.isArray(value))return [];if(value.length>1000)throw new Error('سجل التختيمات أكبر من الحد المدعوم.');const seen=new Set();return value.map(p=>{if(!p||typeof p.id!=='string'||p.id.length>150||seen.has(p.id)||!/^\d{4}-\d{2}-\d{2}$/.test(p.date)||!Number.isFinite(p.minutes)||p.minutes<0||p.minutes>6000000||!Number.isInteger(p.count)||p.count<1||p.count>1000||!['beaten','complete'].includes(p.kind)||p.source!=='legacy-json')throw new Error('سجل تختيم مستورد غير صالح.');seen.add(p.id);return {id:p.id,date:p.date,minutes:p.minutes,count:p.count,kind:p.kind,source:'legacy-json'};});}
 const fail=m=>{throw new Error(m);};
 const str=(x,max=500)=>typeof x==='string'&&x.length<=max;
 const num=(x,min,max)=>Number.isFinite(x)&&x>=min&&x<=max;
@@ -78,7 +80,7 @@ export function validateState(input){
   if(g.ownership==='nso'&&!['standard','expansion'].includes(g.tier))fail('حدد فئة اشتراك لعبة NSO.');
   if(g.completedAt&&!dateOK(g.completedAt))fail('تاريخ التختيم غير صالح.');
   ids.add(g.id);
-  return {nintendoKey:str(g.nintendoKey,310)?g.nintendoKey:'',ownershipConfirmed:g.ownershipConfirmed!==false,id:g.id,catalogId:str(g.catalogId,200)?g.catalogId:'',title:g.title,platform:g.platform,genre:g.genre,ownership:g.ownership,status:g.status,baseMinutes:g.baseMinutes,baseSource:Object.hasOwn(SOURCES,g.baseSource)?g.baseSource:'import',rating:g.rating,progress:g.progress,notes:g.notes||'',completedAt:g.completedAt||'',cover:safeURL(g.cover,true),sourceUrl:safeURL(g.sourceUrl),tier:['standard','expansion'].includes(g.tier)?g.tier:'owned'};
+  return {legacyId:str(g.legacyId,100)?g.legacyId:'',fallbackCover:safeCover(g.fallbackCover),metadata:g.metadata&&g.metadata.source==='legacy-json'?{source:'legacy-json',description:str(g.metadata.description,20000)?g.metadata.description:'',developer:str(g.metadata.developer,500)?g.metadata.developer:'',year:str(g.metadata.year,20)?g.metadata.year:'',originalGenre:str(g.metadata.originalGenre,500)?g.metadata.originalGenre:''}:null,completionHistory:safeHistory(g.completionHistory),isCollection:g.isCollection===true,parentLegacyId:str(g.parentLegacyId,100)?g.parentLegacyId:'',nintendoKey:str(g.nintendoKey,310)?g.nintendoKey:'',ownershipConfirmed:g.ownershipConfirmed!==false,id:g.id,catalogId:str(g.catalogId,200)?g.catalogId:'',title:g.title,platform:g.platform,genre:g.genre,ownership:g.ownership,status:g.status,baseMinutes:g.baseMinutes,baseSource:Object.hasOwn(SOURCES,g.baseSource)?g.baseSource:'import',rating:g.rating,progress:g.progress,notes:g.notes||'',completedAt:g.completedAt||'',cover:safeCover(g.cover),sourceUrl:safeURL(g.sourceUrl),tier:['standard','expansion'].includes(g.tier)?g.tier:'owned'};
  });
  const sessionIds=new Set();
  const sessions=input.sessions.map(s=>{if(!s||!str(s.id,100)||!s.id||sessionIds.has(s.id)||!ids.has(s.gameId)||!num(s.minutes,1,1440)||!dateOK(s.date)||!str(s.note||'',2000))fail('جلسة غير صالحة: تحقق من التاريخ والمدة واللعبة.');sessionIds.add(s.id);return {id:s.id,gameId:s.gameId,date:s.date,minutes:s.minutes,note:s.note||'',source:Object.hasOwn(SOURCES,s.source)?s.source:'import'};});
@@ -92,7 +94,7 @@ export function validateState(input){
  }
  let timer=null;
  if(input.timer){if(!ids.has(input.timer.gameId)||!num(input.timer.startedAt,0,Date.now()))fail('المؤقت غير صالح.');timer={gameId:input.timer.gameId,startedAt:input.timer.startedAt};}
- return {schema:SCHEMA,profile:{name:p.name,subscription:p.subscription,monthlyHours:p.monthlyHours},games,sessions,challenges,timer,...(input.nintendo?{nintendo:validateSnapshot(input.nintendo)}:{})};
+ return {schema:SCHEMA,profile:{name:p.name,subscription:p.subscription,monthlyHours:p.monthlyHours},games,sessions,challenges,timer:null,appliedSeeds:Array.isArray(input.appliedSeeds)?input.appliedSeeds.filter(x=>str(x,100)).slice(0,100):[],...(input.nintendo?{nintendo:validateSnapshot(input.nintendo)}:{})};
 }
 export function parseCSV(text){
  const rows=[];let row=[],value='',quoted=false;

@@ -19,6 +19,9 @@ public class AppSmokeTest {
     scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("!!document.querySelector('#main h1') && typeof AndroidBridge.request==='function'",result->{value[0]=result;latch.countDown();}));
     assertTrue(latch.await(5,TimeUnit.SECONDS));loaded="true".equals(value[0]);if(!loaded)Thread.sleep(250);
    }assertTrue("Bundled interface failed to load",loaded);
+   CountDownLatch seeded=new CountDownLatch(1);String[] imported={""};
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("(function(){var s=JSON.parse(localStorage.getItem('yasir-nintendo-v1'));return s.games.length===0 && !document.querySelector('[data-action=add]') && !document.querySelector('[data-action=start-timer]');})()",r->{imported[0]=r;seeded.countDown();}));
+   assertTrue(seeded.await(5,TimeUnit.SECONDS));assertEquals("Fresh app must not contain private library data", "true",imported[0]);
    CountDownLatch latch=new CountDownLatch(1);String[] value={""};
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("(function(){location.hash='settings';return true;})()",r->latch.countDown()));assertTrue(latch.await(5,TimeUnit.SECONDS));
    Thread.sleep(300);

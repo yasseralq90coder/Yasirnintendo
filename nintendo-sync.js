@@ -1,3 +1,4 @@
+import {titleKey} from './legacy-library.js';
 import {uid,safeURL} from './core.js';
 export function validateSnapshot(data){
  if(!data||data.version!==1||typeof data.accountId!=='string'||!/^[a-zA-Z0-9-]{1,100}$/.test(data.accountId)||!Array.isArray(data.titles)||data.titles.length>10000)throw Error('ملف نينتندو غير صالح.');
@@ -17,17 +18,14 @@ export function mergeNintendo(state,data){
  for(const t of snapshot.titles){
   const key=snapshot.accountId+'|'+t.titleId+'|'+t.platform;
   let g=next.games.find(g=>g.nintendoKey===key);
+  if(!g){const platform=t.platform==='BEE'?'Switch 2':'Switch';const sameOfficial=snapshot.titles.filter(x=>x.platform===t.platform&&titleKey(x.titleName)===titleKey(t.titleName));const candidates=next.games.filter(x=>x.legacyId&&!x.nintendoKey&&x.platform===platform&&titleKey(x.title)===titleKey(t.titleName));if(sameOfficial.length===1&&candidates.length===1){g=candidates[0];g.nintendoKey=key;}}
   if(!g){g={id:uid(),catalogId:'',title:t.titleName,platform:t.platform==='BEE'?'Switch 2':'Switch',genre:'أخرى',ownership:'digital',ownershipConfirmed:false,status:'backlog',baseMinutes:0,baseSource:'import',rating:0,progress:0,notes:'',completedAt:'',tier:'owned',sourceUrl:'',cover:t.imageUrl,nintendoKey:key};next.games.push(g);}
-  // Never merge by name; preserve completion, notes and manual ownership edits.
-  g.title=t.titleName;if(t.imageUrl)g.cover=t.imageUrl;
+  // Existing native IDs stay separate; the unique exact legacy match preserves its completion history.
+  g.title=t.titleName;if(t.imageUrl){if(!g.fallbackCover&&g.cover?.startsWith('data:image/'))g.fallbackCover=g.cover;g.cover=t.imageUrl;}
  }
  next.nintendo=snapshot;return next;
 }
 export function nintendoTitle(state,g){if(!g?.nintendoKey||!state.nintendo)return null;return state.nintendo.titles.find(t=>state.nintendo.accountId+'|'+t.titleId+'|'+t.platform===g.nintendoKey)||null;}
 export function datedActivity(state){
- // Daily Nintendo aggregates are not sessions. Replace overlap per title/day rather than add.
- const map=new Map();
- for(const s of state.sessions){const key=s.gameId+'|'+s.date;const prior=map.get(key);map.set(key,{id:key,gameId:s.gameId,date:s.date,minutes:(prior?.minutes||0)+s.minutes});}
- for(const g of state.games){const t=nintendoTitle(state,g);if(t)for(const d of t.days)map.set(g.id+'|'+d.date,{id:g.id+'|'+d.date,gameId:g.id,date:d.date,minutes:d.minutes});}
- return [...map.values()];
+ const rows=[];for(const g of state.games){const t=nintendoTitle(state,g);if(t)for(const d of t.days)rows.push({id:g.nintendoKey+'|'+d.date,gameId:g.id,date:d.date,minutes:d.minutes,source:'nintendo',aggregate:true});}return rows;
 }

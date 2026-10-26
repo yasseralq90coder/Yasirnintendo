@@ -1,7 +1,7 @@
-const CACHE='yasir-nintendo-shell-v5';
+const CACHE='yasir-nintendo-shell-v6';
 const ROOT=new URL('./',self.location).href;
-const SHELL=['./','./index.html','./styles.css','./app.js','./native-android.js','./sync-ui.js','./core.js','./nintendo-sync.js','./catalog.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
-self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)));});
+const SHELL=['./','./index.html','./styles.css','./app.js','./native-android.js','./sync-ui.js','./legacy-library.js','./library-seed.json','./core.js','./nintendo-sync.js','./catalog.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
+self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(async cache=>{await cache.addAll(SHELL);const seed=await (await cache.match('./library-seed.json')).json();await cache.addAll([...new Set(seed.items.map(g=>g.cover))]);}));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('yasir-nintendo-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{
  if(event.request.method!=='GET')return;
