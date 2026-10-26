@@ -1,10 +1,10 @@
 import {cleanJourney} from './journey.js';
 import {validateSnapshot,nintendoTitle,datedActivity} from './nintendo-sync.js';
 export const SCHEMA = 1;
-export const STATUSES = {backlog:'لم أبدأ',playing:'ألعب الآن',beaten:'ختمت القصة',complete:'مكتملة 100٪',paused:'متوقفة',wishlist:'أتمناها'};
+export const STATUSES = {backlog:'لم أبدأ',playing:'ألعب الآن',beaten:'مختومة',complete:'مختومة',paused:'متوقفة',wishlist:'أتمناها'};
 export const OWNERS = {physical:'فيزكال',digital:'رقمي',both:'فيزكال + رقمي',nso:'اشتراك NSO'};
 export const GENRES = ['منصات','مغامرات','أكشن','تقمص أدوار','سباقات','ألغاز','محاكاة','رياضة','استراتيجية','أخرى'];
-export const PLATFORMS = ['Switch 2','Switch','NES','SNES','Game Boy','Nintendo 64','Game Boy Advance','GameCube','SEGA Genesis','Virtual Boy'];
+export const PLATFORMS = ['Switch 2','Switch','NES','SNES','Game Boy','Game Boy Color','Nintendo 64','Game Boy Advance','GameCube','SEGA Genesis','Virtual Boy'];
 export const SOURCES = {manual:'إدخال يدوي',timer:'مؤقت محلي','nintendo-manual':'منقول من نينتندو',import:'ملف مستورد'};
 export const uid = () => globalThis.crypto.randomUUID?.() || 'id-'+Array.from(globalThis.crypto.getRandomValues(new Uint32Array(4)),n=>n.toString(16)).join('-');
 export const localDay = (date=new Date()) => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;

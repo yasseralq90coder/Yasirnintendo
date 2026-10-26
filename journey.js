@@ -1,3 +1,4 @@
+import {cleanChronicle} from './chronicle.js';
 import {datedActivity,nintendoTitle} from './nintendo-sync.js';
 import {titleKey,mergeCompletionHistory} from './legacy-library.js';
 const dayMs=86400000;
@@ -5,7 +6,7 @@ export const dayShift=(d,n)=>new Date(Date.parse(d+'T00:00:00Z')+n*dayMs).toISOS
 export const todayKey=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Riyadh',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 export const defaults=()=>({version:1,hardwareSince:'2025-08-01',weeklyDays:3,focus:[],favorites:[],runs:[],plans:{}});
 export function cleanJourney(raw,ids){
- const j=defaults();if(!raw)return j;
+ const j={...defaults(),...cleanChronicle(raw,ids),bookmarks:[]};if(!raw)return j;j.bookmarks=Array.isArray(raw.bookmarks)?[...new Set(raw.bookmarks.filter(x=>typeof x==='string'&&/^[a-f0-9]{16}$/.test(x)))].slice(0,200):[];
  const date=d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&!isNaN(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d;
  if(date(raw.hardwareSince)&&raw.hardwareSince<=todayKey())j.hardwareSince=raw.hardwareSince;
  if(Number.isInteger(raw.weeklyDays)&&raw.weeklyDays>=1&&raw.weeklyDays<=7)j.weeklyDays=raw.weeklyDays;
@@ -26,7 +27,8 @@ export function family(g){const t=g.title.toLowerCase();for(const [key,re,icon] 
 export function genreOf(g){if(g.genre&&g.genre!=='أخرى')return g.genre;const t=g.title.toLowerCase();if(/kart|racing|f-zero/.test(t))return 'سباقات';if(/zelda|metroid|bioshock|metal gear/.test(t))return 'مغامرات';if(/final fantasy|dragon quest|xenoblade|pok[eé]mon|fire emblem|diablo|ni no kuni/.test(t))return 'تقمص أدوار';if(/animal crossing|stardew/.test(t))return 'محاكاة';if(/mario|donkey kong|sonic|kirby|crash/.test(t))return 'منصات';return 'أخرى';}
 export function hardwareOn(state,g,date){return date>=(state.journey?.hardwareSince||'2025-08-01')||g.platform==='Switch 2'?'Switch 2':'Switch';}
 export function playedHardware(state,g){const t=nintendoTitle(state,g);const dates=t?.days.filter(d=>d.minutes>0).map(d=>d.date)||[];const last=dates.sort().pop()||t?.lastPlayedAt?.slice(0,10)||g.completedAt;return last?hardwareOn(state,g,last):g.platform;}
-export function events(state){const out=[];for(const g of state.games){const hs=g.completionHistory||[];for(const h of hs)out.push({...h,gameId:g.id,kind:h.kind,imported:true});if(!hs.length&&['beaten','complete'].includes(g.status))out.push({id:'status-'+g.id,gameId:g.id,date:g.completedAt||'',count:1,kind:g.status,minutes:null,imported:true});}for(const r of state.journey?.runs||[])if(['beaten','complete'].includes(r.status))out.push({id:r.id,gameId:r.gameId,date:r.endedAt,count:1,kind:r.status,minutes:r.minutes,imported:false});return out;}
+export function events(state){const out=[];for(const g of state.games){const hs=g.completionHistory||[];for(const h of hs)out.push({...h,gameId:g.id,kind:'beaten',imported:true});if(!hs.length&&['beaten','complete'].includes(g.status))out.push({id:'status-'+g.id,gameId:g.id,date:g.completedAt||'',count:1,kind:'beaten',minutes:null,imported:true});}for(const r of state.journey?.runs||[])if(['beaten','complete'].includes(r.status))out.push({id:r.id,gameId:r.gameId,date:r.endedAt,count:1,kind:'beaten',minutes:r.minutes,imported:false,startedAt:r.startedAt});for(const r of state.journey?.records||[])out.push({...r,kind:'beaten',minutes:null,imported:false});const hidden=new Set(state.journey?.hiddenEvents||[]),seen=new Set();return out.filter(e=>{if(hidden.has(e.id)||seen.has(e.id))return false;seen.add(e.id);return true;}).map(e=>({...e,...state.journey?.overrides?.[e.id]}));}
+
 export function completions(state,id){return events(state).filter(e=>!id||e.gameId===id).reduce((n,e)=>n+e.count,0);}
 export function activity(state){const seen=new Set();return datedActivity(state).filter(r=>{const key=r.id;if(seen.has(key)||r.minutes<=0)return false;seen.add(key);return true;});}
 export function streaks(rows,today=todayKey()){const dates=[...new Set(rows.map(r=>r.date))].sort();let best=0,run=0,previous='';for(const d of dates){run=previous&&dayShift(previous,1)===d?run+1:1;best=Math.max(best,run);previous=d;}let current=0,d=dates.includes(today)?today:dayShift(today,-1),set=new Set(dates);while(set.has(d)){current++;d=dayShift(d,-1);}return {best,current,active:dates.length};}
@@ -35,7 +37,7 @@ export function progression(state,today=todayKey()){
  const timeXP=[...byDay.values()].reduce((n,m)=>n+Math.floor(Math.min(m,120)/15)*10,0),dayXP=byDay.size*15;
  const ev=events(state).filter(e=>!e.date||e.date<=today);const counts=new Map();let finishXP=0,masteryXP=0;
  for(const e of ev.sort((a,b)=>a.date.localeCompare(b.date))){const n=counts.get(e.gameId)||0;for(let i=n;i<Math.min(n+e.count,3);i++)finishXP+=[300,200,100][i];counts.set(e.gameId,n+e.count);}
- const mastered=new Set(ev.filter(e=>e.kind==='complete').map(e=>e.gameId));masteryXP=mastered.size*200;
+ const mastered=new Set();masteryXP=0;
  const xp=timeXP+dayXP+finishXP+masteryXP,level=Math.floor((Math.sqrt(1+8*xp/180)-1)/2)+1,floor=180*(level-1)*level/2,ceiling=180*level*(level+1)/2;
  const rank=level>=40?'أسطورة المملكة':level>=25?'حارس الترايفورس':level>=15?'فارس هايرول':level>=8?'بطل المشروم':'مستكشف العوالم';
  return {xp,level,floor,ceiling,progress:(xp-floor)/(ceiling-floor)*100,rank,timeXP,dayXP,finishXP,masteryXP,completions:[...counts.values()].reduce((a,b)=>a+b,0),finished:counts.size,mastered:mastered.size,streak:streaks(rows,today)};
@@ -43,7 +45,7 @@ export function progression(state,today=todayKey()){
 export function achievements(state,today=todayKey()){
  const rows=activity(state).filter(r=>r.date<=today),p=progression(state,today),official=state.nintendo?.titles||[],total=official.reduce((n,t)=>n+t.totalPlayedMinutes,0),ev=events(state),out=[];
  const add=(id,icon,name,desc,value,targets)=>targets.forEach((target,i)=>out.push({id:id+'-'+i,icon,name:name+' · '+['برونزي','فضي','ذهبي','أسطوري'][i],description:desc+' '+target,value,target,tier:i,unlocked:value>=target}));
- add('time','⭐','نجوم ماريو','ساعات Nintendo:',total/60,[1,25,100,500]);add('finish','🏁','رايات المملكة','ألعاب مختومة:',p.finished,[1,5,10,25]);add('replay','🔄','عودة لينك','تختيمات إضافية بعد الأولى:',p.completions-p.finished,[1,3,10,25]);add('master','👑','تاج بييتش','ألعاب أكملتها 100٪ بتأكيدك:',p.mastered,[1,3,10,20]);
+ add('time','⭐','نجوم ماريو','ساعات Nintendo:',total/60,[1,25,100,500]);add('finish','🏁','رايات المملكة','ألعاب مختومة:',p.finished,[1,5,10,25]);add('replay','🔄','عودة لينك','تختيمات إضافية بعد الأولى:',p.completions-p.finished,[1,3,10,25]);add('master','👑','تاج بييتش','إجمالي الرايات في رحلتك:',p.completions,[3,10,25,50]);
  add('days','🍃','رحلة إيزابيل','أيام نشاط Nintendo:',p.streak.active,[7,30,100,365]);add('explore','🌸','فضول كيربي','عناوين Nintendo لعبتها:',official.filter(t=>t.totalPlayedMinutes>0).length,[3,10,30,100]);
  add('streak','🔥','شعلة باوزر','أفضل تتابع أيام (للذكرى، دون عقوبة):',p.streak.best,[3,7,14,30]);
  const hardware=rows.filter(r=>hardwareOn(state,state.games.find(g=>g.id===r.gameId),r.date)==='Switch 2').reduce((n,r)=>n+r.minutes,0);
@@ -83,14 +85,14 @@ export function startRun(state,id,today=todayKey(),runId='run-'+Date.now()){
 }
 export function finishRun(state,id,kind='beaten',today=todayKey()){
  const r=state.journey?.runs.find(r=>r.id===id&&r.status==='active');if(!r||!['beaten','complete','abandoned'].includes(kind))throw Error('الرحلة غير متاحة.');if(today<r.startedAt)throw Error('تاريخ النهاية يسبق البداية.');
- if(kind!=='abandoned'&&state.journey.runs.some(x=>x.id!==id&&x.gameId===r.gameId&&x.endedAt===today&&['beaten','complete'].includes(x.status)))throw Error('يمكن تأكيد تختيمة واحدة للعبة في اليوم، دون مضاعفة المكافآت.');
- const g=state.games.find(g=>g.id===r.gameId),t=nintendoTitle(state,g);r.status=kind;r.endedAt=today;r.minutes=t?Math.max(0,t.totalPlayedMinutes-r.baselineMinutes):null;r.timeSource=t?'nintendo-delta':'unavailable';return state;
+
+ const g=state.games.find(g=>g.id===r.gameId),t=nintendoTitle(state,g);r.status=kind==='complete'?'beaten':kind;r.endedAt=today;r.minutes=t?Math.max(0,t.totalPlayedMinutes-r.baselineMinutes):null;r.timeSource=t?'nintendo-delta':'unavailable';return state;
 }
 export function linkLegacy(state,sourceId,targetId){
  const source=state.games.find(g=>g.id===sourceId),target=state.games.find(g=>g.id===targetId);if(!source?.legacyId||source.nintendoKey||!target?.nintendoKey||target.legacyId)throw Error('اختر سجلًا قديمًا غير مربوط وعنوان حساب لا يحمل سجلًا قديمًا آخر.');
  target.legacyId=source.legacyId;target.completionHistory=mergeCompletionHistory(target.completionHistory,source.completionHistory);target.metadata=source.metadata;target.fallbackCover=source.fallbackCover||source.cover;target.ownership=source.ownership;target.ownershipConfirmed=true;target.parentLegacyId=source.parentLegacyId;target.isCollection=source.isCollection;
  const ranks={backlog:0,paused:0,wishlist:0,playing:1,beaten:2,complete:3};if(ranks[source.status]>ranks[target.status])target.status=source.status;target.completedAt=[source.completedAt,target.completedAt].filter(Boolean).sort().pop()||'';
- state.games=state.games.filter(g=>g.id!==sourceId);state.sessions=state.sessions.filter(r=>r.gameId!==sourceId);if(state.journey){for(const k of ['focus','favorites'])state.journey[k]=[...new Set(state.journey[k].map(id=>id===sourceId?targetId:id))];for(const r of state.journey.runs)if(r.gameId===sourceId)r.gameId=targetId;for(const p of Object.values(state.journey.plans))for(const q of p.items)if(q.gameId===sourceId)q.gameId=targetId;}for(const p of Object.values(state.challenges||{}))for(const q of p.items)if(q.gameId===sourceId)q.gameId=targetId;return state;
+ state.games=state.games.filter(g=>g.id!==sourceId);state.sessions=state.sessions.filter(r=>r.gameId!==sourceId);if(state.journey){for(const r of state.journey.records||[])if(r.gameId===sourceId)r.gameId=targetId;for(const k of ['focus','favorites'])state.journey[k]=[...new Set(state.journey[k].map(id=>id===sourceId?targetId:id))];for(const r of state.journey.runs)if(r.gameId===sourceId)r.gameId=targetId;for(const p of Object.values(state.journey.plans))for(const q of p.items)if(q.gameId===sourceId)q.gameId=targetId;}for(const p of Object.values(state.challenges||{}))for(const q of p.items)if(q.gameId===sourceId)q.gameId=targetId;return state;
 }
 export function matchScore(a,b){const x=titleKey(a),y=titleKey(b);if(x===y)return 100;if(x.length>8&&y.includes(x)||y.length>8&&x.includes(y))return 80;const aw=new Set(a.toLowerCase().split(/\W+/).filter(w=>w.length>2)),bw=new Set(b.toLowerCase().split(/\W+/).filter(w=>w.length>2));return [...aw].filter(w=>bw.has(w)).length/Math.max(1,aw.size,bw.size)*60;}
 export function review(state,year=todayKey().slice(0,4)){
