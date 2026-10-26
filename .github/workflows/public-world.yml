@@ -1,5 +1,10 @@
 name: Refresh official Nintendo world
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/refresh-world.py'
+      - '.github/workflows/public-world.yml'
   schedule:
     - cron: '20 */6 * * *'
   workflow_dispatch:
