@@ -1,15 +1,10 @@
-Yasir Nintendo 3.0 — عالمك وراياتك
+# Yasir Nintendo 4.0
 
-نظام تختيم واحد دون تصنيف 100٪. أضف راية بأي تاريخ سابق، وعدّلها، وسجّل عدة تختيمات في اليوم نفسه. كل لعبة تحمل ختمًا ذهبيًا وعدد راياتها؛ قسم «راياتي» يجمع الألبوم والسجل الزمني والفواصل بالأيام. حذف الراية قابل للاستعادة.
+- Nintendo Club interface with compact progressive achievement paths, medal showcase and a next-goal focus.
+- Complete library classification: owned, demo, subscription, free, borrowed, unknown; bulk edits, tags, archive, grid/list, and price-per-official-hour.
+- Nintendo US/noon Saudi public offers with dates, filters, targets, and opt-in Android notifications. Amazon live listing fetching may be unavailable; the Saudi comparison link remains available. Delivery to Mecca and total checkout cost require retailer confirmation.
+- Game metadata/trailers when matched, community/guide links, local chapter notes and checklist.
+- Android guide reader remembers URL/scroll independently of Nintendo account credentials.
+- Existing library, multiple dated flags, account-only time and Switch 2 playing-device attribution remain intact.
 
-حساب نشاط Nintendo بين التختيمات لا يكرر يوم الختم السابق. تعدد التختيمات في يوم واحد يجعل وقتها الفردي غير قابل للفصل، والمدة المستوردة من ملف قديم تبقى موسومة ومستقلة. لا يوجد إدخال ساعات يدوي.
-
-إحصائيات بفترات 7/30/90 يومًا، العام، كل السنوات وفترة مخصصة، ومقارنة بفترة مساوية، ومتوسط اليوم النشط وتقويم تفاعلي وتصدير تقرير. إجمالي Nintendo منفصل عن مجاميع الأيام.
-
-ثمانية مراكز NSO تعرض وقت التطبيقات ورايات كل كلاسيكية، مع إضافة ألعاب مختومة من الكتالوج أو بالاسم. الكتالوج الحالي 110 عناوين من صفحات Nintendo في AU وUS وUK، ويتفاوت نطاق كل مصدر؛ لا ندعي أنه كامل لكل منطقة. لا توزع ساعات التطبيق على الألعاب الفردية.
-
-قسم الأخبار بعناوين أصلية من Nintendo، حفظ المفضلة، فلترة وبحث وتحديث من البيانات العامة كل ست ساعات عبر GitHub Actions. الأخبار بالإنجليزية مع تاريخ النشر وآخر جلب ناجح. متحف تفاعلي من 17 حقبة، صور رسمية للأجهزة، وراياتك ومختارات اشتراكك لكل منصة.
-
-واجهة باللون الأحمر وتفاصيل ذهبية للرايات، تنقل سفلي وخيارات المزيد على الجوال، ونوافذ سفلية ووضع داكن وتقليل الحركة. Backup/Restore متوافق مع النسخ السابقة ويحفظ الرايات وتعديلاتها والمحذوفات القابلة للاستعادة والمفضلة.
-
-ثبّت التحديث فوق النسخة الحالية. تبقى مكتبتك محلية والتفويض مشفرًا على الجهاز.
+Install over the current app to retain its data. Export a JSON backup from Settings before changing devices. Background price alerts are periodic, not instantaneous, and need Android notification permission.

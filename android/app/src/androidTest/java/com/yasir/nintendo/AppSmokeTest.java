@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class AppSmokeTest {
  private WebView find(View view){if(view instanceof WebView)return (WebView)view;if(view instanceof ViewGroup){ViewGroup group=(ViewGroup)view;for(int i=0;i<group.getChildCount();i++){WebView found=find(group.getChildAt(i));if(found!=null)return found;}}return null;}
+ @Test public void guideReaderRejectsUnsafeOrigins(){assertFalse(GuideActivity.allowed("javascript:alert(1)"));assertFalse(GuideActivity.allowed("file:///data/data/com.yasir.nintendo/"));assertFalse(GuideActivity.allowed("https://127.0.0.1/"));assertFalse(GuideActivity.allowed("https://appassets.androidplatform.net/assets/www/index.html"));assertTrue(GuideActivity.allowed("https://www.nintendolife.com/guides/example"));}
  @Test public void offlineBundledInterfaceAndNativeBridgeWork() throws Exception {
   try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)){
    boolean loaded=false;
@@ -35,7 +36,7 @@ public class AppSmokeTest {
    CountDownLatch badgePage=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='achievements';",r->badgePage.countDown()));assertTrue(badgePage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
    CountDownLatch badges=new CountDownLatch(1);
-   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.badge-card').length===52",r->{value[0]=r;badges.countDown();}));assertTrue(badges.await(5,TimeUnit.SECONDS));assertEquals("52 tiered badges must render on the factory WebView", "true",value[0]);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.trophy-path').length===20 && document.querySelectorAll('.tier-track button').length===80 && document.documentElement.scrollWidth<=window.innerWidth+2",r->{value[0]=r;badges.countDown();}));assertTrue(badges.await(5,TimeUnit.SECONDS));assertEquals("80 tiered badges in 20 compact paths must render on the factory WebView", "true",value[0]);
    CountDownLatch museumPage=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='history';",r->museumPage.countDown()));assertTrue(museumPage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
    CountDownLatch eras=new CountDownLatch(1);
@@ -44,6 +45,10 @@ public class AppSmokeTest {
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='news';",r->newsPage.countDown()));assertTrue(newsPage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
    CountDownLatch headlines=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.news-card').length>=3 && document.querySelectorAll('#bottom-nav a').length===4",r->{value[0]=r;headlines.countDown();}));assertTrue(headlines.await(5,TimeUnit.SECONDS));assertEquals("Bundled news and Android navigation must work offline", "true",value[0]);
+   CountDownLatch shopPage=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='store';",r->shopPage.countDown()));assertTrue(shopPage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
+   CountDownLatch offers=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.offer-card').length>0 && document.querySelectorAll('.offer-card').length<=24 && document.documentElement.scrollWidth<=window.innerWidth+2",r->{value[0]=r;offers.countDown();}));assertTrue(offers.await(5,TimeUnit.SECONDS));assertEquals("Public shop must load a bounded mobile grid offline", "true",value[0]);
    // Request through the exact exposed bridge; reply contains no Nintendo token.
    CountDownLatch called=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("window.__nativeSmoke=null;window.__yasirNativeResult=function(id,result){if(id==='smoke')window.__nativeSmoke=result;};AndroidBridge.request('smoke','/status','{}');",r->called.countDown()));assertTrue(called.await(5,TimeUnit.SECONDS));

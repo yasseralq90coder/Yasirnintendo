@@ -18,7 +18,7 @@ export function mergeNintendo(state,data){
  for(const t of snapshot.titles){
   const key=snapshot.accountId+'|'+t.titleId+'|'+t.platform;
   let g=next.games.find(g=>g.nintendoKey===key);
-  if(!g){const platform=t.platform==='BEE'?'Switch 2':'Switch';const sameOfficial=snapshot.titles.filter(x=>x.platform===t.platform&&titleKey(x.titleName)===titleKey(t.titleName));const candidates=next.games.filter(x=>x.legacyId&&!x.nintendoKey&&x.platform===platform&&titleKey(x.title)===titleKey(t.titleName));if(sameOfficial.length===1&&candidates.length===1){g=candidates[0];g.nintendoKey=key;}}
+  if(!g){const platform=t.platform==='BEE'?'Switch 2':'Switch';const sameOfficial=snapshot.titles.filter(x=>x.platform===t.platform&&titleKey(x.titleName)===titleKey(t.titleName));const candidates=next.games.filter(x=>(x.legacyId||x.ownershipConfirmed===true)&&!x.isCollection&&x.ownership!=='nso'&&!x.nintendoKey&&x.platform===platform&&titleKey(x.title)===titleKey(t.titleName));if(sameOfficial.length===1&&candidates.length===1){g=candidates[0];g.nintendoKey=key;}}
   if(!g){g={id:uid(),catalogId:'',title:t.titleName,platform:t.platform==='BEE'?'Switch 2':'Switch',genre:'أخرى',ownership:'digital',ownershipConfirmed:false,status:'backlog',baseMinutes:0,baseSource:'import',rating:0,progress:0,notes:'',completedAt:'',tier:'owned',sourceUrl:'',cover:t.imageUrl,nintendoKey:key};next.games.push(g);}
   // Existing native IDs stay separate; the unique exact legacy match preserves its completion history.
   g.title=t.titleName;if(t.imageUrl){if(!g.fallbackCover&&g.cover?.startsWith('data:image/'))g.fallbackCover=g.cover;g.cover=t.imageUrl;}

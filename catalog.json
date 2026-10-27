@@ -8,7 +8,12 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2017-10-27T00:00:00.000Z",
+    "description": "Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on a massive, globe-trotting 3D adventure. Use amazing new abilities—like the power to capture and control objects, animals, and enemies—to collect Power Moons so you can power up the Odyssey airship and save Princess Peach from Bowser’s wedding plans!\n\nThanks to heroic, hat-shaped Cappy, Mario’s got new moves that’ll make you rethink his traditional run-and-jump gameplay—like cap jump, cap throw, and capture. Use captured cohorts such as enemies, objects, and animals to progress through the game and uncover loads of hidden collectibles. And if you feel like playing with a friend, just pass them a Joy-Con™ controller! Player 1 controls Mario while Player 2 controls Cappy. This sandbox-style 3D Mario adventure—the first since 1996’s beloved Super Mario 64™ and 2002’s Nintendo GameCube™ classic Super Mario Sunshine™—is packed with secrets and surprises, plus exciting new kingdoms to explore.",
+    "players": "2+",
+    "rating": ""
   },
   {
     "id": "the-legend-of-zelda-tears-of-the-kingdom-switch",
@@ -19,7 +24,13 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2023-05-12T00:00:00.000Z",
+    "description": "An epic adventure across the land and skies of Hyrule awaits in The Legend of Zelda™: Tears of the Kingdom for Nintendo Switch™. The adventure is yours to create in a world fueled by your imagination.\n\nIn this sequel to The Legend of Zelda: Breath of the Wild, you’ll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above. Can you harness the power of Link’s new abilities to fight back against the malevolent forces that threaten the kingdom?",
+    "players": "Single player",
+    "rating": "",
+    "trailer": "https://assets.nintendo.com/video/upload/store/software/switch/70010000063714/Video/001cea64352df96169da96b648eb8a9d3a3062a9f3bd1ca50f18668b392a54e8.mp4"
   },
   {
     "id": "super-mario-bros-wonder-switch",
@@ -30,7 +41,13 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2023-10-20T00:00:00.000Z",
+    "description": "Classic Mario side-scrolling gameplay is turned on its head with the addition of Wonder Flowers. These game-changing items trigger spectacular moments you have to see to believe...Witness pipes coming alive, float through outer space, wreak havoc as a giant Spike-Ball, and see even more unexpected events called Wonder effects.\n\nPick from heroic Super Mario characters and power-ups to save the Flower Kingdom\n\nChoose from the largest cast of characters in a side-scrolling Mario game, including Mario, Luigi, Peach, Daisy, and Toads. Players of all skill levels can feel the wonder by playing as a Yoshi or Nabbit who don’t take damage! Grab surprising new power-ups like Elephant Fruit to use your trunk to trounce enemies and spray water, on your adventure to save the Flower Kingdom from Bowser’s wonder grip. You can even find and equip new badges to change up your play style to truly make this Mario adventure your own.\n\nShare the wonder with friends and Mario fans near and far\n\nTeam up with",
+    "players": "4+",
+    "rating": "",
+    "trailer": "https://assets.nintendo.com/video/upload/store/software/switch/70010000068688/Video/74ce702f5f94723a94e8081534adcc5108b37bbdb59a993a459bba71d30210ff.mp4"
   },
   {
     "id": "kirby-and-the-forgotten-land-switch",
@@ -41,7 +58,13 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/kirby-and-the-forgotten-land-switch/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2022-03-25T00:00:00.000Z",
+    "description": "Float off on an adventure as the powerful puffball, Kirby. Explore in 3D platforming stages as you discover a mysterious world with abandoned structures from a past civilization—like a shopping mall?! Copy enemies’ abilities like Drill and Ranger and use them to attack, explore your surroundings, and save the kidnapped Waddle Dees from the ferocious Beast Pack alongside the mysterious Elfilin. Hope you’re hungry for an unforgettable adventure!\n\nGet a mouthful of real-world objects for powerful transformations\n\nFeeling hungry? Kirby can inhale real-world objects and transform using Mouthful Mode! Why get one drink from a vending machine when you can swallow the whole thing? Then, use your boxy body to shoot out cans at baddies. Consume a car to gain some wheels and slam through walls. Sit back and take it all in…literally.\n\nJoin up with a pointy partner, Bandana Waddle Dee, in co-op play\n\nPass a Joy-Con™ controller to a buddy to play as the spear-wielding Bandana Waddle Dee and help eac",
+    "players": "2+",
+    "rating": "",
+    "trailer": "https://assets.nintendo.com/video/upload/store/software/switch/70010000046405/Video/09360f27d11f16c742e1cafff6316540a866e297a5962536c35bba6198e57182.mp4"
   },
   {
     "id": "metroid-dread-switch",
@@ -52,7 +75,13 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/metroid-dread-switch/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2021-10-08T00:00:00.000Z",
+    "description": "Upon investigating a mysterious transmission on Planet ZDR, Samus faces a mysterious foe that traps her in this dangerous world. The remote planet has been overrun by vicious alien lifeforms and murderous robots called E.M.M.I. Hunt or be hunted as you make your way through a labyrinth of enemies in Samus’ most intense side-scrolling adventure yet.\n\nSamus is more agile and capable than ever\n\nGuide Samus Aran, an intergalactic bounty hunter raised by an ancient tribe, and traverse the many environments of a dangerous world. Parkour over obstacles, slide through tight spaces, counter enemies, and battle your way through the planet. Through her countless missions, Samus has never experienced a threat like the dread of ZDR.\n\nPower up and find more ways to explore and secrets to uncover\n\nGain abilities and return to previous areas to find new areas and hidden upgrades in classic Metroid™ gameplay. Planet ZDR’s sprawling map is home to many secrets to discover and powers to find. You’ll need",
+    "players": "Single player",
+    "rating": "",
+    "trailer": "https://assets.nintendo.com/video/upload/store/software/switch/70010000042924/Video/f8aade841942297cd19b4d14ad4ec506fd6316813767f3295deb9145a5850702.mp4"
   },
   {
     "id": "mario-kart-world-switch-2",
@@ -63,7 +92,13 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2025-06-05T00:00:00.000Z",
+    "description": "The whole world is your racetrack in this massive evolution of the Mario Kart™ series! The courses you race on are all connected in a seamless world. Drive the paths between them to traverse mountains, forests, cities, and more. Take in the sprawling vistas as you explore at your own pace in Free Roam—or watch how a sudden shift in the weather can mix up a dead heat in a tense Grand Prix.\n\nRide on rails, jump off walls, skim across water, and more as you race for the finish line. Master these new maneuvers and you might cut down your time to the finish line! \n\nTake on a classic Grand Prix, or go the distance in the Knockout Tour elimination mode\n\nSpeed through one course and then drive to the next in a non-stop rally that stretches from one corner of the world to another in the adrenaline-packed Knockout Tour! In this fierce 24-driver mode, racers are steadily eliminated, checkpoint by checkpoint, until only one remains. With Grand Prix and VS Races also supporting up to 24 drivers, th",
+    "players": "4+",
+    "rating": "",
+    "trailer": "https://assets.nintendo.com/video/upload/store/software/switch2/70010000095431/Video/edaafe8cf9163f9487f6cbc0b90a284a0a61ac85829fda0cc41f6f356cfed7f8.mp4"
   },
   {
     "id": "donkey-kong-bananza-switch-2",
@@ -74,7 +109,13 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/donkey-kong-bananza-switch-2/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2025-07-17T00:00:00.000Z",
+    "description": "Bash through just about anything with the raw power of Donkey Kong! Crash through walls, carve tunnels with your fists, punch straight down into the ground, and even tear off chunks of terrain to swing around and throw in groundbreaking exploration—the more you smash, the more areas open up for you to move through.  \n\nJoin DK and his companion, Pauline, as they delve deep underground—and discover that this subterranean world is a lot more than it seems on the surface. Uncover a variety of environments such as arid canyons, lush forests, and frigid tundra as you peel back the world’s layers!\n\nPair up with Pauline to use powerful Bananza Transformations \n\nPauline is a talented young singer looking to find her way back to the surface—and her singing can empower Donkey Kong with Bananza Transformations! Each transformation has its own signature strengths: you can smash through the toughest obstacles with the raw strength of Kong form, gallop with incredible speed as a Zebra, and more.\n\nTea",
+    "players": "2+",
+    "rating": "",
+    "trailer": "https://assets.nintendo.com/video/upload/store/software/switch2/70010000096809/Video/049f264bfaa0b2f3d8a5fc0774b0a4d6be4a5f4b7fe686df272296b4429efe29.mp4"
   },
   {
     "id": "animal-crossing-new-horizons-switch",
@@ -85,7 +126,13 @@
     "sourceUrl": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
     "sourceRegion": "US",
     "verifiedAt": "2026-10-26",
-    "tier": "owned"
+    "tier": "owned",
+    "publisher": "Nintendo",
+    "releaseDate": "2020-03-20T00:00:00.000Z",
+    "description": "Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing™: New Horizons game. Your island getaway has a wealth of natural resources that can be used to craft everything from tools to creature comforts. You can hunt down insects at the crack of dawn, decorate your paradise throughout the day, or enjoy sunset on the beach while fishing in the ocean. The time of day and season match real life, so each day on your island is a chance to check in and find new surprises all year round. \n\nShow off your island utopia to family and friends—or pack your bags and visit theirs. Whether playing online* or with others beside you**, island living is even better when you can share it. Even without hopping on a flight, you’ll meet a cast of charming animal residents bursting with personality. Friendly faces like Tom Nook and Isabelle will lend their services and happily help you grow your budding community. Escape to your island getaway—howeve",
+    "players": "4+",
+    "rating": "",
+    "trailer": "https://assets.nintendo.com/video/upload/store/software/switch/70010000027619/Video/61277935eaf84edf6f241126d0130dd3b0c0838bf83765bbba54aa09b3d3f9d2.mp4"
   },
   {
     "id": "nso-1",

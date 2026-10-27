@@ -4,9 +4,10 @@ on:
     branches: [main]
     paths:
       - 'tools/refresh-world.py'
+      - 'tools/refresh-store.py'
       - '.github/workflows/public-world.yml'
   schedule:
-    - cron: '20 */6 * * *'
+    - cron: '20 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,14 +24,15 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p '*_test.py'
           python3 tools/refresh-world.py
+          python3 tools/refresh-store.py
       - name: Save public snapshot and deploy Pages
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if ! git diff --quiet -- nintendo-world.json; then
+          if ! git diff --quiet -- nintendo-world.json store-data.json; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add nintendo-world.json
+            git add nintendo-world.json store-data.json
             git commit -m 'Refresh official public Nintendo headlines and catalogue'
             git push
             gh workflow run pages.yml --ref main

@@ -1,49 +1,26 @@
-# Yasir Nintendo 3.0 — عالمك وراياتك
+# Yasir Nintendo 4.0 — Nintendo Club
 
-تطبيق Android وPWA عربي لمكتبة Nintendo ووقت الحساب والتختيمات وNintendo Classics والتاريخ والأخبار. واجهة RTL متجاوبة بلون أحمر ورايات ذهبية، تنقل سفلي على الجوال، نوافذ سفلية، وضع داكن وتقليل الحركة.
+Android + offline PWA. Personal activity stays on the device; GitHub stores application code and public Nintendo/retailer snapshots only.
 
-## الرايات والتختيمات
+## New in 4.0
+- Owned/demo/NSO/free/borrowed/unclassified shelves, bulk classification, tags, archive, list/grid and official recent-play sorting. User-confirmed ownership never adds playtime.
+- 80 personal achievement tiers grouped into 20 paths, a four-medal showcase, chosen next goal and level roadmap. Existing XP totals/formula preserved; no inactivity penalties.
+- Public Nintendo US digital and Saudi noon price snapshots, per-price timestamps, expiry/stale handling, genre/budget sorting and price watches. Amazon fetching is best effort with explicit unavailable status and direct Saudi search fallback. No cheapest-market or Mecca delivery guarantee.
+- Exact-title/edition official metadata and trailers where present. Curated guide/community links for selected titles, explicit searches for others.
+- Android isolated guide reader: last URL and scroll remembered locally, no native account bridge. Guide chapters, notes and checklist are included in JSON backup; device reader scroll is device-local.
+- Opt-in Android hourly price-target notifications (JobScheduler; timing depends on Android battery/network). Currency and freshness checked; no account data leaves the device.
 
-راية واحدة دون تصنيف 100٪. أضف تختيمة قديمة بتاريخها، عدة تختيمات للعبة أو في اليوم نفسه، تاريخ بداية اختياري وذكرى. يمكن تعديل الرايات وحذفها واستعادتها. المكتبة تبرز الألعاب المختومة وعددها، وقسم «راياتي» يجمع الألبوم والسجل والفواصل بالأيام.
+## Data rules
+Nintendo activity is the only source of play minutes. NSO container minutes never get allocated to child games. Playing device since 2025-08-01 is Switch 2; original game/platform IDs remain unchanged. Dated repeated completions are player-declared flags, without a 100% completion category. Classifying ownership cannot create a flag.
 
-التختيم تأكيد اللاعب؛ Nintendo لا يكشفه تلقائيًا. `chronicle.js` يحسب الفاصل التقويمي ونشاط اللعبة من مجاميع Nintendo بين التواريخ، دون إدخال ساعات. يوم الراية السابقة لا يُحسب ثانية. إذا تعددت الرايات في اليوم نفسه لا نخمن تقسيم وقته. مدة الملف القديم محفوظة بمصدرها، ولا تدخل وقت الحساب. هذه الفترات لا تدعي قياس مدة التختيمة داخل اللعبة بدقة.
+## Prices and freshness
+`tools/refresh-store.py` fetches public pages without authentication. `public-world.yml` runs hourly and updates Pages; failure keeps old source entries with their original timestamps. Offers older than 24 hours are labeled stale; expired offers are hidden and never trigger notifications. USD-to-SAR at 3.75 is a comparison estimate, before fees. Retail prices exclude unknown delivery fees; enter your Mecca address at the retailer to verify seller, stock and final delivery. No purchase is performed by this app.
 
-## الإحصائيات والتقدم
+## Build
+`npm ci --ignore-scripts`, `npm test`, `npm run check`, `python3 -m unittest discover -s tests -p '*_test.py'`, then `node tools/package-android.mjs`.
+GitHub Actions builds Android with Java 17 / Gradle 8.11.1, runs unit tests/lint and an API 29 smoke test, then publishes `YasirNintendo.apk` under `android-preview`. Signing cache preserves update compatibility. GitHub Pages receives only the explicit public file allowlist.
 
-نطاق واضح 7/30/90 يومًا، السنة، كل السنوات أو تاريخين مخصصين. الرسوم والترتيب والمتوسطات تتبع النطاق، والمقارنة تستخدم فترة سابقة بنفس الطول. متوسط يوم اللعب يُقسم على الأيام النشطة فقط. يوجد تقويم سنوي تفاعلي وتصدير تقرير.
+## Privacy / backup
+The bundled `library-seed.json` is empty. Import private historical libraries locally from Settings. JSON backups include classification, guide checklist, favorites, flags and price watches, but never Nintendo authentication tokens. Android tokens remain encrypted in Keystore-backed storage. Account reconnection is required after transferring to another device. Guide pages run in a separate WebView without AndroidBridge and cannot read the local app origin.
 
-إجمالي `totalPlayedMinutes` مستقل عن تفاصيل الأيام؛ لا نجمعهما ولا نضيف الجلسات اليدوية القديمة. تقرير الدقة يبين اختلاف المجاميع إن وجد. جهاز اللعب مشتق من قاعدة اللاعب (افتراضيًا Switch 2 من 2025-08-01)، دون تغيير منصة الإصدار أو معرّفات Nintendo.
-
-مستويات مهنية و52 شارة شخصية، مهمات أسبوعية وشهرية محفوظة، نجوم مواسم وأرشيف، خطة تركيز لثلاث ألعاب ومفضلة وتوصيات للعودة وإعادة التختيم. 10 XP لكل 15 دقيقة حتى ساعتين مكافأتين يوميًا، و15 لكل يوم نشط. أول ثلاث تختيمات للعبة تمنح 300/200/100 XP، دون فئة إكمال إضافية أو خسارة عند الراحة.
-
-## Nintendo Classics
-
-ثمانية مراكز: NES وSNES وGame Boy وNintendo 64 وGBA وGameCube وSEGA Genesis وVirtual Boy. لكل مركز وقت تطبيقات الحساب وأيام النشاط والرايات والألعاب المختومة والإعادات وخريطة شهرية. ساعات التطبيقات لا توزع على الألعاب الفردية.
-
-يمكن إضافة كلاسيكية من بيانات المصدر أو كتابة اسم لعبة مختومة. بيانات الكتالوج العامة تجمع مختارات Nintendo AU وقائمة Genesis الأمريكية وVirtual Boy البريطانية. نطاق التغطية مختلف لكل منصة؛ التوفر يعتمد على المنطقة والاشتراك، وليس كشفًا آليًا لاستحقاق الحساب.
-
-## الأخبار والمتحف
-
-`nintendo-world.json` بيانات عامة فقط: عناوين الأخبار وروابطها وتواريخها، الكتالوج وصور رسمية وتاريخ الأجهزة من Nintendo. لا تُنسخ أجسام المقالات. الواجهة تعرض العنوان الأصلي بالإنجليزية، آخر جلب ناجح، البحث والحفظ.
-
-Workflow `public-world.yml` يحاول التحديث كل ست ساعات، يحفظ آخر بيانات ناجحة عند تعطل المصدر، وينشر Pages. تطبيق Android يجلب النسخة العامة المنشورة عند تحديث الأخبار؛ البيانات المضمنة تعمل دون اتصال. لا يُرسل أي رمز Nintendo أو سجل شخصي لهذا المسار.
-
-المتحف يربط 17 حقبة من 1889 إلى Switch 2 برايات اللاعب حسب منصة الإصدار، مع مصادر وصور ومختارات من اشتراك NSO المحدد. سنة الإطلاق هي الأولى وقد تختلف حسب المنطقة. لا تُختلق ألعاب NSO لمنصات غير متاحة.
-
-## الخصوصية والبناء
-
-المكتبة والرايات محفوظة محليًا. Backup/Restore يحتفظ بالتقدم والتعديلات والمفضلة؛ التفويض مشفر بـAndroid Keystore وخارج النسخة الاحتياطية. استيراد ملف المكتبة السابق يستبعد مفاتيح الخدمات والجلسات اليدوية. لا تُضمّن نسخ المستخدم في المستودع أو APK.
-
-```sh
-npm ci --ignore-scripts
-npm test
-npm run check
-python3 -m unittest discover -s tests -p '*_test.py'
-node tools/package-android.mjs
-cd android
-gradle testDebugUnitTest lintDebug assembleDebug
-```
-
-GitHub Actions يختبر APK ومحاكي Android قبل نشره إلى إصدار `android-preview`. ربط Android مباشر من الجهاز دون خادم؛ ربط الويب الثابت يحتاج [خادم المستخدم الاختياري](server/README.md).
-
-مصادر البيانات: [الأخبار الرسمية](https://www.nintendo.com/us/whatsnew/)، [Nintendo Classics AU](https://www.nintendo.com/au/hardware/nintendo-switch-online/classic-games/)، [SEGA Genesis](https://www.nintendo.com/us/store/products/sega-genesis-nintendo-switch-online-switch/)، [Virtual Boy](https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Virtual-Boy-Nintendo-Classics-2915432.html)، [تاريخ الشركة](https://www.nintendo.co.jp/corporate/en/history/index.html)، [تاريخ Nintendo UK](https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html)، و[الخط الزمني الرسمي](https://careers.nintendo.com/our-history/).
+Legacy detailed account-linking documentation: [Android](android/README.md), [optional web bridge](server/README.md).
