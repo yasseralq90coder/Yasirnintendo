@@ -1211,8 +1211,17 @@
       "verifiedAt": "2026-10-27"
     }
   ],
-  "catalogUpdatedAt": "2026-10-27T14:37:22.547270+00:00",
+  "catalogUpdatedAt": "2026-10-27T20:08:05.689418+00:00",
   "news": [
+    {
+      "id": "2ec0655e2869bdb6",
+      "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
     {
       "id": "2e4da9ea7cc2178a",
       "title": "New update for Nintendo Switch Online + Expansion Pack members!",
@@ -1376,15 +1385,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "472cf93c9fceb9c6",
-      "title": "Experience the epic KINGDOM HEARTS saga!",
-      "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "57ccf3adc81fa414",
       "title": "Hello Kitty Island Adventure",
       "date": "2026-10-08",
@@ -1400,6 +1400,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/competitive-play-keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/1920x1080_MKW_OCT-open_EN",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "472cf93c9fceb9c6",
+      "title": "Experience the epic KINGDOM HEARTS saga!",
+      "date": "2026-10-08",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1430,21 +1439,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "79e280303175d3fa",
-      "title": "Play the 57th MAXIMUS CUP online event and you could earn an in-game collaborative theme!",
-      "date": "2026-09-29",
-      "url": "https://www.nintendo.com/us/whatsnew/play-the-57th-maximus-cup-online-event-and-you-could-earn-an-in-game-collaborative-theme/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/play-the-57th-maximus-cup-online-event-and-you-could-earn-an-in-game-collaborative-theme/1920x1080_Switch_News_TetrisEvent_57_EN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "8af9731954a6af02",
       "title": "Blast off into high-octane adventure with added multiplayer content for Star Fox, available now on Nintendo Switch 2!",
       "date": "2026-09-29",
       "url": "https://www.nintendo.com/us/whatsnew/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/2250x1266_StarFoxUpdate_EN_1",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "79e280303175d3fa",
+      "title": "Play the 57th MAXIMUS CUP online event and you could earn an in-game collaborative theme!",
+      "date": "2026-09-29",
+      "url": "https://www.nintendo.com/us/whatsnew/play-the-57th-maximus-cup-online-event-and-you-could-earn-an-in-game-collaborative-theme/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/play-the-57th-maximus-cup-online-event-and-you-could-earn-an-in-game-collaborative-theme/1920x1080_Switch_News_TetrisEvent_57_EN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/welcome-to-the-worlds-game-in-ea-sports-fc-27/2250x1266_availablenow",
       "category": "ألعاب",
       "source": "Nintendo US"
-    },
-    {
-      "id": "62b10044d0e4513b",
-      "title": "Try the latest Game Trial, Prince of Persia The Lost Crown",
-      "date": "2026-09-23",
-      "url": "https://www.nintendo.com/us/whatsnew/try-the-latest-game-trial-prince-of-persia-the-lost-crown/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/try-the-latest-game-trial-prince-of-persia-the-lost-crown/September-PoP-GameTrial-Ncom-NSO-1920x1080-EN",
-      "category": "NSO",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-10-27T14:37:22.673878+00:00",
+  "newsUpdatedAt": "2026-10-27T20:08:05.712002+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
