@@ -1211,8 +1211,17 @@
       "verifiedAt": "2026-10-27"
     }
   ],
-  "catalogUpdatedAt": "2026-10-27T20:08:05.689418+00:00",
+  "catalogUpdatedAt": "2026-10-27T23:51:21.543109+00:00",
   "news": [
+    {
+      "id": "f99f239c3f9ac5e1",
+      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
     {
       "id": "2ec0655e2869bdb6",
       "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
@@ -1277,21 +1286,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "037e3fbb5bd37e6a",
-      "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
-      "date": "2026-10-19",
-      "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "70d7f93c2daa6037",
       "title": "Get up and move in Nintendo Switch Sports Resort!",
       "date": "2026-10-19",
       "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "037e3fbb5bd37e6a",
+      "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
+      "date": "2026-10-19",
+      "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1367,15 +1376,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "da637d45327d32d9",
-      "title": "Dig up some fun with great games for Halloween!",
-      "date": "2026-10-09",
-      "url": "https://www.nintendo.com/us/whatsnew/dig-up-some-fun-with-great-games-for-halloween-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/merchandising/feature-banner/NTAT-2025/1920x1080_NTAT2025_feature_banner",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "7a09715e21c18904",
       "title": "Flame Lords and Book IV arrive in a free update to Fire Emblem Shadows",
       "date": "2026-10-09",
@@ -1385,12 +1385,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "57ccf3adc81fa414",
-      "title": "Hello Kitty Island Adventure",
-      "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/hello-kitty-island-adventure/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/hello-kitty-island-adventure/OCT-GameTrial-Ncom-NSO-1920x1080-EN_v01",
-      "category": "نينتندو",
+      "id": "da637d45327d32d9",
+      "title": "Dig up some fun with great games for Halloween!",
+      "date": "2026-10-09",
+      "url": "https://www.nintendo.com/us/whatsnew/dig-up-some-fun-with-great-games-for-halloween-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/merchandising/feature-banner/NTAT-2025/1920x1080_NTAT2025_feature_banner",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1400,6 +1400,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/competitive-play-keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/1920x1080_MKW_OCT-open_EN",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "57ccf3adc81fa414",
+      "title": "Hello Kitty Island Adventure",
+      "date": "2026-10-08",
+      "url": "https://www.nintendo.com/us/whatsnew/hello-kitty-island-adventure/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/hello-kitty-island-adventure/OCT-GameTrial-Ncom-NSO-1920x1080-EN_v01",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1439,11 +1448,11 @@
       "source": "Nintendo US"
     },
     {
-      "id": "8af9731954a6af02",
-      "title": "Blast off into high-octane adventure with added multiplayer content for Star Fox, available now on Nintendo Switch 2!",
+      "id": "e1650d1794eb9695",
+      "title": "Minecraft Dungeons II has arrived",
       "date": "2026-09-29",
-      "url": "https://www.nintendo.com/us/whatsnew/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/2250x1266_StarFoxUpdate_EN_1",
+      "url": "https://www.nintendo.com/us/whatsnew/minecraft-dungeons-ii-has-arrived/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/minecraft-dungeons-ii-has-arrived/2250x1266_availablenow_2",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1457,11 +1466,11 @@
       "source": "Nintendo US"
     },
     {
-      "id": "e1650d1794eb9695",
-      "title": "Minecraft Dungeons II has arrived",
+      "id": "8af9731954a6af02",
+      "title": "Blast off into high-octane adventure with added multiplayer content for Star Fox, available now on Nintendo Switch 2!",
       "date": "2026-09-29",
-      "url": "https://www.nintendo.com/us/whatsnew/minecraft-dungeons-ii-has-arrived/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/minecraft-dungeons-ii-has-arrived/2250x1266_availablenow_2",
+      "url": "https://www.nintendo.com/us/whatsnew/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/2250x1266_StarFoxUpdate_EN_1",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/maximize-your-game-with-nba-2k27-on-nintendo-switch-2/NBA2K27_KA_WEMBY_HORIZ_RGB_BR-1920x1080_1",
       "category": "ألعاب",
       "source": "Nintendo US"
-    },
-    {
-      "id": "6fd80c341d1f415c",
-      "title": "Welcome to The World’s Game in EA SPORTS FC 27",
-      "date": "2026-09-25",
-      "url": "https://www.nintendo.com/us/whatsnew/welcome-to-the-worlds-game-in-ea-sports-fc-27/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/welcome-to-the-worlds-game-in-ea-sports-fc-27/2250x1266_availablenow",
-      "category": "ألعاب",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-10-27T20:08:05.712002+00:00",
+  "newsUpdatedAt": "2026-10-27T23:51:21.653514+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
