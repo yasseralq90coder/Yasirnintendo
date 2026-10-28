@@ -1211,23 +1211,14 @@
       "verifiedAt": "2026-10-28"
     }
   ],
-  "catalogUpdatedAt": "2026-10-28T13:12:48.008090+00:00",
+  "catalogUpdatedAt": "2026-10-28T16:50:04.125434+00:00",
   "news": [
     {
-      "id": "2ec0655e2869bdb6",
-      "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "f99f239c3f9ac5e1",
-      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
+      "id": "174ea40928c90197",
+      "title": "New Indie World Showcase features cozy and chaotic fun for Nintendo Switch 2 and Nintendo Switch",
+      "date": "2026-10-28",
+      "url": "https://www.nintendo.com/us/whatsnew/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/1920x1080_Ncom_FeatureBanner_US",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1241,12 +1232,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "4151226702b02b45",
-      "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
-      "category": "ألعاب",
+      "id": "f99f239c3f9ac5e1",
+      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2ec0655e2869bdb6",
+      "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1256,6 +1256,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
       "category": "NSO",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "4151226702b02b45",
+      "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
+      "date": "2026-10-26",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1385,21 +1394,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "da637d45327d32d9",
-      "title": "Dig up some fun with great games for Halloween!",
-      "date": "2026-10-09",
-      "url": "https://www.nintendo.com/us/whatsnew/dig-up-some-fun-with-great-games-for-halloween-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/merchandising/feature-banner/NTAT-2025/1920x1080_NTAT2025_feature_banner",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "7a09715e21c18904",
       "title": "Flame Lords and Book IV arrive in a free update to Fire Emblem Shadows",
       "date": "2026-10-09",
       "url": "https://www.nintendo.com/us/whatsnew/mobile-news-flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/FES-BookIV_KV",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "da637d45327d32d9",
+      "title": "Dig up some fun with great games for Halloween!",
+      "date": "2026-10-09",
+      "url": "https://www.nintendo.com/us/whatsnew/dig-up-some-fun-with-great-games-for-halloween-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/merchandising/feature-banner/NTAT-2025/1920x1080_NTAT2025_feature_banner",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1412,20 +1421,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "472cf93c9fceb9c6",
-      "title": "Experience the epic KINGDOM HEARTS saga!",
-      "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "57ccf3adc81fa414",
       "title": "Hello Kitty Island Adventure",
       "date": "2026-10-08",
       "url": "https://www.nintendo.com/us/whatsnew/hello-kitty-island-adventure/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/hello-kitty-island-adventure/OCT-GameTrial-Ncom-NSO-1920x1080-EN_v01",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "472cf93c9fceb9c6",
+      "title": "Experience the epic KINGDOM HEARTS saga!",
+      "date": "2026-10-08",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/minecraft-dungeons-ii-has-arrived/2250x1266_availablenow_2",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "8af9731954a6af02",
-      "title": "Blast off into high-octane adventure with added multiplayer content for Star Fox, available now on Nintendo Switch 2!",
-      "date": "2026-09-29",
-      "url": "https://www.nintendo.com/us/whatsnew/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/blast-off-into-high-octane-adventure-with-added-multiplayer-content-for-star-fox-available-now-on-nintendo-switch-2/2250x1266_StarFoxUpdate_EN_1",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-10-28T13:12:48.037057+00:00",
+  "newsUpdatedAt": "2026-10-28T16:50:04.228879+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
