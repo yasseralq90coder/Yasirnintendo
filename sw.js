@@ -1,6 +1,6 @@
-const CACHE='yasir-nintendo-shell-v10';
+const CACHE='yasir-nintendo-shell-v11';
 const ROOT=new URL('./',self.location).href;
-const SHELL=['./companion.js','./companion-ui.js','./companion.css','./store-data.json','./','./index.html','./styles.css','./journey.css','./world.css','./chronicle.js','./nintendo-world.js','./nintendo-world-ui.js','./nintendo-world.json','./journey.js','./adventure-ui.js','./app.js','./native-android.js','./sync-ui.js','./legacy-library.js','./library-seed.json','./core.js','./nintendo-sync.js','./catalog.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
+const SHELL=['./kingdom.js','./kingdom-state.js','./kingdom-ui.js','./kingdom.css','./companion.js','./companion-ui.js','./companion.css','./store-data.json','./','./index.html','./styles.css','./journey.css','./world.css','./chronicle.js','./nintendo-world.js','./nintendo-world-ui.js','./nintendo-world.json','./journey.js','./adventure-ui.js','./app.js','./native-android.js','./sync-ui.js','./legacy-library.js','./library-seed.json','./core.js','./nintendo-sync.js','./catalog.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(async cache=>{await cache.addAll(SHELL);const seed=await (await cache.match('./library-seed.json')).json();await cache.addAll([...new Set(seed.items.map(g=>g.cover))]);await self.skipWaiting();}));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('yasir-nintendo-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{

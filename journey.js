@@ -56,6 +56,12 @@ export function achievements(state,today=todayKey()){
  const familyTargets=[['Mario','🍄','سفير المشروم'],['Zelda','🔺','حارس هايرول'],['Kirby','🌸','صديق دريم لاند'],['Metroid','🚀','صائد المجرات'],['Pokémon','🔴','وسام المدرّب'],['Donkey Kong','🍌','بطل الأدغال']];
  for(const [name,icon,label] of familyTargets){const ids=new Set(state.games.filter(g=>family(g).name===name).map(g=>g.id));const done=new Set(ev.filter(e=>ids.has(e.gameId)).map(e=>e.gameId)).size;add('family-'+name,icon,label,'ألعاب مختلفة مختومة من '+name+':',done,[1,2,3,5]);}
  add('variety','🌈','قوس قزح يوشي','أنواع مختلفة ختمتها:',new Set(state.games.filter(g=>ev.some(e=>e.gameId===g.id)&&genreOf(g)!=='أخرى').map(genreOf)).size,[2,3,4,5]);
+ const visibleIds=new Set(ev.map(e=>e.id));const memories=(state.kingdom?.memories||[]).filter(m=>visibleIds.has(m.eventId));
+ add('memory','💌','حارس الذكريات','رايات لها ذكريات مكتوبة:',memories.filter(m=>m.text.trim()).length,[1,5,10,25]);
+ add('eras','🕰️','عابر الأجيال','منصات إصدار ختمت ألعابًا منها:',new Set(state.games.filter(g=>ev.some(e=>e.gameId===g.id)).map(g=>g.platform)).size,[2,3,5,8]);
+ const returns=new Set();for(const g of state.games){const dates=ev.filter(e=>e.gameId===g.id&&e.date).map(e=>e.date).sort();if(dates.some((d,i)=>i&&Date.parse(d)-Date.parse(dates[i-1])>=90*86400000))returns.add(g.id);}
+ add('long-return','🗡️','عودة لينك البعيدة','ألعاب أعدت تختيمها بعد 90 يومًا:',returns.size,[1,3,5,10]);
+ add('new-style','🎨','رحلة بلون جديد','ألعاب لها إعادة تختيم ووصف أسلوب منك:',new Set(memories.filter(m=>m.style.trim()&&completions(state,m.gameId)>1).map(m=>m.gameId)).size,[1,3,5,10]);
  return out;
 }
 export function recommendations(state,mode='continue',today=todayKey()){
@@ -97,6 +103,7 @@ export function linkLegacy(state,sourceId,targetId){
  target.legacyId=source.legacyId;target.completionHistory=mergeCompletionHistory(target.completionHistory,source.completionHistory);target.metadata=source.metadata;target.fallbackCover=source.fallbackCover||source.cover;target.ownership=source.ownership;target.ownershipConfirmed=true;target.parentLegacyId=source.parentLegacyId;target.isCollection=source.isCollection;
  const ranks={backlog:0,paused:0,wishlist:0,playing:1,beaten:2,complete:3};if(ranks[source.status]>ranks[target.status])target.status=source.status;target.completedAt=[source.completedAt,target.completedAt].filter(Boolean).sort().pop()||'';
  if(state.companion)for(const key of ['profiles','guides']){if(state.companion[key]?.[sourceId]&&!state.companion[key][targetId])state.companion[key][targetId]=state.companion[key][sourceId];delete state.companion[key]?.[sourceId];}
+ if(state.kingdom){for(const m of state.kingdom.memories)if(m.gameId===sourceId)m.gameId=targetId;for(const c of state.kingdom.campaigns)for(const step of c.steps)if(step.gameId===sourceId)step.gameId=targetId;state.kingdom.dismissed=state.kingdom.dismissed.map(id=>id===sourceId?targetId:id);}
  state.games=state.games.filter(g=>g.id!==sourceId);state.sessions=state.sessions.filter(r=>r.gameId!==sourceId);if(state.journey){for(const r of state.journey.records||[])if(r.gameId===sourceId)r.gameId=targetId;for(const k of ['focus','favorites'])state.journey[k]=[...new Set(state.journey[k].map(id=>id===sourceId?targetId:id))];for(const r of state.journey.runs)if(r.gameId===sourceId)r.gameId=targetId;for(const p of Object.values(state.journey.plans))for(const q of p.items)if(q.gameId===sourceId)q.gameId=targetId;}for(const p of Object.values(state.challenges||{}))for(const q of p.items)if(q.gameId===sourceId)q.gameId=targetId;return state;
 }
 export function matchScore(a,b){const x=titleKey(a),y=titleKey(b);if(x===y)return 100;if(x.length>8&&y.includes(x)||y.length>8&&x.includes(y))return 80;const aw=new Set(a.toLowerCase().split(/\W+/).filter(w=>w.length>2)),bw=new Set(b.toLowerCase().split(/\W+/).filter(w=>w.length>2));return [...aw].filter(w=>bw.has(w)).length/Math.max(1,aw.size,bw.size)*60;}

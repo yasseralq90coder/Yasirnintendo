@@ -24,3 +24,14 @@ GitHub Actions builds Android with Java 17 / Gradle 8.11.1, runs unit tests/lint
 The bundled `library-seed.json` is empty. Import private historical libraries locally from Settings. JSON backups include classification, guide checklist, favorites, flags and price watches, but never Nintendo authentication tokens. Android tokens remain encrypted in Keystore-backed storage. Account reconnection is required after transferring to another device. Guide pages run in a separate WebView without AndroidBridge and cannot read the local app origin.
 
 Legacy detailed account-linking documentation: [Android](android/README.md), [optional web bridge](server/README.md).
+
+
+## الإصدار 5.0 — المملكة والحملات
+
+الرئيسية الآن «وش نلعب اليوم»: وقت ومزاج، ثلاثة اقتراحات مع أسبابها ونقطة الحل المحفوظة. قسم «مملكتي» يجمع خريطة بخمس مناطق، سبعة قوالب حملات، جريدة الفترة وألبوم الذكريات. الأوسمة 96 ضمن 24 مسارًا؛ المستويات لا تُضخّم عند إضافة ذكرى. الحملات تلتقط معرّفات الرايات السابقة، بما فيها المخفية، ولا تحتسبها عند إعادتها؛ التراجع عن راية يعكس تقدمها.
+
+الجريدة تستخدم مجموع الأيام المسجلة، وتقارن فترة سابقة مساوية في عدد الأيام؛ الإجمالي الرسمي لكل لعبة يبقى مستقلًا. المتحف يعرض ذكريات منصة الإصدار الأصلية حتى عند تشغيلها على Switch 2. بيانات المملكة تمر عبر تحقق الاستعادة وتبقى محلية داخل النسخة الاحتياطية.
+
+تاريخ الأسعار يحتفظ بما رصده المشروع فعليًا فقط (حتى 180 نقطة لكل عرض)، نقطة يومية عند ثبات السعر ومع كل تغير؛ فشل المصدر لا ينشئ رصدًا جديدًا. مساعد الشراء يقرأ المكتبة والذوق والميزانية محليًا، ويبيّن اختلاف المنطقة والنسخة وتقادم السعر. لا يستنتج امتلاك اللعبة من مجرد لعبها.
+
+التحقق: `npm test`، `npm run check`، `python -m unittest discover -s tests -p '*_test.py'`، وبناء Android واختبارات الوحدة وLint وفحص الواجهة على محاكي API 29 عبر GitHub Actions.

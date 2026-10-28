@@ -51,6 +51,18 @@ def amazon(source,stamp):
   out.append({'id':'amazon-'+asin,'title':title,'platform':'Switch 2' if re.search(r'switch\s*2',low) else 'Switch','format':'physical','merchant':'Amazon.sa','currency':'SAR','price':float(price[1].replace(',','')),'regular':None,'endsAt':'','checkedAt':stamp,'url':'https://www.amazon.sa/dp/'+asin,'cover':html.unescape(image[1]) if image else '', 'genre':'أخرى','delivery':'confirm-at-checkout','region':'SA'})
  return out
 
+def record_history(previous,offers):
+ history={}
+ for ident,rows in (previous.get('history') or {}).items():
+  if isinstance(rows,list):history[ident]=[r for r in rows if isinstance(r,dict) and isinstance(r.get('price'),(int,float)) and r['price']>=0 and r.get('currency') in ['USD','SAR'] and isinstance(r.get('at'),str)][-180:]
+ for o in offers:
+  if not isinstance(o.get('price'),(int,float)) or not o.get('checkedAt'):continue
+  rows=history.setdefault(o['id'],[]);point={'at':o['checkedAt'],'price':o['price'],'currency':o['currency']}
+  # One unchanged observation per UTC day, plus price changes. Failed-source timestamps do not create new observations.
+  if not any(r['at']==point['at'] for r in rows) and (not rows or rows[-1]['at'][:10]!=point['at'][:10] or rows[-1]['price']!=point['price'] or rows[-1]['currency']!=point['currency']):rows.append(point)
+  rows.sort(key=lambda r:r['at']);history[o['id']]=rows[-180:]
+ return dict(list(history.items())[-3000:])
+
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--fixtures');args=parser.parse_args();path=ROOT/'store-data.json';previous=json.loads(path.read_text()) if path.exists() else {'offers':[]};stamp=datetime.now(timezone.utc).isoformat();offers=[];sources=[]
  for merchant,fn,fixture in [('Nintendo',nintendo,'shop-nintendo.html'),('noon',noon,'shop-noon.html'),('Amazon.sa',amazon,'shop-amazon.html')]:
@@ -64,5 +76,5 @@ def main():
    offers.extend(rows);sources.append({'id':merchant,'status':'ok','checkedAt':stamp});print(merchant,len(rows))
   except Exception as e:
    offers.extend(x for x in previous['offers'] if x.get('merchant')==merchant);sources.append({'id':merchant,'status':'unavailable','checkedAt':stamp});print(merchant,'unavailable:',type(e).__name__)
- result={'version':1,'updatedAt':stamp,'sources':sources,'offers':offers};path.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+ result={'version':1,'updatedAt':stamp,'sources':sources,'offers':offers,'history':record_history(previous,offers)};path.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':main()

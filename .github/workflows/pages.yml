@@ -22,7 +22,7 @@ jobs:
       - name: Package public application only
         run: |
           mkdir dist
-          cp companion.js companion-ui.js companion.css store-data.json index.html app.js adventure-ui.js nintendo-world-ui.js nintendo-world.js chronicle.js journey.js core.js native-android.js nintendo-sync.js sync-ui.js legacy-library.js styles.css journey.css world.css nintendo-world.json sw.js manifest.webmanifest catalog.json library-seed.json dist/
+          cp kingdom.js kingdom-state.js kingdom-ui.js kingdom.css companion.js companion-ui.js companion.css store-data.json index.html app.js adventure-ui.js nintendo-world-ui.js nintendo-world.js chronicle.js journey.js core.js native-android.js nintendo-sync.js sync-ui.js legacy-library.js styles.css journey.css world.css nintendo-world.json sw.js manifest.webmanifest catalog.json library-seed.json dist/
           cp -r assets dist/
           touch dist/.nojekyll
       - uses: actions/configure-pages@v5

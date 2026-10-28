@@ -68,7 +68,7 @@ public final class MainActivity extends Activity {
      case "/disconnect":client.disconnect();reply(id,new JSONObject().put("linked",false),null);break;
      case "/export":
       String text=body.getString("text"),name=body.getString("name").replaceAll("[^a-zA-Z0-9._-]","_");if(text.length()>20*1024*1024)throw new Exception();
-      runOnUiThread(()->{if(saveId!=null){reply(id,null,"save_in_progress");return;}saveText=text;saveId=id;Intent i=new Intent(Intent.ACTION_CREATE_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE).setType(body.optString("type").startsWith("text/csv")?"text/csv":"application/json").putExtra(Intent.EXTRA_TITLE,name);try{startActivityForResult(i,102);}catch(Exception e){saveText=null;saveId=null;reply(id,null,"save_failed");}});break;
+      runOnUiThread(()->{if(saveId!=null){reply(id,null,"save_in_progress");return;}saveText=text;saveId=id;Intent i=new Intent(Intent.ACTION_CREATE_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE).setType(java.util.Arrays.asList("text/csv","text/plain","text/markdown","text/html").contains(body.optString("type"))?body.optString("type"):"application/json").putExtra(Intent.EXTRA_TITLE,name);try{startActivityForResult(i,102);}catch(Exception e){saveText=null;saveId=null;reply(id,null,"save_failed");}});break;
      default:reply(id,null,"unsupported_native_operation");
     }
    }catch(Exception e){reply(id,null,NintendoClient.safeError(e));}});

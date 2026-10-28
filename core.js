@@ -1,3 +1,4 @@
+import {cleanKingdom} from './kingdom-state.js';
 import {cleanCompanion} from './companion.js';
 import {cleanJourney} from './journey.js';
 import {validateSnapshot,nintendoTitle,datedActivity} from './nintendo-sync.js';
@@ -96,7 +97,7 @@ export function validateState(input){
  }
  let timer=null;
  if(input.timer){if(!ids.has(input.timer.gameId)||!num(input.timer.startedAt,0,Date.now()))fail('المؤقت غير صالح.');timer={gameId:input.timer.gameId,startedAt:input.timer.startedAt};}
- return {companion:cleanCompanion(input.companion,ids),journey:cleanJourney(input.journey,ids),schema:SCHEMA,profile:{name:p.name,subscription:p.subscription,monthlyHours:p.monthlyHours},games,sessions,challenges,timer:null,appliedSeeds:Array.isArray(input.appliedSeeds)?input.appliedSeeds.filter(x=>str(x,100)).slice(0,100):[],...(input.nintendo?{nintendo:validateSnapshot(input.nintendo)}:{})};
+ return {kingdom:cleanKingdom(input.kingdom,ids),companion:cleanCompanion(input.companion,ids),journey:cleanJourney(input.journey,ids),schema:SCHEMA,profile:{name:p.name,subscription:p.subscription,monthlyHours:p.monthlyHours},games,sessions,challenges,timer:null,appliedSeeds:Array.isArray(input.appliedSeeds)?input.appliedSeeds.filter(x=>str(x,100)).slice(0,100):[],...(input.nintendo?{nintendo:validateSnapshot(input.nintendo)}:{})};
 }
 export function parseCSV(text){
  const rows=[];let row=[],value='',quoted=false;

@@ -1,10 +1,13 @@
-# Yasir Nintendo 4.0
+# Yasir Nintendo 5.0 — مملكتك ورحلتك
 
-- Nintendo Club interface with compact progressive achievement paths, medal showcase and a next-goal focus.
-- Complete library classification: owned, demo, subscription, free, borrowed, unknown; bulk edits, tags, archive, grid/list, and price-per-official-hour.
-- Nintendo US/noon Saudi public offers with dates, filters, targets, and opt-in Android notifications. Amazon live listing fetching may be unavailable; the Saudi comparison link remains available. Delivery to Mecca and total checkout cost require retailer confirmation.
-- Game metadata/trailers when matched, community/guide links, local chapter notes and checklist.
-- Android guide reader remembers URL/scroll independently of Nintendo account credentials.
-- Existing library, multiple dated flags, account-only time and Switch 2 playing-device attribution remain intact.
+- خريطة تفاعلية بخمس مناطق تنمو برايات التختيم المتكررة.
+- مخرج مغامرة يقترح ثلاث ألعاب متاحة بحسب وقتك ومزاجك وتقدمك.
+- سبعة قوالب حملات قابلة للتخصيص؛ تحتسب الرايات الجديدة فقط، مع شهادة قابلة للحفظ.
+- 96 وسامًا ضمن 24 مسارًا، وذكريات مرتبطة بكل راية دون تضخيم XP.
+- جريدة أسبوعية وشهرية وسنوية من أيام Nintendo الفعلية، وملاحظات وتصدير.
+- مساعد شراء محلي، بدائل من المكتبة، وتاريخ أسعار يبدأ من أول رصد فعلي.
+- متحف شخصي يربط الذكريات بمنصة إصدار اللعبة، مع دعم النسخ والاستعادة.
 
-Install over the current app to retain its data. Export a JSON backup from Settings before changing devices. Background price alerts are periodic, not instantaneous, and need Android notification permission.
+ثبّت التحديث فوق النسخة الحالية للاحتفاظ ببياناتك. يُنصح بتصدير Backup قبل التحديث.
+الأوقات من Nintendo فقط. NSO يحتفظ بوقت التطبيق ولا يوزعه على ألعاب داخله.
+أرصاد العروض ليست ضمانًا لأقل سعر تاريخي أو للتوفر والشحن؛ تحقق لدى المتجر.

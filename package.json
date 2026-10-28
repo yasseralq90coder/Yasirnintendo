@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "check": "node --check companion.js && node --check companion-ui.js && node --check app.js && node --check nintendo-world-ui.js && node --check nintendo-world.js && node --check chronicle.js && node --check adventure-ui.js && node --check journey.js && node --check core.js && node --check sw.js && node --check nintendo-sync.js && node --check server/start.js && node --check server/nintendo.js && node --check server/launch.js",
+    "check": "node --check kingdom.js && node --check kingdom-state.js && node --check kingdom-ui.js && node --check companion.js && node --check companion-ui.js && node --check app.js && node --check nintendo-world-ui.js && node --check nintendo-world.js && node --check chronicle.js && node --check adventure-ui.js && node --check journey.js && node --check core.js && node --check sw.js && node --check nintendo-sync.js && node --check server/start.js && node --check server/nintendo.js && node --check server/launch.js",
     "bridge": "node server/start.js",
     "bridge:start": "node server/launch.js"
   },
