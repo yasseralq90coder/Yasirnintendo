@@ -1211,8 +1211,17 @@
       "verifiedAt": "2026-10-29"
     }
   ],
-  "catalogUpdatedAt": "2026-10-29T16:58:45.819995+00:00",
+  "catalogUpdatedAt": "2026-10-29T21:51:51.693456+00:00",
   "news": [
+    {
+      "id": "8b018274cc25d092",
+      "title": "Pikmin in Nashville",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
     {
       "id": "174ea40928c90197",
       "title": "New Indie World Showcase features cozy and chaotic fun for Nintendo Switch 2 and Nintendo Switch",
@@ -1232,15 +1241,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "f99f239c3f9ac5e1",
-      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "2ec0655e2869bdb6",
       "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
       "date": "2026-10-27",
@@ -1250,12 +1250,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "2e4da9ea7cc2178a",
-      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
-      "category": "NSO",
+      "id": "f99f239c3f9ac5e1",
+      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1265,6 +1265,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2e4da9ea7cc2178a",
+      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
+      "date": "2026-10-26",
+      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
+      "category": "NSO",
       "source": "Nintendo US"
     },
     {
@@ -1394,15 +1403,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "7a09715e21c18904",
-      "title": "Flame Lords and Book IV arrive in a free update to Fire Emblem Shadows",
-      "date": "2026-10-09",
-      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/FES-BookIV_KV",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "da637d45327d32d9",
       "title": "Dig up some fun with great games for Halloween!",
       "date": "2026-10-09",
@@ -1412,12 +1412,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "48194b154c865d20",
-      "title": "Keep up the autumn momentum with the Mario Kart World Open Oct. 2026 event!",
+      "id": "7a09715e21c18904",
+      "title": "Flame Lords and Book IV arrive in a free update to Fire Emblem Shadows",
+      "date": "2026-10-09",
+      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/FES-BookIV_KV",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "472cf93c9fceb9c6",
+      "title": "Experience the epic KINGDOM HEARTS saga!",
       "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/1920x1080_MKW_OCT-open_EN",
-      "category": "ألعاب",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1430,12 +1439,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "472cf93c9fceb9c6",
-      "title": "Experience the epic KINGDOM HEARTS saga!",
+      "id": "48194b154c865d20",
+      "title": "Keep up the autumn momentum with the Mario Kart World Open Oct. 2026 event!",
       "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
-      "category": "نينتندو",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/1920x1080_MKW_OCT-open_EN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/play-the-57th-maximus-cup-online-event-and-you-could-earn-an-in-game-collaborative-theme/1920x1080_Switch_News_TetrisEvent_57_EN",
       "category": "ألعاب",
       "source": "Nintendo US"
-    },
-    {
-      "id": "e1650d1794eb9695",
-      "title": "Minecraft Dungeons II has arrived",
-      "date": "2026-09-29",
-      "url": "https://www.nintendo.com/us/whatsnew/minecraft-dungeons-ii-has-arrived/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/minecraft-dungeons-ii-has-arrived/2250x1266_availablenow_2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-10-29T16:58:47.124833+00:00",
+  "newsUpdatedAt": "2026-10-29T21:51:51.835529+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
