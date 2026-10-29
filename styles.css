@@ -3,3 +3,5 @@
 [hidden]{display:none!important}
 
 body.native-app .disclosure,body.native-app .muted,body.native-app #bridge-status-text{color:var(--ink);opacity:1}body.native-app #bridge-status-text{padding:12px;border:1px solid var(--line);border-radius:10px;line-height:1.9;overflow-wrap:anywhere}
+
+.sync-shortcut{margin-bottom:20px}.account-game-list .session-main{min-width:0}.account-game-list h3{overflow-wrap:anywhere;font-size:15px}.account-game-list .session-row{gap:12px;flex-wrap:wrap}.account-game-list small{display:block;line-height:1.8}.account-game-list .session-main{flex:1 1 200px}

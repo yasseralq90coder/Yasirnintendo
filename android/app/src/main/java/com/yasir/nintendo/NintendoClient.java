@@ -12,6 +12,7 @@ final class NintendoClient {
  interface Store { JSONObject read() throws Exception; void write(JSONObject value) throws Exception; }
  interface Transport { JSONObject fetch(String url,String method,String body,String contentType,String token) throws Exception; }
  private final Store vault;private final Transport transport;private final Runnable updated;private volatile JSONObject data;private String access="",idToken="";private long expiry=0,nextRequest=0,lastAttempt=0;
+ private volatile String listCheckedAt="",sourceUpdatedAt="";private volatile int changedTitles=0,newTitles=0;
  private volatile boolean syncing=false;private volatile String lastError="",phase="idle",dailyError="",platforms="";private volatile int progressDone=0,progressTotal=0,dailyFailed=0;
  NintendoClient(Store vault) throws Exception{this(vault,null,()->{});}
  NintendoClient(Store vault,Transport transport,Runnable updated) throws Exception{this.vault=vault;this.transport=transport;this.updated=updated;data=vault.read();}
@@ -50,7 +51,7 @@ final class NintendoClient {
    long wait=nextRequest-System.currentTimeMillis();if(wait>0)Thread.sleep(wait);nextRequest=System.currentTimeMillis()+350;
    HttpURLConnection c=(HttpURLConnection)new URL(url).openConnection();
    try{
-    c.setInstanceFollowRedirects(false);c.setConnectTimeout(20000);c.setReadTimeout(30000);c.setRequestMethod(method);c.setRequestProperty("Accept","application/json");c.setRequestProperty("User-Agent","com.nintendo.znej/3.0.3 (iOS/26.0.1)");
+    c.setUseCaches(false);c.setRequestProperty("Cache-Control","no-cache");c.setInstanceFollowRedirects(false);c.setConnectTimeout(20000);c.setReadTimeout(30000);c.setRequestMethod(method);c.setRequestProperty("Accept","application/json");c.setRequestProperty("User-Agent","com.nintendo.znej/3.0.3 (iOS/26.0.1)");
     if(token!=null){c.setRequestProperty("Authorization","Bearer "+token);c.setRequestProperty("Gentry-Locale","en-GB");}
     if(body!=null){c.setDoOutput(true);c.setRequestProperty("Content-Type",contentType);try(OutputStream stream=c.getOutputStream()){stream.write(body.getBytes(StandardCharsets.UTF_8));}}
     int status=c.getResponseCode();
@@ -79,22 +80,24 @@ final class NintendoClient {
  static String platform(JSONObject r){String p=r.optString("platform","").trim();return (p.isEmpty()?r.optString("deviceType","").trim():p).toUpperCase(Locale.ROOT);}
  static boolean sameHistory(JSONObject a,JSONObject b){return a!=null&&a.optBoolean("historyComplete")&&a.optLong("totalPlayedMinutes")==b.optLong("totalPlayedMinutes")&&a.optString("lastPlayedAt").equals(b.optString("lastPlayedAt"))&&a.optString("lastUpdatedAt").equals(b.optString("lastUpdatedAt"));}
  private JSONObject publish(JSONArray titles,JSONObject old,boolean full) throws Exception {
-  JSONObject snapshot=new JSONObject().put("version",1).put("accountId",old.optString("accountId",UUID.randomUUID().toString())).put("syncedAt",now()).put("lastFullSync",full?now():old.optString("lastFullSync")).put("titles",new JSONArray(titles.toString()));
+  JSONObject snapshot=new JSONObject().put("version",1).put("accountId",old.optString("accountId",UUID.randomUUID().toString())).put("syncedAt",now()).put("listCheckedAt",listCheckedAt).put("sourceUpdatedAt",sourceUpdatedAt).put("changedTitles",changedTitles).put("newTitles",newTitles).put("lastFullSync",full?now():old.optString("lastFullSync")).put("titles",new JSONArray(titles.toString()));
   JSONObject next=new JSONObject(data.toString()).put("snapshot",snapshot);vault.write(next);data=next;signal();return snapshot;
  }
- JSONObject sync(boolean full) throws Exception {
+ JSONObject sync(boolean full) throws Exception {return sync(full,false);}
+ JSONObject sync(boolean full,boolean quick) throws Exception {
   if(syncing)throw new Exception("sync_in_progress");
   if(System.currentTimeMillis()-lastAttempt<60000)throw new Exception("wait_one_minute");lastAttempt=System.currentTimeMillis();syncing=true;phase="list";lastError="";dailyError="";dailyFailed=0;progressDone=0;progressTotal=0;signal();
   try{
    JSONObject old=data.optJSONObject("snapshot");if(old==null)old=new JSONObject().put("titles",new JSONArray());
    if(!old.has("accountId"))old=new JSONObject(old.toString()).put("accountId",UUID.randomUUID().toString());
-   JSONArray raw=api(API).getJSONArray("playHistories");if(raw.length()==0&&old.getJSONArray("titles").length()>0)throw new Exception("unexpected_empty_history");
+   JSONObject response=api(API);JSONArray raw=response.getJSONArray("playHistories");listCheckedAt=now();sourceUpdatedAt=response.optString("lastUpdatedAt");changedTitles=0;newTitles=0;if(raw.length()==0&&old.getJSONArray("titles").length()>0)throw new Exception("unexpected_empty_history");
    Map<String,JSONObject> prior=new HashMap<>();JSONArray oldTitles=old.getJSONArray("titles");for(int i=0;i<oldTitles.length();i++){JSONObject t=oldTitles.getJSONObject(i);prior.put(t.getString("titleId")+"|"+t.getString("platform"),t);}
    JSONArray titles=new JSONArray();Set<String> detected=new TreeSet<>();
    for(int i=0;i<raw.length();i++){
     JSONObject r=raw.getJSONObject(i);String p=platform(r);detected.add(p.replaceAll("[^A-Z0-9_-]","").substring(0,Math.min(20,p.replaceAll("[^A-Z0-9_-]","").length())));
     if(!p.equals("HAC")&&!p.equals("BEE"))continue;
     JSONObject t=normalTitle(r),previous=prior.get(t.getString("titleId")+"|"+p);
+    if(previous==null)newTitles++;else if(previous.optLong("totalPlayedMinutes")!=t.optLong("totalPlayedMinutes")||!previous.optString("lastPlayedAt").equals(t.optString("lastPlayedAt"))||!previous.optString("titleName").equals(t.optString("titleName"))||!previous.optString("imageUrl").equals(t.optString("imageUrl")))changedTitles++;
     t.put("days",previous==null?new JSONArray():previous.getJSONArray("days")).put("historyComplete",!full&&sameHistory(previous,t)).put("historyCheckedAt",previous==null?"":previous.optString("historyCheckedAt"));titles.put(t);
    }
    platforms=String.join(", ",detected);
@@ -102,6 +105,7 @@ final class NintendoClient {
    progressTotal=titles.length();phase="days";
    // Persist titles, covers and official totals before the slower daily-history requests.
    publish(titles,old,false);
+   if(quick&&!full){phase="complete";return publish(titles,old,false);}
    for(int i=0;i<titles.length();i++){
     JSONObject t=titles.getJSONObject(i),previous=prior.get(t.getString("titleId")+"|"+t.getString("platform"));
     if(t.optBoolean("historyComplete")){progressDone=i+1;signal();continue;}
@@ -120,10 +124,12 @@ final class NintendoClient {
    phase="complete";lastError="";return publish(titles,old,full&&dailyFailed==0);
   }catch(Exception e){lastError=safeError(e);phase="failed";throw e;}finally{syncing=false;signal();}
  }
- JSONObject status() throws Exception {JSONObject current=data;JSONObject snapshot=current.optJSONObject("snapshot");return new JSONObject().put("linked",!current.optString("session").isEmpty()).put("syncing",syncing).put("phase",phase).put("progressDone",progressDone).put("progressTotal",progressTotal).put("dailyFailed",dailyFailed).put("dailyError",dailyError).put("platforms",platforms).put("lastError",lastError).put("syncedAt",snapshot==null?"":snapshot.optString("syncedAt")).put("titles",snapshot==null?0:snapshot.getJSONArray("titles").length());}
+ JSONObject status() throws Exception {JSONObject current=data;JSONObject snapshot=current.optJSONObject("snapshot");return new JSONObject().put("listCheckedAt",snapshot==null?"":snapshot.optString("listCheckedAt",snapshot.optString("syncedAt"))).put("sourceUpdatedAt",snapshot==null?"":snapshot.optString("sourceUpdatedAt")).put("newTitles",snapshot==null?0:snapshot.optInt("newTitles")).put("changedTitles",snapshot==null?0:snapshot.optInt("changedTitles")).put("retryAfterSeconds",Math.max(0,(60000-(System.currentTimeMillis()-lastAttempt)+999)/1000)).put("linked",!current.optString("session").isEmpty()).put("syncing",syncing).put("phase",phase).put("progressDone",progressDone).put("progressTotal",progressTotal).put("dailyFailed",dailyFailed).put("dailyError",dailyError).put("platforms",platforms).put("lastError",lastError).put("syncedAt",snapshot==null?"":snapshot.optString("syncedAt")).put("titles",snapshot==null?0:snapshot.getJSONArray("titles").length());}
  JSONObject snapshot() throws Exception {JSONObject s=data.optJSONObject("snapshot");if(s==null)throw new Exception("no_successful_sync");return s;}
- void disconnect() throws Exception {vault.write(new JSONObject());data=new JSONObject();access="";idToken="";expiry=0;lastError="";phase="idle";progressDone=0;progressTotal=0;dailyFailed=0;dailyError="";signal();}
- void autoSync(){try{JSONObject s=data.optJSONObject("snapshot");long updated=s==null?0:Instant.parse(s.optString("syncedAt")).toEpochMilli();if(!data.optString("session").isEmpty()&&System.currentTimeMillis()-updated>=6*3600000L){String lastFull=s==null?"":s.optString("lastFullSync");long full=lastFull.isEmpty()?0:Instant.parse(lastFull).toEpochMilli();sync(System.currentTimeMillis()-full>=7*86400000L);}}catch(Exception ignored){}}
+ void disconnect() throws Exception {vault.write(new JSONObject());data=new JSONObject();access="";idToken="";expiry=0;lastAttempt=0;lastError="";phase="idle";progressDone=0;progressTotal=0;dailyFailed=0;dailyError="";signal();}
+ static long timestamp(String value){try{return Instant.parse(value).toEpochMilli();}catch(Exception e){return 0;}}
+ static boolean autoSyncDue(JSONObject snapshot,long time,long attempted){return time-attempted>=60000&&(snapshot==null||time-timestamp(snapshot.optString("listCheckedAt",snapshot.optString("syncedAt")))>=15*60000L);}
+ void autoSync(){try{JSONObject s=data.optJSONObject("snapshot");long time=System.currentTimeMillis();if(!syncing&&!data.optString("session").isEmpty()&&autoSyncDue(s,time,lastAttempt)){long full=s==null?0:timestamp(s.optString("lastFullSync"));sync(time-full>=7*86400000L);}}catch(Exception ignored){}}
  static String safeError(Exception e){if(e instanceof HttpStatusError)return "nintendo_http_"+((HttpStatusError)e).status;if(e instanceof java.net.SocketTimeoutException)return "network_timeout";if(e instanceof java.net.UnknownHostException||e instanceof java.net.ConnectException)return "network_unavailable";if(e instanceof javax.net.ssl.SSLException)return "network_tls_error";if(e instanceof JSONException)return "invalid_history_response";String m=e.getMessage();return Arrays.asList("invalid_callback","disconnect_before_linking_another_account","wait_one_minute","no_successful_sync","nintendo_auth_required","nintendo_rate_limited","unexpected_empty_history","no_supported_titles_returned","unsupported_platforms","sync_in_progress","invalid_history_response","invalid_daily_history").contains(m==null?"":m)?m:"nintendo_operation_failed";}
  static final class HttpStatusError extends Exception {final int status;HttpStatusError(int status){this.status=status;}}
  static final class AuthError extends Exception {AuthError(){super("nintendo_auth_required");}}

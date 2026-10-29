@@ -5,3 +5,11 @@ export function nativeRequest(path,body={}){
  if(!isAndroid)return Promise.reject(new Error('Android only'));
  return new Promise((resolve,reject)=>{const id=crypto.randomUUID?crypto.randomUUID():Array.from(crypto.getRandomValues(new Uint32Array(4)),n=>n.toString(16)).join("-");const timer=setTimeout(()=>{pending.delete(id);reject(new Error('انتهت مهلة الطلب؛ تحقق من الحالة قبل إعادة المحاولة.'));},30*60*1000);pending.set(id,{resolve,reject,timer});try{window.AndroidBridge.request(id,path,JSON.stringify(body));}catch(e){clearTimeout(timer);pending.delete(id);reject(e);}});
 }
+
+// Coalesce update events, but always read again when an event arrives during import.
+export function createSnapshotHydrator({status,pull,currentStamp,onError=()=>{}}){
+ let running=null,queued=false;
+ return function refresh(){queued=true;if(running)return running;
+  running=(async()=>{try{while(queued){queued=false;try{const d=await status();if(d.syncedAt&&d.syncedAt!==currentStamp())await pull();}catch(e){onError(e);}}}finally{running=null;}})();return running;
+ };
+}

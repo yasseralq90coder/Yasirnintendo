@@ -57,4 +57,32 @@ public class NintendoProtocolTest {
   },()->{});
   try{client.sync(false);fail("Unknown platforms accepted as empty library");}catch(Exception expected){assertEquals("unsupported_platforms",client.status().getString("lastError"));assertEquals("NEW_PLATFORM",client.status().getString("platforms"));}
  }
+
+ @Test public void quickSyncPublishesTotalsWithoutWaitingForAnyDailyEndpoint() throws Exception {
+  MemoryStore store=new MemoryStore();org.json.JSONArray oldDays=new org.json.JSONArray().put(new JSONObject().put("date","2026-10-20").put("minutes",30));
+  JSONObject oldTitle=new JSONObject().put("titleId","01001").put("titleName","Mario").put("platform","HAC").put("totalPlayedMinutes",100).put("days",oldDays).put("historyComplete",true);
+  store.value.put("snapshot",new JSONObject().put("accountId","stable-account").put("titles",new org.json.JSONArray().put(oldTitle)));
+  NintendoClient client=new NintendoClient(store,(url,method,body,type,token)->{
+   if(url.endsWith("/api/token"))return new JSONObject().put("access_token","test-access").put("expires_in",900);
+   if(!url.equals(NintendoClient.API))throw new AssertionError("Quick sync must not request daily history");
+   return new JSONObject().put("lastUpdatedAt","2026-10-20T12:00:00Z").put("playHistories",new org.json.JSONArray().put(new JSONObject().put("titleId","01001").put("titleName","Mario").put("platform","HAC").put("totalPlayedMinutes",150)).put(new JSONObject().put("titleId","01002").put("titleName","Zelda").put("platform","BEE").put("totalPlayedMinutes",20)));
+  },()->{});
+  JSONObject snapshot=client.sync(false,true);assertEquals("stable-account",snapshot.getString("accountId"));
+  JSONObject title=snapshot.getJSONArray("titles").getJSONObject(0);assertEquals(150,title.getInt("totalPlayedMinutes"));assertEquals(oldDays.toString(),title.getJSONArray("days").toString());assertFalse(title.getBoolean("historyComplete"));
+  assertEquals(1,client.status().getInt("newTitles"));assertEquals(1,client.status().getInt("changedTitles"));assertEquals("2026-10-20T12:00:00Z",client.status().getString("sourceUpdatedAt"));assertFalse(client.status().getString("listCheckedAt").isEmpty());assertFalse(client.status().getBoolean("syncing"));
+ }
+ @Test public void foregroundSyncIsDueAfterFifteenMinutesAndBadTimestampsCanRecover() throws Exception {
+  long now=java.time.Instant.parse("2026-10-29T12:00:00Z").toEpochMilli();
+  assertFalse(NintendoClient.autoSyncDue(new JSONObject().put("syncedAt","2026-10-29T11:50:00Z"),now,0));
+  assertTrue(NintendoClient.autoSyncDue(new JSONObject().put("syncedAt","2026-10-29T11:45:00Z"),now,0));
+  assertTrue(NintendoClient.autoSyncDue(new JSONObject().put("syncedAt","invalid"),now,0));
+  assertFalse(NintendoClient.autoSyncDue(null,now,now-10000));
+ }
+ @Test public void failedQuickListNeverErasesPreviousSnapshot() throws Exception {
+  MemoryStore store=new MemoryStore();JSONObject snapshot=new JSONObject().put("accountId","stable-account").put("titles",new org.json.JSONArray().put(new JSONObject().put("titleId","01001").put("platform","HAC").put("days",new org.json.JSONArray()).put("totalPlayedMinutes",123)));
+  store.value.put("snapshot",snapshot);
+  NintendoClient client=new NintendoClient(store,(url,method,body,type,token)->{if(url.endsWith("/api/token"))return new JSONObject().put("access_token","test-access").put("expires_in",900);throw new NintendoClient.HttpStatusError(503);},()->{});
+  try{client.sync(false,true);fail("Expected HTTP failure");}catch(NintendoClient.HttpStatusError expected){}
+  assertEquals(snapshot.toString(),client.snapshot().toString());assertEquals("nintendo_http_503",client.status().getString("lastError"));
+ }
 }

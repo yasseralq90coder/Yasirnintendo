@@ -14,6 +14,8 @@ import org.json.*;
 public final class MainActivity extends Activity {
  private WebView web;private final ExecutorService executor=Executors.newSingleThreadExecutor();private volatile NintendoClient client;private volatile boolean secureReady=false;
  private ValueCallback<Uri[]> fileChooser;private String saveText=null,saveId=null;private String initialCallback=null;
+ private final android.os.Handler foregroundHandler=new android.os.Handler(android.os.Looper.getMainLooper());
+ private final Runnable foregroundSync=new Runnable(){public void run(){if(!executor.isShutdown())executor.execute(()->{if(client!=null){client.autoSync();notifyUpdate();}});foregroundHandler.postDelayed(this,60000);}};
  private static final String HOME="https://appassets.androidplatform.net/assets/www/index.html";
  @Override public void onCreate(Bundle state){
   super.onCreate(state);FrameLayout root=new FrameLayout(this);web=new WebView(this);WebViewRendering.configure(web);root.addView(web,new FrameLayout.LayoutParams(-1,-1));setContentView(root);
@@ -48,7 +50,8 @@ public final class MainActivity extends Activity {
  private void notifyUpdate(){runOnUiThread(()->{if(web!=null)web.evaluateJavascript("window.dispatchEvent(new Event('nintendo-native-update'))",null);});}
  private void receiveCallback(String url){executor.execute(()->{try{if(client==null)throw new Exception();client.complete(url);notifyUpdate();runOnUiThread(()->{android.widget.Toast.makeText(this,"تم ربط Nintendo وبدأ جلب بيانات اللعب.",android.widget.Toast.LENGTH_LONG).show();notifyUpdate();});client.autoSync();}catch(Exception e){runOnUiThread(()->android.widget.Toast.makeText(this,"تعذر إتمام التفويض. أعد محاولة الربط من الإعدادات.",android.widget.Toast.LENGTH_LONG).show());}});}
  @Override protected void onNewIntent(Intent intent){super.onNewIntent(intent);setIntent(intent);if(intent.getBooleanExtra("openStore",false)&&web!=null)web.evaluateJavascript("location.hash='store'",null);if(intent.getData()!=null)receiveCallback(intent.getData().toString());}
- @Override protected void onResume(){super.onResume();if(executor!=null)executor.execute(()->{if(client!=null){client.autoSync();notifyUpdate();}});}
+ @Override protected void onResume(){super.onResume();foregroundHandler.removeCallbacks(foregroundSync);foregroundHandler.postDelayed(foregroundSync,60000);if(executor!=null)executor.execute(()->{if(client!=null){client.autoSync();notifyUpdate();}});}
+ @Override protected void onPause(){foregroundHandler.removeCallbacks(foregroundSync);super.onPause();}
  public final class NativeBridge {
   @JavascriptInterface public void request(String id,String path,String raw){
    if(id==null||id.length()>100||raw==null||raw.length()>21*1024*1024)return;
@@ -63,7 +66,7 @@ public final class MainActivity extends Activity {
      case "/status":reply(id,client.status(),null);break;
      case "/auth/start":reply(id,client.start(),null);break;
      case "/auth/complete":client.complete(body.getString("callback"));reply(id,new JSONObject().put("linked",true),null);break;
-     case "/sync":client.sync(body.optBoolean("full"));reply(id,new JSONObject().put("syncing",false),null);break;
+     case "/sync":client.sync(body.optBoolean("full"),body.optBoolean("quick"));reply(id,new JSONObject().put("syncing",false),null);break;
      case "/snapshot":reply(id,client.snapshot(),null);break;
      case "/disconnect":client.disconnect();reply(id,new JSONObject().put("linked",false),null);break;
      case "/export":
@@ -79,5 +82,5 @@ public final class MainActivity extends Activity {
   if(requestCode==102&&saveId!=null){String id=saveId,text=saveText;saveId=null;saveText=null;if(resultCode!=RESULT_OK||data==null){reply(id,null,"save_cancelled");return;}Uri uri=data.getData();executor.execute(()->{try(OutputStream out=getContentResolver().openOutputStream(uri)){if(out==null)throw new IOException();out.write(text.getBytes(java.nio.charset.StandardCharsets.UTF_8));reply(id,new JSONObject().put("saved",true),null);}catch(Exception e){reply(id,null,"save_failed");}});}
  }
  @Override public void onBackPressed(){web.evaluateJavascript("(function(){var d=document.querySelector('dialog[open]');if(d){d.close();return true;}return false;})()",value->{if(!"true".equals(value)){if(web.canGoBack())web.goBack();else finish();}});}
- @Override protected void onDestroy(){if(fileChooser!=null)fileChooser.onReceiveValue(null);if(web!=null){web.removeJavascriptInterface("AndroidBridge");web.destroy();web=null;}executor.shutdown();super.onDestroy();}
+ @Override protected void onDestroy(){foregroundHandler.removeCallbacks(foregroundSync);if(fileChooser!=null)fileChooser.onReceiveValue(null);if(web!=null){web.removeJavascriptInterface("AndroidBridge");web.destroy();web=null;}executor.shutdown();super.onDestroy();}
 }

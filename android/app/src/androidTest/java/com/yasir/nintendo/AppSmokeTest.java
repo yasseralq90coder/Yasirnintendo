@@ -43,6 +43,10 @@ public class AppSmokeTest {
    CountDownLatch ready=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.body.textContent.includes('حساب Nintendo على جوالك') && !document.querySelector('#bridge-key')",r->{value[0]=r;ready.countDown();}));
    assertTrue(ready.await(5,TimeUnit.SECONDS));assertEquals("true",value[0]);
+   CountDownLatch accountRoute=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='account'",r->accountRoute.countDown()));assertTrue(accountRoute.await(5,TimeUnit.SECONDS));Thread.sleep(400);
+   CountDownLatch accountCheck=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("!!document.querySelector('#account-search') && !!document.querySelector('#sync-facts') && document.documentElement.scrollWidth<=window.innerWidth+2",r->{value[0]=r;accountCheck.countDown();}));assertTrue(accountCheck.await(5,TimeUnit.SECONDS));assertEquals("Account sync center must fit the mobile viewport","true",value[0]);
    CountDownLatch statsPage=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='stats';",r->statsPage.countDown()));assertTrue(statsPage.await(5,TimeUnit.SECONDS));Thread.sleep(400);
    CountDownLatch calendar=new CountDownLatch(1);

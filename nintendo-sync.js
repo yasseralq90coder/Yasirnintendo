@@ -11,7 +11,7 @@ export function validateSnapshot(data){
   const dates=new Set();const days=t.days.map(d=>{if(!d||!date(d.date)||dates.has(d.date)||!Number.isInteger(d.minutes)||d.minutes<0||d.minutes>1440)throw Error('بيانات يومية غير صالحة.');dates.add(d.date);return {date:d.date,minutes:d.minutes};});
   return {titleId:t.titleId,titleName:t.titleName,platform:t.platform,imageUrl:safeURL(t.imageUrl),totalPlayedMinutes:t.totalPlayedMinutes,totalPlayedDays:Number.isInteger(t.totalPlayedDays)?t.totalPlayedDays:0,firstPlayedAt:text(t.firstPlayedAt,50)?t.firstPlayedAt:'',lastPlayedAt:text(t.lastPlayedAt,50)?t.lastPlayedAt:'',lastUpdatedAt:text(t.lastUpdatedAt,50)?t.lastUpdatedAt:'',historyComplete:t.historyComplete===true,historyCheckedAt:text(t.historyCheckedAt,50)?t.historyCheckedAt:'',days};
  });
- return {version:1,accountId:data.accountId,syncedAt:text(data.syncedAt,50)?data.syncedAt:'',lastFullSync:text(data.lastFullSync,50)?data.lastFullSync:'',titles};
+ return {version:1,accountId:data.accountId,syncedAt:text(data.syncedAt,50)?data.syncedAt:'',lastFullSync:text(data.lastFullSync,50)?data.lastFullSync:'',listCheckedAt:text(data.listCheckedAt,50)?data.listCheckedAt:'',sourceUpdatedAt:text(data.sourceUpdatedAt,50)?data.sourceUpdatedAt:'',titles};
 }
 export function mergeNintendo(state,data){
  const snapshot=validateSnapshot(data),next=structuredClone(state);
