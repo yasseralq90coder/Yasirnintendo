@@ -16,7 +16,7 @@ public final class MainActivity extends Activity {
  private ValueCallback<Uri[]> fileChooser;private String saveText=null,saveId=null;private String initialCallback=null;
  private static final String HOME="https://appassets.androidplatform.net/assets/www/index.html";
  @Override public void onCreate(Bundle state){
-  super.onCreate(state);FrameLayout root=new FrameLayout(this);web=new WebView(this);root.addView(web,new FrameLayout.LayoutParams(-1,-1));setContentView(root);
+  super.onCreate(state);FrameLayout root=new FrameLayout(this);web=new WebView(this);WebViewRendering.configure(web);root.addView(web,new FrameLayout.LayoutParams(-1,-1));setContentView(root);
   root.setOnApplyWindowInsetsListener((v,insets)->{if(Build.VERSION.SDK_INT>=30){android.graphics.Insets b=insets.getInsets(WindowInsets.Type.systemBars());v.setPadding(b.left,b.top,b.right,b.bottom);}else v.setPadding(insets.getSystemWindowInsetLeft(),insets.getSystemWindowInsetTop(),insets.getSystemWindowInsetRight(),insets.getSystemWindowInsetBottom());return insets;});
   WebSettings settings=web.getSettings();settings.setJavaScriptEnabled(true);settings.setDomStorageEnabled(true);settings.setAllowFileAccess(false);settings.setAllowContentAccess(true);settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);settings.setSupportMultipleWindows(true);
   CookieManager.getInstance().setAcceptThirdPartyCookies(web,false);WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
