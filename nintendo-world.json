@@ -1211,14 +1211,14 @@
       "verifiedAt": "2026-10-30"
     }
   ],
-  "catalogUpdatedAt": "2026-10-30T16:00:40.723730+00:00",
+  "catalogUpdatedAt": "2026-10-30T20:53:28.701131+00:00",
   "news": [
     {
-      "id": "8a9a1e7fe1c33543",
-      "title": "My Nintendo October Wrap-Up",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
+      "id": "1de53c107d91ef5c",
+      "title": "Disguise announces new Yoshi costumes just in time for Halloween",
+      "date": "2026-10-30",
+      "url": "https://www.nintendo.com/us/whatsnew/disguise-announces-new-yoshi-costumes-just-in-time-for-halloween/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/disguise-announces-new-yoshi-costumes-just-in-time-for-halloween/Yoshi_Press_release16x9_copy_20",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1232,20 +1232,20 @@
       "source": "Nintendo US"
     },
     {
+      "id": "8a9a1e7fe1c33543",
+      "title": "My Nintendo October Wrap-Up",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
       "id": "174ea40928c90197",
       "title": "New Indie World Showcase features cozy and chaotic fun for Nintendo Switch 2 and Nintendo Switch",
       "date": "2026-10-28",
       "url": "https://www.nintendo.com/us/whatsnew/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/1920x1080_Ncom_FeatureBanner_US",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "f99f239c3f9ac5e1",
-      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1268,12 +1268,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "4151226702b02b45",
-      "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
-      "category": "ألعاب",
+      "id": "f99f239c3f9ac5e1",
+      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1283,6 +1283,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
       "category": "NSO",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "4151226702b02b45",
+      "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
+      "date": "2026-10-26",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1385,15 +1394,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "922929e9c262a981",
-      "title": "Just arrived: Shop hundreds of the latest must-have Nintendo items!",
-      "date": "2026-10-14",
-      "url": "https://www.nintendo.com/us/whatsnew/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/1920x1080_Feature_Banner",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "66fdbff144a64ed7",
       "title": "You have been summoned to watch the new Legend of Zelda: Ocarina of Time — Overview Trailer!",
       "date": "2026-10-14",
@@ -1403,20 +1403,20 @@
       "source": "Nintendo US"
     },
     {
+      "id": "922929e9c262a981",
+      "title": "Just arrived: Shop hundreds of the latest must-have Nintendo items!",
+      "date": "2026-10-14",
+      "url": "https://www.nintendo.com/us/whatsnew/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/1920x1080_Feature_Banner",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
       "id": "640a03b4b3710415",
       "title": "Step into a brand-new Just Dance experience!",
       "date": "2026-10-13",
       "url": "https://www.nintendo.com/us/whatsnew/step-into-a-brand-new-just-dance-experience/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/step-into-a-brand-new-just-dance-experience/2250x1266_availablenow_4",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "7a09715e21c18904",
-      "title": "Flame Lords and Book IV arrive in a free update to Fire Emblem Shadows",
-      "date": "2026-10-09",
-      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/FES-BookIV_KV",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1430,11 +1430,11 @@
       "source": "Nintendo US"
     },
     {
-      "id": "472cf93c9fceb9c6",
-      "title": "Experience the epic KINGDOM HEARTS saga!",
-      "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
+      "id": "7a09715e21c18904",
+      "title": "Flame Lords and Book IV arrive in a free update to Fire Emblem Shadows",
+      "date": "2026-10-09",
+      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/FES-BookIV_KV",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1457,6 +1457,15 @@
       "source": "Nintendo US"
     },
     {
+      "id": "472cf93c9fceb9c6",
+      "title": "Experience the epic KINGDOM HEARTS saga!",
+      "date": "2026-10-08",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
       "id": "a67fff761d42ad14",
       "title": "Pre-order Minecraft for Nintendo Switch™ 2 today!",
       "date": "2026-10-07",
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/join-the-mario-tennis-fever-open-october-2026/EVT_MTFOpen_OCT2026_MAINnoESRB_1920X1080_EN",
       "category": "ألعاب",
       "source": "Nintendo US"
-    },
-    {
-      "id": "904fd52d8aae4e8a",
-      "title": "My Nintendo September Wrap-Up",
-      "date": "2026-10-01",
-      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-september-wrap-up-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-september-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Sep2026_v1_1",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-10-30T16:00:40.750875+00:00",
+  "newsUpdatedAt": "2026-10-30T20:53:28.730740+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
