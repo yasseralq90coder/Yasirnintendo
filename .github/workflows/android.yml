@@ -35,14 +35,27 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
-      - uses: actions/cache@v4
-        with:
-          path: ~/.android/debug.keystore
-          key: yasir-android-preview-signing-v1
+      - name: Require persistent private signing identity
+        env:
+          SIGNING_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ -z "$SIGNING_KEYSTORE_BASE64" ] || [ -z "$STORE_PASSWORD" ] || [ -z "$KEY_ALIAS" ] || [ -z "$KEY_PASSWORD" ]; then
+            echo '::error::Persistent Android signing secrets are missing. Refusing to create another incompatible APK. See android/SIGNING.md. The current download is unchanged.'
+            exit 1
+          fi
+          umask 077
+          printf '%s' "$SIGNING_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/yasir-signing.jks"
+          test -s "$RUNNER_TEMP/yasir-signing.jks"
+          echo "ANDROID_SIGNING_STORE_FILE=$RUNNER_TEMP/yasir-signing.jks" >> "$GITHUB_ENV"
       - name: Test web logic and package bundled assets
         run: |
           npm ci --ignore-scripts
           npm test
+          python -m unittest discover -s tools -p test_android_update.py
           npm run check
           node tools/package-android.mjs
       - uses: android-actions/setup-android@v3
@@ -52,7 +65,20 @@ jobs:
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
       - name: Compile, test and lint Android
         working-directory: android
-        run: gradle --no-daemon testDebugUnitTest lintDebug assembleDebug
+        env:
+          ANDROID_SIGNING_STORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: gradle --no-daemon testDebugUnitTest lintDebug lintRelease assembleDebug assembleRelease
+      - name: Verify compatibility with published APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p previous-apk
+          gh release download android-preview --pattern YasirNintendo.apk --dir previous-apk
+          python tools/verify-android-update.py --previous previous-apk/YasirNintendo.apk --candidate android/app/build/outputs/apk/release/app-release.apk --apksigner "$ANDROID_HOME/build-tools/35.0.0/apksigner" --aapt "$ANDROID_HOME/build-tools/35.0.0/aapt"
+
       - name: Enable KVM for emulator
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -66,11 +92,16 @@ jobs:
           target: default
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
-          script: cd android && gradle --no-daemon connectedDebugAndroidTest
+          script: |
+            (cd android && gradle --no-daemon connectedDebugAndroidTest)
+            adb uninstall com.yasir.nintendo
+            adb install previous-apk/YasirNintendo.apk
+            adb install -r android/app/build/outputs/apk/release/app-release.apk
+            adb shell pm path com.yasir.nintendo
       - name: Prepare installable APK and checksum
         run: |
           mkdir -p apk
-          cp android/app/build/outputs/apk/debug/app-debug.apk apk/YasirNintendo.apk
+          cp android/app/build/outputs/apk/release/app-release.apk apk/YasirNintendo.apk
           cd apk
           sha256sum YasirNintendo.apk > YasirNintendo.apk.sha256
       - uses: actions/upload-artifact@v4
@@ -97,3 +128,6 @@ jobs:
             android/app/build/outputs/androidTest-results/
           if-no-files-found: ignore
           retention-days: 14
+      - name: Remove temporary signing material
+        if: always()
+        run: rm -f "$RUNNER_TEMP/yasir-signing.jks"
