@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T20:53:29.914011+00:00",
+  "updatedAt": "2026-10-31T00:52:16.240116+00:00",
   "sources": [
     {
       "id": "Nintendo",
       "status": "ok",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00"
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00"
     },
     {
       "id": "noon",
       "status": "unavailable",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00"
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00"
     },
     {
       "id": "Amazon.sa",
       "status": "unavailable",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00"
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00"
     }
   ],
   "offers": [
@@ -29,7 +29,7 @@
       "price": 29.99,
       "regular": 39.99,
       "endsAt": "2026-11-08T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/resident-evil-2-deluxe-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000114442/d24c11aa26050d127d0e8f2ced155f4d8833bdfcc06d14dfb726b5521ba673aa",
       "genre": "أكشن",
@@ -50,7 +50,7 @@
       "price": 19.79,
       "regular": 29.99,
       "endsAt": "2026-11-08T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/resident-evil-3-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000122485/c4f0789e36dc8978f212dfdce44608ac886f8ba53c9bb5ee00c068c142875e66",
       "genre": "أكشن",
@@ -71,7 +71,7 @@
       "price": 39.99,
       "regular": 49.99,
       "endsAt": "2026-11-08T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/resident-evil-4-gold-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000122497/4952443466ceea57bb76efd345bdae9564693ed6e76f38a1a1e0b556da52a3c2",
       "genre": "أكشن",
@@ -92,7 +92,7 @@
       "price": 19.99,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/deltarune-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/bc917426b718460086afcfd29dfba77f_1024",
       "genre": "أخرى",
@@ -113,7 +113,7 @@
       "price": 19.99,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/deltarune-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/3d64ae29711e40feaf65d3148e2a46cf_1024",
       "genre": "أخرى",
@@ -134,7 +134,7 @@
       "price": 39.99,
       "regular": 49.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/the-elder-scrolls-iv-oblivion-remastered-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000103529/90216f93311fa7ea79404a962bfa5fe9b02578cf5a8b7a06acd63c6dcb33a79a",
       "genre": "أكشن",
@@ -155,7 +155,7 @@
       "price": 55.99,
       "regular": 69.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/indiana-jones-and-the-great-circle-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b51c6e9b1e2d47319fb65b185ca8905a_1024",
       "genre": "أكشن",
@@ -176,7 +176,7 @@
       "price": 29.99,
       "regular": 59.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/the-elder-scrolls-v-skyrim-anniversary-edition-70010000103193-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/2f74bc8fb44f4c32a4acf3899ebdb0d1_1024",
       "genre": "أكشن",
@@ -197,7 +197,7 @@
       "price": 74.99,
       "regular": 99.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ea-sports-fc-27-ultimate-edition-70070000036530-switch-2/",
       "cover": "",
       "genre": "أخرى",
@@ -218,7 +218,7 @@
       "price": 67.49,
       "regular": 89.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ea-sports-fc-27-ultimate-edition-70070000036463-switch/",
       "cover": "",
       "genre": "أخرى",
@@ -239,7 +239,7 @@
       "price": 27.99,
       "regular": 69.99,
       "endsAt": "2026-11-07T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/wwe-2k26-standard-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/cda4f4ee01fe485faedcc57514db3e8b_1024",
       "genre": "رياضة",
@@ -260,7 +260,7 @@
       "price": 17.99,
       "regular": 59.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/persona-5-royal-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/edf20681df0a40f3bc77d3364f22498b_1024",
       "genre": "أخرى",
@@ -281,7 +281,7 @@
       "price": 47.99,
       "regular": 59.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/fallout-4-anniversary-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/d4594a417b80428ab9e718191821b6f6_1024",
       "genre": "أكشن",
@@ -302,7 +302,7 @@
       "price": 39.59,
       "regular": 59.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/resident-evil-7-gold-edition-and-village-gold-edition-switch-2/",
       "cover": "",
       "genre": "أكشن",
@@ -323,7 +323,7 @@
       "price": 9.99,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/cult-of-the-lamb-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/0ca0c5cf1e7643579f82e8e31d283b4f_1024",
       "genre": "أكشن",
@@ -344,7 +344,7 @@
       "price": 3.99,
       "regular": 4.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/vampire-survivors-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/271382b9eccc41e29df3c7cc5dc177fd_1024",
       "genre": "أكشن",
@@ -365,7 +365,7 @@
       "price": 34.79,
       "regular": 57.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/castlevania-collections-bundle-switch/",
       "cover": "",
       "genre": "أكشن",
@@ -386,7 +386,7 @@
       "price": 17.49,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/animal-well-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1df4b7beb2c54faf80ddc1f4a5213fa0_1024",
       "genre": "أكشن",
@@ -407,7 +407,7 @@
       "price": 14.99,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/nine-sols-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/bd7935770b444612a577db56f1d07b4b_1024",
       "genre": "أكشن",
@@ -428,7 +428,7 @@
       "price": 7.49,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/little-nightmares-enhanced-edition-complete-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5cbb3341487e4340a12e268f4c554e89_1024",
       "genre": "أكشن",
@@ -449,7 +449,7 @@
       "price": 18.74,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ufo-50-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ceb754bdfaa64145bf723ff71d3bab6d_1024",
       "genre": "أكشن",
@@ -470,7 +470,7 @@
       "price": 34.99,
       "regular": 49.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/tales-of-arise-beyond-the-dawn-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000111758/2af23f454e0baf4a33c0bb5bdd41bc1aed8a1b4bebea83a500034cb40588d0b2",
       "genre": "أكشن",
@@ -491,7 +491,7 @@
       "price": 34.99,
       "regular": 69.99,
       "endsAt": "2026-11-07T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/sid-meiers-civilization-vii-nintendo-switch-2-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c46f764a83774a87b9d1a1c832a0572d_1024",
       "genre": "استراتيجية",
@@ -512,7 +512,7 @@
       "price": 27.99,
       "regular": 39.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/fatal-frame-maiden-of-black-water-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a8f1be536b3843cfb787bf797d3260ea_1024",
       "genre": "أكشن",
@@ -533,7 +533,7 @@
       "price": 14.99,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/tunic-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/90e77106441b4b0cb9948505e5e22161_1024",
       "genre": "أكشن",
@@ -554,7 +554,7 @@
       "price": 16.49,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/system-shock-2-25th-anniversary-remaster-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/292d739ee6394bfaa85896303a4481bc_1024",
       "genre": "أخرى",
@@ -575,7 +575,7 @@
       "price": 16.49,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/system-shock-2-25th-anniversary-remaster-nintendo-switch-2-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000128435/6e705bb369523357993697ec0e87bedef9f74443cdf4ea4bfe34b146a7003dc3",
       "genre": "أخرى",
@@ -596,7 +596,7 @@
       "price": 3.49,
       "regular": 9.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/possessor-s-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000104906/ce287d5ff02b775f76f8021cf1f860ec9cb6c50a03555177f983e32d0036385a",
       "genre": "أكشن",
@@ -617,7 +617,7 @@
       "price": 9.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/night-in-the-woods-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e60d973a6d094fef9afe6aaba9b11a9e_1024",
       "genre": "أكشن",
@@ -638,7 +638,7 @@
       "price": 5.99,
       "regular": 14.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/momodora-reverie-under-the-moonlight-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b668a707a24248bf8955844c83c3e867_1024",
       "genre": "أكشن",
@@ -659,7 +659,7 @@
       "price": 9.99,
       "regular": 29.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ghost-trick-phantom-detective-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f76ff7c5a8214fb9a63a037a71eaa0e7_1024",
       "genre": "مغامرات",
@@ -680,7 +680,7 @@
       "price": 27.49,
       "regular": 49.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/raidou-remastered-the-mystery-of-the-soulless-army-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ea23c2b23424459a83c2ef8abdee7270_1024",
       "genre": "أكشن",
@@ -701,7 +701,7 @@
       "price": 27.49,
       "regular": 49.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/raidou-remastered-the-mystery-of-the-soulless-army-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/30f6f21d7fbc4f958cd8edc1d73d779f_1024",
       "genre": "أكشن",
@@ -722,7 +722,7 @@
       "price": 5.99,
       "regular": 39.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/wolfenstein-ii-the-new-colossus-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/6485d6a3b7ea4ea997be2bce24b0aeae_1024",
       "genre": "أخرى",
@@ -743,7 +743,7 @@
       "price": 4.99,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/hotline-miami-collection-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/2e1d503de5154da0a4c8d591c2a90a90_1024",
       "genre": "أكشن",
@@ -764,7 +764,7 @@
       "price": 4.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/inscryption-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/fc259f2b29c14a919bfde80a229d99c8_1024",
       "genre": "مغامرات",
@@ -785,7 +785,7 @@
       "price": 3.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/deaths-door-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c9c5f143cb464fbda5a0a2899e33bae6_1024",
       "genre": "أكشن",
@@ -806,7 +806,7 @@
       "price": 2.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/carrion-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f6b2bf1fd4ab422582b215c9dffd0994_1024",
       "genre": "أكشن",
@@ -827,7 +827,7 @@
       "price": 14.99,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/the-thing-remastered-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ef2251852a384b6a83b0e36cdc5d6dbf_1024",
       "genre": "أكشن",
@@ -848,7 +848,7 @@
       "price": 3.74,
       "regular": 4.99,
       "endsAt": "2026-11-01T15:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/poppy-playtime-chapter-1-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f59f1d1e361646d88cc2049109c13651_1024",
       "genre": "أكشن",
@@ -869,7 +869,7 @@
       "price": 24.99,
       "regular": 49.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/mortal-kombat-legacy-kollection-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/acde00cd0c4544abbb42b70e342ddf7c_1024",
       "genre": "أكشن",
@@ -890,7 +890,7 @@
       "price": 24.99,
       "regular": 49.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/mortal-kombat-legacy-kollection-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/64bbc094a79746dcaad6c6e4f8276aa6_1024",
       "genre": "أكشن",
@@ -911,7 +911,7 @@
       "price": 9.99,
       "regular": 29.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ghosts-n-goblins-resurrection-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/7513482aa1034d4b92761a71addfb2c8_1024",
       "genre": "أكشن",
@@ -932,7 +932,7 @@
       "price": 4.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/the-mummy-demastered-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/605e6bff74ef4f4591fa5ba670da654b_1024",
       "genre": "أكشن",
@@ -953,7 +953,7 @@
       "price": 3.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/shadow-man-remastered-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/d3e87f764ede4509ab21d6c67ebcc847_1024",
       "genre": "أكشن",
@@ -974,7 +974,7 @@
       "price": 5.99,
       "regular": 14.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/batman-the-telltale-series-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5e2318486b0b4afea03587a554fb06a7_1024",
       "genre": "مغامرات",
@@ -995,7 +995,7 @@
       "price": 5.99,
       "regular": 14.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/batman-the-enemy-within-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1e75878e937d43b5be75712748536029_1024",
       "genre": "أكشن",
@@ -1016,7 +1016,7 @@
       "price": 14.99,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/shadow-labyrinth-nintendo-switch-2-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c79c0392235a420681f9225954ec8416_1024",
       "genre": "أكشن",
@@ -1037,7 +1037,7 @@
       "price": 14.99,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/shadow-labyrinth-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c0086b517992489c9d530988b0eaba39_1024",
       "genre": "أكشن",
@@ -1058,7 +1058,7 @@
       "price": 9.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/pentiment-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ae81bd0a2d40407d89680aa96e7a1af4_1024",
       "genre": "مغامرات",
@@ -1079,7 +1079,7 @@
       "price": 8.99,
       "regular": 14.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/oneshot-world-machine-edition-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/d49f6dc1acd54a7bafbf72578f0c26fa_1024",
       "genre": "مغامرات",
@@ -1100,7 +1100,7 @@
       "price": 7.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/overland-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/2ad8edd576894ea1b213f18a76419830_1024",
       "genre": "مغامرات",
@@ -1121,7 +1121,7 @@
       "price": 5.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/minoria-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c4c6dbcc30ab462bb0535bfad92b0250_1024",
       "genre": "أكشن",
@@ -1142,7 +1142,7 @@
       "price": 29.99,
       "regular": 49.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/sonic-frontiers-definitive-edition-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dfb9300641c443229d029cf47e83d389_1024",
       "genre": "أكشن",
@@ -1163,7 +1163,7 @@
       "price": 9.99,
       "regular": 29.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/mega-man-11-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/18b1493313cf433c9c3383436af1ada7_1024",
       "genre": "أكشن",
@@ -1184,7 +1184,7 @@
       "price": 9.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/spelunky-2-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/0136d24e04c442fbb7c52ae6af3b3dda_1024",
       "genre": "أكشن",
@@ -1205,7 +1205,7 @@
       "price": 12.49,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/the-stanley-parable-ultra-deluxe-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dcffb598d46045cd8b4dd6bad864c41d_1024",
       "genre": "مغامرات",
@@ -1226,7 +1226,7 @@
       "price": 12.49,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/little-kitty-big-city-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ea4d8254e0ff40a6927b86598499b2c6_1024",
       "genre": "أكشن",
@@ -1247,7 +1247,7 @@
       "price": 15.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/just-crow-things-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/182470809dec452fb4393ab2c052726f_1024",
       "genre": "أكشن",
@@ -1268,7 +1268,7 @@
       "price": 2.99,
       "regular": 14.99,
       "endsAt": "2026-11-06T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/dicey-dungeons-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a8ebb454b32f479fadfac2c0cd8812fa_1024",
       "genre": "أخرى",
@@ -1289,7 +1289,7 @@
       "price": 9.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/chicory-a-colorful-tale-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/3b156907efa34b8da9d658aba82c156b_1024",
       "genre": "مغامرات",
@@ -1310,7 +1310,7 @@
       "price": 12.49,
       "regular": 24.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/bugsnax-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/54194da15e67470586c865c53737defe_1024",
       "genre": "مغامرات",
@@ -1331,7 +1331,7 @@
       "price": 7.99,
       "regular": 19.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ghostbusters-spirits-unleashed-ecto-edition-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/8a3cd2c0d90f4fa8829e24b7d049acfb_1024",
       "genre": "أكشن",
@@ -1352,7 +1352,7 @@
       "price": 25.49,
       "regular": 29.99,
       "endsAt": "2026-11-01T06:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-11-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f7b3d85c0af24775b44eecad0e25e7e7_1024",
       "genre": "حفلات",
@@ -1373,7 +1373,7 @@
       "price": 15.99,
       "regular": 39.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/street-fighter-6-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e25604998002460e839cd4cac5d33e07_1024",
       "genre": "أخرى",
@@ -1394,7 +1394,7 @@
       "price": 4.49,
       "regular": 29.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/6e83edc9aa7347f99bfdc8957011097a_1024",
       "genre": "أخرى",
@@ -1415,7 +1415,7 @@
       "price": 7.99,
       "regular": 19.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/resident-evil-revelations-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/795f94176716488b8eaf5465425a4001_1024",
       "genre": "أكشن",
@@ -1436,7 +1436,7 @@
       "price": 7.99,
       "regular": 19.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/resident-evil-revelations-2-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/6d396446812a4d6bae23cb3b7557f3e9_1024",
       "genre": "أكشن",
@@ -1457,7 +1457,7 @@
       "price": 15.99,
       "regular": 49.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/marvel-vs-capcom-fighting-collection-arcade-classics-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c742e69274ed4136b8ea033ac4749e45_1024",
       "genre": "أكشن",
@@ -1478,7 +1478,7 @@
       "price": 19.99,
       "regular": 39.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ultra-street-fighter-ii-the-final-challengers-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c35e1bf6ee4e4f4ea57cd7e9caab816d_1024",
       "genre": "أخرى",
@@ -1499,7 +1499,7 @@
       "price": 9.89,
       "regular": 29.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/capcom-fighting-collection-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a178b04e24a54bf886e047ee5bc518e3_1024",
       "genre": "ألغاز",
@@ -1520,7 +1520,7 @@
       "price": 19.99,
       "regular": 39.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/capcom-fighting-collection-2-switch/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/15017473cf484720bca26c3b7f2f0672_1024",
       "genre": "أخرى",
@@ -1541,7 +1541,7 @@
       "price": 23.99,
       "regular": 59.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/capcom-fighting-collection-1-plus-2-bundle-switch/",
       "cover": "",
       "genre": "ألغاز",
@@ -1562,7 +1562,7 @@
       "price": 19.49,
       "regular": 38.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/onimusha-1-plus-2-pack-switch/",
       "cover": "",
       "genre": "أكشن",
@@ -1583,7 +1583,7 @@
       "price": 29.99,
       "regular": 59.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/ace-attorney-anthology-switch/",
       "cover": "",
       "genre": "مغامرات",
@@ -1604,7 +1604,7 @@
       "price": 29.99,
       "regular": 39.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/kunitsu-gami-path-of-the-goddess-switch-2/",
       "cover": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/28d1290693cf423d875bab13d07867cd_1024",
       "genre": "أكشن",
@@ -1625,7 +1625,7 @@
       "price": 47.99,
       "regular": 79.99,
       "endsAt": "2026-11-05T07:59:59Z",
-      "checkedAt": "2026-10-30T20:53:29.914011+00:00",
+      "checkedAt": "2026-10-31T00:52:16.240116+00:00",
       "url": "https://www.nintendo.com/us/store/products/mega-man-cyber-wave-pack-switch/",
       "cover": "",
       "genre": "أكشن",
@@ -1976,6 +1976,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 29.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 29.99,
+        "currency": "USD"
       }
     ],
     "eshop-resident-evil-3-switch-2": [
@@ -1991,6 +1996,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 19.79,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 19.79,
         "currency": "USD"
       }
@@ -2010,6 +2020,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 39.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 39.99,
+        "currency": "USD"
       }
     ],
     "eshop-deltarune-switch-2": [
@@ -2025,6 +2040,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 19.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 19.99,
         "currency": "USD"
       }
@@ -2044,6 +2064,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 19.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 19.99,
+        "currency": "USD"
       }
     ],
     "eshop-the-elder-scrolls-iv-oblivion-remastered-switch-2": [
@@ -2059,6 +2084,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 39.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 39.99,
         "currency": "USD"
       }
@@ -2078,6 +2108,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 55.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 55.99,
+        "currency": "USD"
       }
     ],
     "eshop-the-elder-scrolls-v-skyrim-anniversary-edition-70010000103193-switch-2": [
@@ -2093,6 +2128,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 29.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 29.99,
         "currency": "USD"
       }
@@ -2112,6 +2152,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 74.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 74.99,
+        "currency": "USD"
       }
     ],
     "eshop-ea-sports-fc-27-ultimate-edition-70070000036463-switch": [
@@ -2127,6 +2172,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 67.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 67.49,
         "currency": "USD"
       }
@@ -2146,6 +2196,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 27.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 27.99,
+        "currency": "USD"
       }
     ],
     "eshop-persona-5-royal-switch": [
@@ -2161,6 +2216,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 17.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 17.99,
         "currency": "USD"
       }
@@ -2180,6 +2240,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 47.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 47.99,
+        "currency": "USD"
       }
     ],
     "eshop-resident-evil-7-gold-edition-and-village-gold-edition-switch-2": [
@@ -2195,6 +2260,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 39.59,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 39.59,
         "currency": "USD"
       }
@@ -2214,6 +2284,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 9.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 9.99,
+        "currency": "USD"
       }
     ],
     "eshop-vampire-survivors-switch": [
@@ -2229,6 +2304,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 3.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 3.99,
         "currency": "USD"
       }
@@ -2248,6 +2328,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 34.79,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 34.79,
+        "currency": "USD"
       }
     ],
     "eshop-animal-well-switch": [
@@ -2263,6 +2348,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 17.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 17.49,
         "currency": "USD"
       }
@@ -2282,6 +2372,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 14.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 14.99,
+        "currency": "USD"
       }
     ],
     "eshop-little-nightmares-enhanced-edition-complete-edition-switch-2": [
@@ -2297,6 +2392,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 7.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 7.49,
         "currency": "USD"
       }
@@ -2316,6 +2416,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 18.74,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 18.74,
+        "currency": "USD"
       }
     ],
     "eshop-tales-of-arise-beyond-the-dawn-edition-switch-2": [
@@ -2331,6 +2436,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 34.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 34.99,
         "currency": "USD"
       }
@@ -2350,6 +2460,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 34.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 34.99,
+        "currency": "USD"
       }
     ],
     "eshop-fatal-frame-maiden-of-black-water-switch": [
@@ -2365,6 +2480,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 27.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 27.99,
         "currency": "USD"
       }
@@ -2384,6 +2504,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 14.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 14.99,
+        "currency": "USD"
       }
     ],
     "eshop-system-shock-2-25th-anniversary-remaster-switch": [
@@ -2399,6 +2524,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 16.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 16.49,
         "currency": "USD"
       }
@@ -2418,6 +2548,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 16.49,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 16.49,
+        "currency": "USD"
       }
     ],
     "eshop-possessor-s-switch-2": [
@@ -2433,6 +2568,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 3.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 3.49,
         "currency": "USD"
       }
@@ -2452,6 +2592,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 9.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 9.99,
+        "currency": "USD"
       }
     ],
     "eshop-momodora-reverie-under-the-moonlight-switch": [
@@ -2467,6 +2612,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 5.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 5.99,
         "currency": "USD"
       }
@@ -2486,6 +2636,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 9.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 9.99,
+        "currency": "USD"
       }
     ],
     "eshop-raidou-remastered-the-mystery-of-the-soulless-army-switch-2": [
@@ -2501,6 +2656,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 27.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 27.49,
         "currency": "USD"
       }
@@ -2520,6 +2680,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 27.49,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 27.49,
+        "currency": "USD"
       }
     ],
     "eshop-wolfenstein-ii-the-new-colossus-switch": [
@@ -2535,6 +2700,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 5.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 5.99,
         "currency": "USD"
       }
@@ -2554,6 +2724,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 4.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 4.99,
+        "currency": "USD"
       }
     ],
     "eshop-inscryption-switch": [
@@ -2569,6 +2744,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 4.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 4.99,
         "currency": "USD"
       }
@@ -2588,6 +2768,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 3.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 3.99,
+        "currency": "USD"
       }
     ],
     "eshop-carrion-switch": [
@@ -2603,6 +2788,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 2.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 2.99,
         "currency": "USD"
       }
@@ -2622,6 +2812,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 14.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 14.99,
+        "currency": "USD"
       }
     ],
     "eshop-poppy-playtime-chapter-1-switch": [
@@ -2637,6 +2832,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 3.74,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 3.74,
         "currency": "USD"
       }
@@ -2656,6 +2856,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 24.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 24.99,
+        "currency": "USD"
       }
     ],
     "eshop-mortal-kombat-legacy-kollection-switch-2": [
@@ -2671,6 +2876,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 24.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 24.99,
         "currency": "USD"
       }
@@ -2690,6 +2900,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 9.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 9.99,
+        "currency": "USD"
       }
     ],
     "eshop-the-mummy-demastered-switch": [
@@ -2705,6 +2920,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 4.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 4.99,
         "currency": "USD"
       }
@@ -2724,6 +2944,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 3.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 3.99,
+        "currency": "USD"
       }
     ],
     "eshop-batman-the-telltale-series-switch": [
@@ -2739,6 +2964,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 5.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 5.99,
         "currency": "USD"
       }
@@ -2758,6 +2988,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 5.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 5.99,
+        "currency": "USD"
       }
     ],
     "eshop-shadow-labyrinth-nintendo-switch-2-edition-switch-2": [
@@ -2773,6 +3008,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 14.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 14.99,
         "currency": "USD"
       }
@@ -2792,6 +3032,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 14.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 14.99,
+        "currency": "USD"
       }
     ],
     "eshop-pentiment-switch": [
@@ -2807,6 +3052,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 9.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 9.99,
         "currency": "USD"
       }
@@ -2826,6 +3076,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 8.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 8.99,
+        "currency": "USD"
       }
     ],
     "eshop-overland-switch": [
@@ -2841,6 +3096,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 7.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 7.99,
         "currency": "USD"
       }
@@ -2860,6 +3120,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 5.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 5.99,
+        "currency": "USD"
       }
     ],
     "eshop-sonic-frontiers-definitive-edition-switch-2": [
@@ -2875,6 +3140,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 29.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 29.99,
         "currency": "USD"
       }
@@ -2894,6 +3164,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 9.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 9.99,
+        "currency": "USD"
       }
     ],
     "eshop-spelunky-2-switch": [
@@ -2909,6 +3184,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 9.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 9.99,
         "currency": "USD"
       }
@@ -2928,6 +3208,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 12.49,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 12.49,
+        "currency": "USD"
       }
     ],
     "eshop-little-kitty-big-city-switch": [
@@ -2943,6 +3228,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 12.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 12.49,
         "currency": "USD"
       }
@@ -2962,6 +3252,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 15.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 15.99,
+        "currency": "USD"
       }
     ],
     "eshop-dicey-dungeons-switch": [
@@ -2977,6 +3272,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 2.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 2.99,
         "currency": "USD"
       }
@@ -2996,6 +3296,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 9.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 9.99,
+        "currency": "USD"
       }
     ],
     "eshop-bugsnax-switch": [
@@ -3011,6 +3316,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 12.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 12.49,
         "currency": "USD"
       }
@@ -3030,6 +3340,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 7.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 7.99,
+        "currency": "USD"
       }
     ],
     "eshop-the-jackbox-party-pack-11-switch": [
@@ -3045,6 +3360,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 25.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 25.49,
         "currency": "USD"
       }
@@ -3064,6 +3384,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 15.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 15.99,
+        "currency": "USD"
       }
     ],
     "eshop-street-fighter-30th-anniversary-collection-switch": [
@@ -3079,6 +3404,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 4.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 4.49,
         "currency": "USD"
       }
@@ -3098,6 +3428,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 7.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 7.99,
+        "currency": "USD"
       }
     ],
     "eshop-resident-evil-revelations-2-switch": [
@@ -3113,6 +3448,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 7.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 7.99,
         "currency": "USD"
       }
@@ -3132,6 +3472,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 15.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 15.99,
+        "currency": "USD"
       }
     ],
     "eshop-ultra-street-fighter-ii-the-final-challengers-switch": [
@@ -3147,6 +3492,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 19.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 19.99,
         "currency": "USD"
       }
@@ -3166,6 +3516,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 9.89,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 9.89,
+        "currency": "USD"
       }
     ],
     "eshop-capcom-fighting-collection-2-switch": [
@@ -3181,6 +3536,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 19.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 19.99,
         "currency": "USD"
       }
@@ -3200,6 +3560,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 23.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 23.99,
+        "currency": "USD"
       }
     ],
     "eshop-onimusha-1-plus-2-pack-switch": [
@@ -3215,6 +3580,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 19.49,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 19.49,
         "currency": "USD"
       }
@@ -3234,6 +3604,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 29.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 29.99,
+        "currency": "USD"
       }
     ],
     "eshop-kunitsu-gami-path-of-the-goddess-switch-2": [
@@ -3251,6 +3626,11 @@
         "at": "2026-10-30T02:00:37.254973+00:00",
         "price": 29.99,
         "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
+        "price": 29.99,
+        "currency": "USD"
       }
     ],
     "eshop-mega-man-cyber-wave-pack-switch": [
@@ -3266,6 +3646,11 @@
       },
       {
         "at": "2026-10-30T02:00:37.254973+00:00",
+        "price": 47.99,
+        "currency": "USD"
+      },
+      {
+        "at": "2026-10-31T00:52:16.240116+00:00",
         "price": 47.99,
         "currency": "USD"
       }
