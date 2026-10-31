@@ -21,7 +21,11 @@ public class AppSmokeTest {
     assertTrue(latch.await(5,TimeUnit.SECONDS));loaded="true".equals(value[0]);if(!loaded)Thread.sleep(250);
    }assertTrue("Bundled interface failed to load",loaded);
    CountDownLatch director=new CountDownLatch(1);String[] adventure={""};
-   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("!!document.querySelector('#king-director') && document.documentElement.scrollWidth<=window.innerWidth+2",r->{adventure[0]=r;director.countDown();}));assertTrue(director.await(5,TimeUnit.SECONDS));assertEquals("Director must fit mobile viewport","true",adventure[0]);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("!!document.querySelector('.mobile-player') && document.documentElement.scrollWidth<=window.innerWidth+2",r->{adventure[0]=r;director.countDown();}));assertTrue(director.await(5,TimeUnit.SECONDS));assertEquals("Mobile home must fit viewport","true",adventure[0]);
+   CountDownLatch timelineRoute=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='journal'",r->timelineRoute.countDown()));assertTrue(timelineRoute.await(5,TimeUnit.SECONDS));Thread.sleep(400);
+   CountDownLatch timelineCheck=new CountDownLatch(1);
+   scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("document.querySelectorAll('.month-grid button').length>=28 && !!document.querySelector('#mobile-history-filter') && document.documentElement.scrollWidth<=window.innerWidth+2",r->{adventure[0]=r;timelineCheck.countDown();}));assertTrue(timelineCheck.await(5,TimeUnit.SECONDS));assertEquals("Interactive play timeline fits mobile viewport","true",adventure[0]);
    CountDownLatch mapRoute=new CountDownLatch(1);
    scenario.onActivity(activity->find(activity.getWindow().getDecorView()).evaluateJavascript("location.hash='kingdom'",r->mapRoute.countDown()));assertTrue(mapRoute.await(5,TimeUnit.SECONDS));Thread.sleep(400);
    CountDownLatch mapCheck=new CountDownLatch(1);

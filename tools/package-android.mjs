@@ -1,7 +1,7 @@
 import {mkdir,copyFile,cp,readFile,writeFile,rm} from 'node:fs/promises';
 import {build} from 'esbuild';
 const dir='android/app/src/main/assets/www';await rm(dir,{recursive:true,force:true});await mkdir(dir,{recursive:true});
-for(const f of ['index.html','styles.css','journey.css','world.css','companion.css','kingdom.css','store-data.json','nintendo-world.json','catalog.json','library-seed.json'])await copyFile(f,`${dir}/${f}`);
+for(const f of ['mobile.css','index.html','styles.css','journey.css','world.css','companion.css','kingdom.css','store-data.json','nintendo-world.json','catalog.json','library-seed.json'])await copyFile(f,`${dir}/${f}`);
 await cp('assets',`${dir}/assets`,{recursive:true});
 const app=await readFile('app.js','utf8');const imports=app.match(/^import .+;$/gm)||[];
 const body=app.replace(/^import .+;\n/gm,'');

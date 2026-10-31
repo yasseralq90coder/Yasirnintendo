@@ -85,7 +85,7 @@ jobs:
           if ! gh release view android-preview >/dev/null 2>&1; then
             gh release create android-preview --target "$GITHUB_SHA" --title "Yasir Nintendo — Android Preview" --notes-file android/RELEASE_NOTES.md --prerelease
           fi
-          gh release edit android-preview --title "Yasir Nintendo 5.1 — Android" --notes-file android/RELEASE_NOTES.md
+          gh release edit android-preview --title "Yasir Nintendo 5.2 — Android" --notes-file android/RELEASE_NOTES.md
           gh release upload android-preview apk/YasirNintendo.apk apk/YasirNintendo.apk.sha256 --clobber
       - name: Upload diagnostics
         if: always()
