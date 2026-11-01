@@ -20,9 +20,16 @@ public class PopulatedLayoutTest {
   android.os.ParcelFileDescriptor fd=InstrumentationRegistry.getInstrumentation().getUiAutomation().executeShellCommand(command);
   try(InputStream in=new android.os.ParcelFileDescriptor.AutoCloseInputStream(fd);ByteArrayOutputStream out=new ByteArrayOutputStream()){byte[] bytes=new byte[1024];for(int n;(n=in.read(bytes))!=-1;)out.write(bytes,0,n);return out.toString("UTF-8");}
  }
- private void screenshot(String name)throws Exception{
-  shell("mkdir -p /data/local/tmp/yasir-layout-qa");
-  shell("screencap -p /data/local/tmp/yasir-layout-qa/"+name+".png");
+ private void screenshot(ActivityScenario<MainActivity> scene,String name)throws Exception{
+  CountDownLatch painted=new CountDownLatch(1);Bitmap[] image={null};
+  scene.onActivity(a->{WebView w=find(a.getWindow().getDecorView());w.postVisualStateCallback(1,new WebView.VisualStateCallback(){@Override public void onComplete(long id){image[0]=Bitmap.createBitmap(w.getWidth(),w.getHeight(),Bitmap.Config.ARGB_8888);w.draw(new android.graphics.Canvas(image[0]));painted.countDown();}});});
+  assertTrue("WebView visual frame ready",painted.await(10,TimeUnit.SECONDS));
+  java.util.Set<Integer> colors=new java.util.HashSet<>();
+  for(int y=0;y<image[0].getHeight();y+=8)for(int x=0;x<image[0].getWidth();x+=8)colors.add(image[0].getPixel(x,y));
+  assertTrue("Reject blank layout evidence",colors.size()>8);
+  File dir=new File(InstrumentationRegistry.getInstrumentation().getTargetContext().getExternalFilesDir(null),"layout-qa");dir.mkdirs();File file=new File(dir,name+".png");
+  try(FileOutputStream out=new FileOutputStream(file)){image[0].compress(Bitmap.CompressFormat.PNG,100,out);}image[0].recycle();
+  shell("mkdir -p /data/local/tmp/yasir-layout-qa");shell("cp "+file.getAbsolutePath()+" /data/local/tmp/yasir-layout-qa/");
   assertTrue("Screenshot must exist",shell("ls /data/local/tmp/yasir-layout-qa/"+name+".png").contains(name+".png"));
  }
 
@@ -37,10 +44,10 @@ public class PopulatedLayoutTest {
      js(scene,"document.body.classList.toggle('dark',"+dark+");location.hash='home';");Thread.sleep(180);ready(scene,".mobile-resume h2");
      String checks="(function(){var c=document.querySelector('.mobile-resume .director-copy').getBoundingClientRect(),a=document.querySelector('.mobile-resume .director-cover').getBoundingClientRect();return document.documentElement.scrollWidth<=innerWidth+2 && c.width>=innerWidth*.7 && c.top>=a.bottom-2 && document.querySelector('.mobile-resume').getBoundingClientRect().height<1000;})()";
      assertEquals("Home width="+width+" zoom="+zoom+" dark="+dark,"true",js(scene,checks));
-     if(width==360&&zoom==100)screenshot("home-"+(dark?"dark":"light"));
+     if(width==360&&zoom==100)screenshot(scene,"home-"+(dark?"dark":"light"));
      js(scene,"location.hash='stats'");Thread.sleep(180);ready(scene,".year-calendar");
      assertEquals("Stats overflow width="+width+" zoom="+zoom+" dark="+dark,"true",js(scene,"document.documentElement.scrollWidth<=innerWidth+2 && document.querySelectorAll('.year-month').length===12 && document.querySelectorAll('.calendar-day').length>=365 && document.querySelector('#bottom-nav').getBoundingClientRect().right<=innerWidth+2"));
-     if(width==360&&zoom==100)screenshot("stats-"+(dark?"dark":"light"));
+     if(width==360&&zoom==100)screenshot(scene,"stats-"+(dark?"dark":"light"));
     }
    }finally{js(scene,"localStorage.setItem('yasir-nintendo-v1',"+previous+");document.body.classList.toggle('dark',"+theme+");location.hash='home';location.reload();");}
   }
