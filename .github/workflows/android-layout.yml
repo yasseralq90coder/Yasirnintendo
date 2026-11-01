@@ -63,10 +63,9 @@ jobs:
           target: default
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
-          script: cd android && gradle --no-daemon connectedDebugAndroidTest
-      - name: Collect emulator layout screenshots
-        if: always()
-        run: adb pull /sdcard/Android/data/com.yasir.nintendo/files/layout-qa layout-qa || true
+          script: |
+            (cd android && gradle --no-daemon connectedDebugAndroidTest)
+            adb pull /sdcard/Android/data/com.yasir.nintendo/files/layout-qa layout-qa
       - uses: actions/upload-artifact@v4
         if: always()
         with:
