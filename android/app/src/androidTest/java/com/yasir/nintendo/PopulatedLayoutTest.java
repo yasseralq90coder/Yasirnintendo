@@ -16,9 +16,14 @@ public class PopulatedLayoutTest {
  private WebView find(View v){if(v instanceof WebView)return (WebView)v;if(v instanceof ViewGroup)for(int i=0;i<((ViewGroup)v).getChildCount();i++){WebView w=find(((ViewGroup)v).getChildAt(i));if(w!=null)return w;}return null;}
  private String js(ActivityScenario<MainActivity> scene,String code)throws Exception{CountDownLatch wait=new CountDownLatch(1);String[] out={""};scene.onActivity(a->find(a.getWindow().getDecorView()).evaluateJavascript(code,r->{out[0]=r;wait.countDown();}));assertTrue(wait.await(8,TimeUnit.SECONDS));return out[0];}
  private void ready(ActivityScenario<MainActivity> scene,String selector)throws Exception{for(int i=0;i<60;i++){if("true".equals(js(scene,"!!document.querySelector("+JSONObject.quote(selector)+")")))return;Thread.sleep(150);}fail("UI did not load: "+selector);}
+ private String shell(String command)throws Exception{
+  android.os.ParcelFileDescriptor fd=InstrumentationRegistry.getInstrumentation().getUiAutomation().executeShellCommand(command);
+  try(InputStream in=new android.os.ParcelFileDescriptor.AutoCloseInputStream(fd);ByteArrayOutputStream out=new ByteArrayOutputStream()){byte[] bytes=new byte[1024];for(int n;(n=in.read(bytes))!=-1;)out.write(bytes,0,n);return out.toString("UTF-8");}
+ }
  private void screenshot(String name)throws Exception{
-  android.os.ParcelFileDescriptor fd=InstrumentationRegistry.getInstrumentation().getUiAutomation().executeShellCommand("sh -c 'mkdir -p /data/local/tmp/yasir-layout-qa && screencap -p /data/local/tmp/yasir-layout-qa/"+name+".png'");
-  try(InputStream in=new android.os.ParcelFileDescriptor.AutoCloseInputStream(fd)){byte[] bytes=new byte[1024];while(in.read(bytes)!=-1){}}
+  shell("mkdir -p /data/local/tmp/yasir-layout-qa");
+  shell("screencap -p /data/local/tmp/yasir-layout-qa/"+name+".png");
+  assertTrue("Screenshot must exist",shell("ls /data/local/tmp/yasir-layout-qa/"+name+".png").contains(name+".png"));
  }
 
  @Test public void populatedHomeAndStatsFitSmallScreensAndLargeText()throws Exception{
