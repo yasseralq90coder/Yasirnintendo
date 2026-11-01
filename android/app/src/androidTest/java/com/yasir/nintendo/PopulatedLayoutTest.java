@@ -16,7 +16,11 @@ public class PopulatedLayoutTest {
  private WebView find(View v){if(v instanceof WebView)return (WebView)v;if(v instanceof ViewGroup)for(int i=0;i<((ViewGroup)v).getChildCount();i++){WebView w=find(((ViewGroup)v).getChildAt(i));if(w!=null)return w;}return null;}
  private String js(ActivityScenario<MainActivity> scene,String code)throws Exception{CountDownLatch wait=new CountDownLatch(1);String[] out={""};scene.onActivity(a->find(a.getWindow().getDecorView()).evaluateJavascript(code,r->{out[0]=r;wait.countDown();}));assertTrue(wait.await(8,TimeUnit.SECONDS));return out[0];}
  private void ready(ActivityScenario<MainActivity> scene,String selector)throws Exception{for(int i=0;i<60;i++){if("true".equals(js(scene,"!!document.querySelector("+JSONObject.quote(selector)+")")))return;Thread.sleep(150);}fail("UI did not load: "+selector);}
- private void screenshot(String name)throws Exception{Bitmap bitmap=InstrumentationRegistry.getInstrumentation().getUiAutomation().takeScreenshot();File dir=new File(InstrumentationRegistry.getInstrumentation().getTargetContext().getExternalFilesDir(null),"layout-qa");dir.mkdirs();try(FileOutputStream out=new FileOutputStream(new File(dir,name+".png"))){bitmap.compress(Bitmap.CompressFormat.PNG,100,out);}bitmap.recycle();}
+ private void screenshot(String name)throws Exception{
+  android.os.ParcelFileDescriptor fd=InstrumentationRegistry.getInstrumentation().getUiAutomation().executeShellCommand("sh -c 'mkdir -p /data/local/tmp/yasir-layout-qa && screencap -p /data/local/tmp/yasir-layout-qa/"+name+".png'");
+  try(InputStream in=new android.os.ParcelFileDescriptor.AutoCloseInputStream(fd)){byte[] bytes=new byte[1024];while(in.read(bytes)!=-1){}}
+ }
+
  @Test public void populatedHomeAndStatsFitSmallScreensAndLargeText()throws Exception{
   String fixture;try(InputStream in=InstrumentationRegistry.getInstrumentation().getContext().getAssets().open("layout-fixture.json")){ByteArrayOutputStream b=new ByteArrayOutputStream();byte[] buf=new byte[4096];for(int n;(n=in.read(buf))!=-1;)b.write(buf,0,n);fixture=b.toString("UTF-8");}
   try(ActivityScenario<MainActivity> scene=ActivityScenario.launch(MainActivity.class)){
