@@ -41,9 +41,10 @@ jobs:
           STORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          SIGNING_CERT: ${{ secrets.ANDROID_SIGNING_CERT_SHA256 }}
         run: |
           set -euo pipefail
-          if [ -z "$SIGNING_KEYSTORE_BASE64" ] || [ -z "$STORE_PASSWORD" ] || [ -z "$KEY_ALIAS" ] || [ -z "$KEY_PASSWORD" ]; then
+          if [ -z "$SIGNING_KEYSTORE_BASE64" ] || [ -z "$STORE_PASSWORD" ] || [ -z "$KEY_ALIAS" ] || [ -z "$KEY_PASSWORD" ] || [ -z "$SIGNING_CERT" ]; then
             echo '::error::Persistent Android signing secrets are missing. Refusing to create another incompatible APK. See android/SIGNING.md. The current download is unchanged.'
             exit 1
           fi
@@ -70,14 +71,23 @@ jobs:
           ANDROID_SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: gradle --no-daemon testDebugUnitTest lintDebug lintRelease assembleDebug assembleRelease
-      - name: Verify compatibility with published APK
+      - name: Verify pinned signer and stable upgrade compatibility
         env:
           GH_TOKEN: ${{ github.token }}
+          SIGNING_CERT: ${{ secrets.ANDROID_SIGNING_CERT_SHA256 }}
         run: |
           set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          CERT=$("$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --print-certs "$APK" | sed -n 's/Signer #1 certificate SHA-256 digest: //p')
+          test "${CERT,,}" = "${SIGNING_CERT,,}" || { echo '::error::Pinned signing certificate mismatch'; exit 1; }
           mkdir -p previous-apk
-          gh release download android-preview --pattern YasirNintendo.apk --dir previous-apk
-          python tools/verify-android-update.py --previous previous-apk/YasirNintendo.apk --candidate android/app/build/outputs/apk/release/app-release.apk --apksigner "$ANDROID_HOME/build-tools/35.0.0/apksigner" --aapt "$ANDROID_HOME/build-tools/35.0.0/aapt"
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" > "$RUNNER_TEMP/releases.json"
+          if python -c 'import json,sys; sys.exit(0 if any(r["tag_name"]=="android-stable" for r in json.load(open(sys.argv[1]))) else 1)' "$RUNNER_TEMP/releases.json"; then
+            gh release download android-stable --pattern YasirNintendo.apk --dir previous-apk
+            python tools/verify-android-update.py --previous previous-apk/YasirNintendo.apk --candidate "$APK" --apksigner "$ANDROID_HOME/build-tools/35.0.0/apksigner" --aapt "$ANDROID_HOME/build-tools/35.0.0/aapt"
+          else
+            echo 'First stable signing baseline: new installation authorized. Old previews remain separate.'
+          fi
 
       - name: Enable KVM for emulator
         run: |
@@ -95,7 +105,7 @@ jobs:
           script: |
             (cd android && gradle --no-daemon connectedDebugAndroidTest)
             adb uninstall com.yasir.nintendo
-            adb install previous-apk/YasirNintendo.apk
+            if [ -f previous-apk/YasirNintendo.apk ]; then adb install previous-apk/YasirNintendo.apk; fi
             adb install -r android/app/build/outputs/apk/release/app-release.apk
             adb shell pm path com.yasir.nintendo
       - name: Prepare installable APK and checksum
@@ -113,11 +123,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if ! gh release view android-preview >/dev/null 2>&1; then
-            gh release create android-preview --target "$GITHUB_SHA" --title "Yasir Nintendo — Android Preview" --notes-file android/RELEASE_NOTES.md --prerelease
+          if ! gh release view android-stable >/dev/null 2>&1; then
+            gh release create android-stable --target "$GITHUB_SHA" --title "Yasir Nintendo 5.3 — Android" --notes-file android/RELEASE_NOTES.md --prerelease
           fi
-          gh release edit android-preview --title "Yasir Nintendo 5.2 — Android" --notes-file android/RELEASE_NOTES.md
-          gh release upload android-preview apk/YasirNintendo.apk apk/YasirNintendo.apk.sha256 --clobber
+          gh release edit android-stable --title "Yasir Nintendo 5.3 — Android" --notes-file android/RELEASE_NOTES.md
+          gh release upload android-stable apk/YasirNintendo.apk apk/YasirNintendo.apk.sha256 --clobber
       - name: Upload diagnostics
         if: always()
         uses: actions/upload-artifact@v4

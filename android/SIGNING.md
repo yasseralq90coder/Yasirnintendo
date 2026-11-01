@@ -49,3 +49,8 @@ latest release alone cannot prove compatibility with every older install.
 The workflow downloads only the previous public APK for comparison. Private
 signing material is decoded into an owner-only temporary file and removed even
 when the job fails. Public release APKs use `debuggable false`.
+
+## Authorized new baseline (November 1, 2026)
+The owner confirmed the previous installation/data were deleted and requested a new installation. Version 5.3 starts a separate `android-stable` release line. Old `android-preview` assets are retained. Subsequent stable releases must pass the same-certificate upgrade guard; the first stable release must match `ANDROID_SIGNING_CERT_SHA256` from the saved keystore.
+
+Run `tools/setup-android-signing.ps1` locally in PowerShell with GitHub CLI and OpenJDK 17 installed. It generates a key only if the local key does not exist, prompts for a password, uploads five encrypted GitHub Actions secrets, and dispatches the build. Preserve the local key and password in secure backups. Never regenerate it for an update. The connector cannot set Actions secrets, so this one-time local step is required.
