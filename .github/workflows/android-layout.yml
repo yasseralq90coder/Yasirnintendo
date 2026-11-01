@@ -13,6 +13,7 @@ on:
       - 'assets/**'
       - 'tools/package-android.mjs'
       - '.github/workflows/android.yml'
+      - '.github/workflows/android-layout.yml'
   workflow_dispatch:
 permissions:
   contents: read
