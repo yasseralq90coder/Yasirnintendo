@@ -22,11 +22,11 @@ public class PopulatedLayoutTest {
  }
  private void screenshot(ActivityScenario<MainActivity> scene,String name)throws Exception{
   CountDownLatch painted=new CountDownLatch(1);Bitmap[] image={null};
-  scene.onActivity(a->{WebView w=find(a.getWindow().getDecorView());w.postVisualStateCallback(1,new WebView.VisualStateCallback(){@Override public void onComplete(long id){image[0]=Bitmap.createBitmap(w.getWidth(),w.getHeight(),Bitmap.Config.ARGB_8888);w.draw(new android.graphics.Canvas(image[0]));painted.countDown();}});});
+  scene.onActivity(a->{WebView w=find(a.getWindow().getDecorView());w.postVisualStateCallback(1,new WebView.VisualStateCallback(){@Override public void onComplete(long id){image[0]=Bitmap.createBitmap(w.getWidth(),w.getHeight(),Bitmap.Config.ARGB_8888);android.graphics.Canvas canvas=new android.graphics.Canvas(image[0]);canvas.translate(-w.getScrollX(),-w.getScrollY());w.draw(canvas);painted.countDown();}});});
   assertTrue("WebView visual frame ready",painted.await(10,TimeUnit.SECONDS));
   java.util.Set<Integer> colors=new java.util.HashSet<>();
   for(int y=0;y<image[0].getHeight();y+=8)for(int x=0;x<image[0].getWidth();x+=8)colors.add(image[0].getPixel(x,y));
-  assertTrue("Reject blank layout evidence",colors.size()>8);
+  assertTrue("Reject blank layout evidence: "+name,colors.size()>8);
   File dir=new File(InstrumentationRegistry.getInstrumentation().getTargetContext().getExternalFilesDir(null),"layout-qa");dir.mkdirs();File file=new File(dir,name+".png");
   try(FileOutputStream out=new FileOutputStream(file)){image[0].compress(Bitmap.CompressFormat.PNG,100,out);}image[0].recycle();
   shell("mkdir -p /data/local/tmp/yasir-layout-qa");shell("cp "+file.getAbsolutePath()+" /data/local/tmp/yasir-layout-qa/");
