@@ -44,7 +44,7 @@ try {
   $process.Dispose()
  }
  Write-Host "Keep a secure backup of $keyPath and your password. Never delete or replace this key."
- & gh workflow run android.yml --repo $repo
+ & gh workflow run android-stable.yml --repo $repo
  if ($LASTEXITCODE -ne 0) { throw 'Secrets saved; start Build Android APK from GitHub Actions.' }
  Write-Host 'Signing configured. Android build started; check GitHub Actions.'
 } finally {
