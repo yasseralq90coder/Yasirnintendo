@@ -73,14 +73,14 @@ jobs:
           (cd apk && sha256sum YasirNintendo.apk > YasirNintendo.apk.sha256)
       - uses: actions/upload-artifact@v4
         with:
-          name: YasirNintendo-5.3-preview
+          name: YasirNintendo-5.4-preview
           path: apk/
       - name: Publish requested fresh-install preview
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           if ! gh release view android-preview >/dev/null 2>&1; then
-            gh release create android-preview --target "$GITHUB_SHA" --title "Yasir Nintendo 5.3 — Preview" --notes-file android/PREVIEW_NOTES.md --prerelease
+            gh release create android-preview --target "$GITHUB_SHA" --title "Yasir Nintendo 5.4 — Preview" --notes-file android/PREVIEW_NOTES.md --prerelease
           fi
-          gh release edit android-preview --title "Yasir Nintendo 5.3 — Preview" --notes-file android/PREVIEW_NOTES.md
+          gh release edit android-preview --title "Yasir Nintendo 5.4 — Preview" --notes-file android/PREVIEW_NOTES.md
           gh release upload android-preview apk/YasirNintendo.apk apk/YasirNintendo.apk.sha256 --clobber

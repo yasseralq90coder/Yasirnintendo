@@ -1,5 +1,5 @@
 import {uid,safeCover} from './core.js';
-export const titleKey=value=>String(value||'').normalize('NFKC').toLocaleLowerCase('en').replace(/[™®]/g,'').replace(/[^\p{L}\p{N}]/gu,'');
+export const titleKey=value=>String(value||'').replace(/[™®]/g,'').normalize('NFKC').toLocaleLowerCase('en').replace(/[™®]/g,'').replace(/[^\p{L}\p{N}]/gu,'');
 export function mergeCompletionHistory(a=[],b=[]){const out=new Map();for(const p of [...a,...b])out.set(p.id,p);return [...out.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.id.localeCompare(b.id));}
 export function applyLibrarySeed(state,seed){
  if(!seed||seed.version!==1||!Array.isArray(seed.items)||typeof seed.seedId!=='string')throw Error('ملف المكتبة المضمّن غير صالح.');
@@ -32,4 +32,33 @@ export function legacySeedFromBackup(data){
  });
  if(!items.length)throw Error('لا توجد ألعاب Switch أو Switch 2 في هذا الملف.');
  return {version:1,seedId:'local-legacy-'+String(data.exportedAt||'backup').replace(/[^a-zA-Z0-9-]/g,'').slice(0,70),items};
+}
+
+// Explicit backup relationships are authoritative. Aliases only identify the
+// same collection edition; they never distribute a container's playtime.
+const collectionKey = title => {
+ const key=titleKey(title);
+ return key==='sonicshadowgenerations'?'sonicxshadowgenerations':key;
+};
+export function collectionParent(state,game){
+ if(!game?.parentLegacyId)return null;
+ const candidates=state.games.filter(g=>g.id!==game.id&&g.legacyId===game.parentLegacyId&&g.platform===game.platform);
+ return candidates.length===1?candidates[0]:null;
+}
+export function collectionPeers(state,game){
+ return state.games.filter(g=>g.platform===game.platform&&collectionKey(g.title)===collectionKey(game.title));
+}
+export function collectionChildren(state,game){
+ const parents=new Set(collectionPeers(state,game).map(g=>g.legacyId).filter(Boolean));
+ return state.games.filter(g=>g.id!==game.id&&parents.has(g.parentLegacyId)&&g.platform===game.platform);
+}
+export function collectionSources(state,game){
+ return collectionPeers(state,game).filter(g=>g.nintendoKey);
+}
+export function isCollectionGame(state,game){
+ return !!game&&(game.isCollection||collectionChildren(state,game).length>0||[
+  'marvelvscapcomfightingcollectionarcadeclassics','crashbandicootnsanetrilogy',
+  'sonicorigins','sonicoriginsplus','sonicxshadowgenerations',
+  'metalgearsolidmastercollectionvol1','metalgearmetalgear2solidsnake'
+ ].includes(collectionKey(game.title)));
 }

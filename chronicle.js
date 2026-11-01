@@ -1,3 +1,4 @@
+import {isCollectionGame} from './legacy-library.js';
 import {activity,events,completions,todayKey,dayShift,hardwareOn} from './journey.js';
 import {nintendoTitle} from './nintendo-sync.js';
 export const isDate=d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&!isNaN(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d;
@@ -12,7 +13,7 @@ export function cleanChronicle(raw,ids){
  return {records,overrides,hiddenEvents:[...new Set(hidden)]};
 }
 export function saveCompletion(state,{gameId,id='',date,startedAt='',count=1,note='',runId=''},newId){
- const g=state.games.find(g=>g.id===gameId);if(!g||g.isCollection||g.nintendoKey&&/nintendo classics|nintendo switch online|entertainment system/i.test(g.title))throw Error('اختر لعبة فردية، وليس تطبيق منصة أو مجموعة.');
+ const g=state.games.find(g=>g.id===gameId);if(!g||isCollectionGame(state,g)||g.nintendoKey&&/nintendo classics|nintendo switch online|entertainment system/i.test(g.title))throw Error('اختر لعبة فردية، وليس تطبيق منصة أو مجموعة.');
  if(!isDate(date)||date>todayKey()||startedAt&&(!isDate(startedAt)||startedAt>date)||!Number.isInteger(count)||count<1||count>100)throw Error('اختر تاريخًا صحيحًا لا يتجاوز اليوم وعددًا من 1 إلى 100.');
  const j=state.journey;
  if(id){if(!events(state).some(e=>e.id===id&&e.gameId===gameId))throw Error('التختيمة غير موجودة.');j.overrides[id]={date,startedAt,count,note};}
