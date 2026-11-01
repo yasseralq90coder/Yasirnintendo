@@ -44,10 +44,10 @@ public class PopulatedLayoutTest {
      js(scene,"document.body.classList.toggle('dark',"+dark+");location.hash='home';");Thread.sleep(180);ready(scene,".mobile-resume h2");
      String checks="(function(){var c=document.querySelector('.mobile-resume .director-copy').getBoundingClientRect(),a=document.querySelector('.mobile-resume .director-cover').getBoundingClientRect();return document.documentElement.scrollWidth<=innerWidth+2 && c.width>=innerWidth*.7 && c.top>=a.bottom-2 && document.querySelector('.mobile-resume').getBoundingClientRect().height<1000;})()";
      assertEquals("Home width="+width+" zoom="+zoom+" dark="+dark,"true",js(scene,checks));
-     if(width==360&&zoom==100)screenshot(scene,"home-"+(dark?"dark":"light"));
+     if(width==360&&zoom==100){screenshot(scene,"home-"+(dark?"dark":"light"));js(scene,"window.scrollTo(0,document.querySelector('.mobile-resume').offsetTop)");screenshot(scene,"card-"+(dark?"dark":"light"));}
      js(scene,"location.hash='stats'");Thread.sleep(180);ready(scene,".year-calendar");
      assertEquals("Stats overflow width="+width+" zoom="+zoom+" dark="+dark,"true",js(scene,"document.documentElement.scrollWidth<=innerWidth+2 && document.querySelectorAll('.year-month').length===12 && document.querySelectorAll('.calendar-day').length>=365 && document.querySelector('#bottom-nav').getBoundingClientRect().right<=innerWidth+2"));
-     if(width==360&&zoom==100)screenshot(scene,"stats-"+(dark?"dark":"light"));
+     if(width==360&&zoom==100){screenshot(scene,"stats-"+(dark?"dark":"light"));js(scene,"document.querySelector('.year-calendar').scrollIntoView()");screenshot(scene,"calendar-"+(dark?"dark":"light"));}
     }
    }finally{js(scene,"localStorage.setItem('yasir-nintendo-v1',"+previous+");document.body.classList.toggle('dark',"+theme+");location.hash='home';location.reload();");}
   }

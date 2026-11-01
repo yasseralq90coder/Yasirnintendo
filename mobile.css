@@ -45,3 +45,5 @@ body{--muted:#566173}body.dark{--muted:#c4cad6}
  .scope-caption{font-size:12px}.panel h2{font-size:17px}
  .bottom-nav a,.bottom-nav button{color:var(--muted)}.bottom-nav .active{color:var(--red)}
 }
+.stats-range .button.filter{background:var(--panel);color:var(--ink);border:1px solid var(--line)}
+.stats-range .button.filter.active{background:#c90020;color:#fff;border-color:#c90020}
