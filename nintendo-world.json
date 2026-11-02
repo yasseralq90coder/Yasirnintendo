@@ -1211,23 +1211,41 @@
       "verifiedAt": "2026-11-02"
     }
   ],
-  "catalogUpdatedAt": "2026-11-02T07:45:32.972970+00:00",
+  "catalogUpdatedAt": "2026-11-02T18:31:45.952263+00:00",
   "news": [
+    {
+      "id": "9ad7f80df931cb4e",
+      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 1",
+      "date": "2026-11-02",
+      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-1/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "9992e688c6e735fd",
+      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 2",
+      "date": "2026-11-02",
+      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2666bb23e2824dc4",
+      "title": "Nintendo declares November 1 \"Pikmin Day\" in recognition of all things Pikmin",
+      "date": "2026-11-02",
+      "url": "https://www.nintendo.com/us/whatsnew/nintendo-declares-november-1-pikmin-day-in-recognition-of-all-things-pikmin/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/nintendo-declares-november-1-pikmin-day-in-recognition-of-all-things-pikmin/Pikmin-Day-NOA",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
     {
       "id": "1de53c107d91ef5c",
       "title": "Disguise announces new Yoshi costumes just in time for Halloween",
       "date": "2026-10-30",
       "url": "https://www.nintendo.com/us/whatsnew/disguise-announces-new-yoshi-costumes-just-in-time-for-halloween/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/disguise-announces-new-yoshi-costumes-just-in-time-for-halloween/Yoshi_Press_release16x9_copy_20",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "8b018274cc25d092",
-      "title": "Pikmin in Nashville",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1241,11 +1259,29 @@
       "source": "Nintendo US"
     },
     {
+      "id": "8b018274cc25d092",
+      "title": "Pikmin in Nashville",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
       "id": "174ea40928c90197",
       "title": "New Indie World Showcase features cozy and chaotic fun for Nintendo Switch 2 and Nintendo Switch",
       "date": "2026-10-28",
       "url": "https://www.nintendo.com/us/whatsnew/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/1920x1080_Ncom_FeatureBanner_US",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f99f239c3f9ac5e1",
+      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1264,15 +1300,6 @@
       "date": "2026-10-27",
       "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "f99f239c3f9ac5e1",
-      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1394,21 +1421,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "66fdbff144a64ed7",
-      "title": "You have been summoned to watch the new Legend of Zelda: Ocarina of Time — Overview Trailer!",
-      "date": "2026-10-14",
-      "url": "https://www.nintendo.com/us/whatsnew/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/Ocarina_of_Time",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "922929e9c262a981",
       "title": "Just arrived: Shop hundreds of the latest must-have Nintendo items!",
       "date": "2026-10-14",
       "url": "https://www.nintendo.com/us/whatsnew/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/1920x1080_Feature_Banner",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "66fdbff144a64ed7",
+      "title": "You have been summoned to watch the new Legend of Zelda: Ocarina of Time — Overview Trailer!",
+      "date": "2026-10-14",
+      "url": "https://www.nintendo.com/us/whatsnew/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/Ocarina_of_Time",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1439,15 +1466,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "57ccf3adc81fa414",
-      "title": "Hello Kitty Island Adventure",
-      "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/hello-kitty-island-adventure/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/hello-kitty-island-adventure/OCT-GameTrial-Ncom-NSO-1920x1080-EN_v01",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "48194b154c865d20",
       "title": "Keep up the autumn momentum with the Mario Kart World Open Oct. 2026 event!",
       "date": "2026-10-08",
@@ -1457,34 +1475,16 @@
       "source": "Nintendo US"
     },
     {
-      "id": "472cf93c9fceb9c6",
-      "title": "Experience the epic KINGDOM HEARTS saga!",
+      "id": "57ccf3adc81fa414",
+      "title": "Hello Kitty Island Adventure",
       "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-the-epic-kingdom-hearts-saga/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-the-epic-kingdom-hearts-saga/2250x1266_availablenow_3",
+      "url": "https://www.nintendo.com/us/whatsnew/hello-kitty-island-adventure/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/hello-kitty-island-adventure/OCT-GameTrial-Ncom-NSO-1920x1080-EN_v01",
       "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "a67fff761d42ad14",
-      "title": "Pre-order Minecraft for Nintendo Switch™ 2 today!",
-      "date": "2026-10-07",
-      "url": "https://www.nintendo.com/us/whatsnew/pre-order-minecraft-for-nintendo-switch-tm-2-today/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pre-order-minecraft-for-nintendo-switch-tm-2-today/Mario_Mash-Up_Key_Art_Official",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "9d63a8b588fc78cc",
-      "title": "Join the Mario Tennis Fever Open October 2026",
-      "date": "2026-10-06",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-join-the-mario-tennis-fever-open-october-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/join-the-mario-tennis-fever-open-october-2026/EVT_MTFOpen_OCT2026_MAINnoESRB_1920X1080_EN",
-      "category": "ألعاب",
       "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-02T07:45:33.070690+00:00",
+  "newsUpdatedAt": "2026-11-02T18:31:45.993717+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
