@@ -1211,8 +1211,26 @@
       "verifiedAt": "2026-11-03"
     }
   ],
-  "catalogUpdatedAt": "2026-11-03T09:42:42.037823+00:00",
+  "catalogUpdatedAt": "2026-11-03T17:54:12.764972+00:00",
   "news": [
+    {
+      "id": "08254dfab13fa8db",
+      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 3",
+      "date": "2026-11-03",
+      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-3/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f85b025c42106dbc",
+      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 4",
+      "date": "2026-11-03",
+      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-4/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
     {
       "id": "9ad7f80df931cb4e",
       "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 1",
@@ -1250,20 +1268,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "8a9a1e7fe1c33543",
-      "title": "My Nintendo October Wrap-Up",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "8b018274cc25d092",
       "title": "Pikmin in Nashville",
       "date": "2026-10-29",
       "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "8a9a1e7fe1c33543",
+      "title": "My Nintendo October Wrap-Up",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1286,15 +1304,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "84a001a563f61d86",
-      "title": "Jesser vs. Johnny in Nintendo Switch Sports Resort",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/jesser-vs-johnny-in-nintendo-switch-sports-resort/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/jesser-vs-johnny-in-nintendo-switch-sports-resort/A7R07132-Edit",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "2ec0655e2869bdb6",
       "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
       "date": "2026-10-27",
@@ -1304,12 +1313,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "2e4da9ea7cc2178a",
-      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
-      "category": "NSO",
+      "id": "84a001a563f61d86",
+      "title": "Jesser vs. Johnny in Nintendo Switch Sports Resort",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/jesser-vs-johnny-in-nintendo-switch-sports-resort/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/jesser-vs-johnny-in-nintendo-switch-sports-resort/A7R07132-Edit",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1319,6 +1328,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2e4da9ea7cc2178a",
+      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
+      "date": "2026-10-26",
+      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
+      "category": "NSO",
       "source": "Nintendo US"
     },
     {
@@ -1394,6 +1412,15 @@
       "source": "Nintendo US"
     },
     {
+      "id": "3fea6847a7c379a1",
+      "title": "Icon elements inspired by the Halloween season are here for a limited time",
+      "date": "2026-10-15",
+      "url": "https://www.nintendo.com/us/whatsnew/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/1920x1080_Missions_Rewards_Icons_Halloween_2026_EN",
+      "category": "NSO",
+      "source": "Nintendo US"
+    },
+    {
       "id": "bd093199d52790ce",
       "title": "Explore Bluey's world like never before in Bluey’s Happy Snaps, available now!",
       "date": "2026-10-15",
@@ -1412,12 +1439,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "3fea6847a7c379a1",
-      "title": "Icon elements inspired by the Halloween season are here for a limited time",
-      "date": "2026-10-15",
-      "url": "https://www.nintendo.com/us/whatsnew/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/1920x1080_Missions_Rewards_Icons_Halloween_2026_EN",
-      "category": "NSO",
+      "id": "66fdbff144a64ed7",
+      "title": "You have been summoned to watch the new Legend of Zelda: Ocarina of Time — Overview Trailer!",
+      "date": "2026-10-14",
+      "url": "https://www.nintendo.com/us/whatsnew/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/Ocarina_of_Time",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1427,15 +1454,6 @@
       "url": "https://www.nintendo.com/us/whatsnew/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/1920x1080_Feature_Banner",
       "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "66fdbff144a64ed7",
-      "title": "You have been summoned to watch the new Legend of Zelda: Ocarina of Time — Overview Trailer!",
-      "date": "2026-10-14",
-      "url": "https://www.nintendo.com/us/whatsnew/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/Ocarina_of_Time",
-      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1464,27 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/FES-BookIV_KV",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "48194b154c865d20",
-      "title": "Keep up the autumn momentum with the Mario Kart World Open Oct. 2026 event!",
-      "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/keep-up-the-autumn-momentum-with-the-mario-kart-world-open-oct-2026-event/1920x1080_MKW_OCT-open_EN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "57ccf3adc81fa414",
-      "title": "Hello Kitty Island Adventure",
-      "date": "2026-10-08",
-      "url": "https://www.nintendo.com/us/whatsnew/hello-kitty-island-adventure/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/hello-kitty-island-adventure/OCT-GameTrial-Ncom-NSO-1920x1080-EN_v01",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-03T09:42:42.094959+00:00",
+  "newsUpdatedAt": "2026-11-03T17:54:12.789494+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
