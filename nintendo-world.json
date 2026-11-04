@@ -1211,7 +1211,7 @@
       "verifiedAt": "2026-11-04"
     }
   ],
-  "catalogUpdatedAt": "2026-11-04T15:32:06.224576+00:00",
+  "catalogUpdatedAt": "2026-11-04T21:57:35.047679+00:00",
   "news": [
     {
       "id": "08254dfab13fa8db",
@@ -1268,20 +1268,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "8b018274cc25d092",
-      "title": "Pikmin in Nashville",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "8a9a1e7fe1c33543",
       "title": "My Nintendo October Wrap-Up",
       "date": "2026-10-29",
       "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "8b018274cc25d092",
+      "title": "Pikmin in Nashville",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1304,20 +1304,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "2ec0655e2869bdb6",
-      "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "84a001a563f61d86",
       "title": "Jesser vs. Johnny in Nintendo Switch Sports Resort",
       "date": "2026-10-27",
       "url": "https://www.nintendo.com/us/whatsnew/jesser-vs-johnny-in-nintendo-switch-sports-resort/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/jesser-vs-johnny-in-nintendo-switch-sports-resort/A7R07132-Edit",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2ec0655e2869bdb6",
+      "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1376,21 +1376,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "037e3fbb5bd37e6a",
-      "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
-      "date": "2026-10-19",
-      "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "70d7f93c2daa6037",
       "title": "Get up and move in Nintendo Switch Sports Resort!",
       "date": "2026-10-19",
       "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "037e3fbb5bd37e6a",
+      "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
+      "date": "2026-10-19",
+      "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1421,6 +1421,15 @@
       "source": "Nintendo US"
     },
     {
+      "id": "50905f2133c5300d",
+      "title": "Paid DLC is coming to Fire Emblem: Fortune's Weave—Wave 1 is out now!",
+      "date": "2026-10-15",
+      "url": "https://www.nintendo.com/us/whatsnew/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/2250x1266_EXP_availablenow_EN",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
       "id": "bd093199d52790ce",
       "title": "Explore Bluey's world like never before in Bluey’s Happy Snaps, available now!",
       "date": "2026-10-15",
@@ -1430,11 +1439,11 @@
       "source": "Nintendo US"
     },
     {
-      "id": "50905f2133c5300d",
-      "title": "Paid DLC is coming to Fire Emblem: Fortune's Weave—Wave 1 is out now!",
-      "date": "2026-10-15",
-      "url": "https://www.nintendo.com/us/whatsnew/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/2250x1266_EXP_availablenow_EN",
+      "id": "922929e9c262a981",
+      "title": "Just arrived: Shop hundreds of the latest must-have Nintendo items!",
+      "date": "2026-10-14",
+      "url": "https://www.nintendo.com/us/whatsnew/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/1920x1080_Feature_Banner",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1445,15 +1454,6 @@
       "url": "https://www.nintendo.com/us/whatsnew/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/Ocarina_of_Time",
       "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "922929e9c262a981",
-      "title": "Just arrived: Shop hundreds of the latest must-have Nintendo items!",
-      "date": "2026-10-14",
-      "url": "https://www.nintendo.com/us/whatsnew/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/1920x1080_Feature_Banner",
-      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1484,7 +1484,7 @@
       "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-04T15:32:06.272212+00:00",
+  "newsUpdatedAt": "2026-11-04T21:57:35.110280+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
