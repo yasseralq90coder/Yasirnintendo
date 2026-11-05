@@ -1211,8 +1211,26 @@
       "verifiedAt": "2026-11-05"
     }
   ],
-  "catalogUpdatedAt": "2026-11-05T11:10:41.653716+00:00",
+  "catalogUpdatedAt": "2026-11-05T18:50:33.132982+00:00",
   "news": [
+    {
+      "id": "88bcfbd5a1f1a17e",
+      "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
+      "date": "2026-11-05",
+      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "5406a465b4be13b8",
+      "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
+      "date": "2026-11-05",
+      "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/2250x1266_availablenow",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
     {
       "id": "08254dfab13fa8db",
       "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 3",
@@ -1268,15 +1286,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "8a9a1e7fe1c33543",
-      "title": "My Nintendo October Wrap-Up",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "8b018274cc25d092",
       "title": "Pikmin in Nashville",
       "date": "2026-10-29",
@@ -1286,20 +1295,20 @@
       "source": "Nintendo US"
     },
     {
+      "id": "8a9a1e7fe1c33543",
+      "title": "My Nintendo October Wrap-Up",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
       "id": "174ea40928c90197",
       "title": "New Indie World Showcase features cozy and chaotic fun for Nintendo Switch 2 and Nintendo Switch",
       "date": "2026-10-28",
       "url": "https://www.nintendo.com/us/whatsnew/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/1920x1080_Ncom_FeatureBanner_US",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "f99f239c3f9ac5e1",
-      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1318,6 +1327,15 @@
       "date": "2026-10-27",
       "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f99f239c3f9ac5e1",
+      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1376,21 +1394,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "70d7f93c2daa6037",
-      "title": "Get up and move in Nintendo Switch Sports Resort!",
-      "date": "2026-10-19",
-      "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "037e3fbb5bd37e6a",
       "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
       "date": "2026-10-19",
       "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "70d7f93c2daa6037",
+      "title": "Get up and move in Nintendo Switch Sports Resort!",
+      "date": "2026-10-19",
+      "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1464,27 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/step-into-a-brand-new-just-dance-experience/2250x1266_availablenow_4",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "da637d45327d32d9",
-      "title": "Dig up some fun with great games for Halloween!",
-      "date": "2026-10-09",
-      "url": "https://www.nintendo.com/us/whatsnew/dig-up-some-fun-with-great-games-for-halloween-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/merchandising/feature-banner/NTAT-2025/1920x1080_NTAT2025_feature_banner",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "7a09715e21c18904",
-      "title": "Flame Lords and Book IV arrive in a free update to Fire Emblem Shadows",
-      "date": "2026-10-09",
-      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/flame-lords-and-book-iv-arrive-in-a-free-update-to-fire-emblem-shadows/FES-BookIV_KV",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-05T11:10:41.695454+00:00",
+  "newsUpdatedAt": "2026-11-05T18:50:33.160741+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
