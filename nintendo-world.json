@@ -1211,8 +1211,17 @@
       "verifiedAt": "2026-11-09"
     }
   ],
-  "catalogUpdatedAt": "2026-11-09T11:48:47.718022+00:00",
+  "catalogUpdatedAt": "2026-11-09T22:30:23.426749+00:00",
   "news": [
+    {
+      "id": "56e32cf7c480a5af",
+      "title": "Season 1 Arrives in Call of Duty: Modern Warfare 4 and Call of Duty: Warzone",
+      "date": "2026-11-09",
+      "url": "https://www.nintendo.com/us/whatsnew/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/MW4_VAULT_ART_S01_STANDARD_WZ_OPTION_02_B_16_9",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
     {
       "id": "88bcfbd5a1f1a17e",
       "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
@@ -1286,20 +1295,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "8b018274cc25d092",
-      "title": "Pikmin in Nashville",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "8a9a1e7fe1c33543",
       "title": "My Nintendo October Wrap-Up",
       "date": "2026-10-29",
       "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "8b018274cc25d092",
+      "title": "Pikmin in Nashville",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1340,21 +1349,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "2e4da9ea7cc2178a",
-      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
-      "category": "NSO",
-      "source": "Nintendo US"
-    },
-    {
       "id": "4151226702b02b45",
       "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
       "date": "2026-10-26",
       "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2e4da9ea7cc2178a",
+      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
+      "date": "2026-10-26",
+      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
+      "category": "NSO",
       "source": "Nintendo US"
     },
     {
@@ -1430,6 +1439,15 @@
       "source": "Nintendo US"
     },
     {
+      "id": "50905f2133c5300d",
+      "title": "Paid DLC is coming to Fire Emblem: Fortune's Weave—Wave 1 is out now!",
+      "date": "2026-10-15",
+      "url": "https://www.nintendo.com/us/whatsnew/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/2250x1266_EXP_availablenow_EN",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
       "id": "bd093199d52790ce",
       "title": "Explore Bluey's world like never before in Bluey’s Happy Snaps, available now!",
       "date": "2026-10-15",
@@ -1445,15 +1463,6 @@
       "url": "https://www.nintendo.com/us/whatsnew/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/1920x1080_Missions_Rewards_Icons_Halloween_2026_EN",
       "category": "NSO",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "50905f2133c5300d",
-      "title": "Paid DLC is coming to Fire Emblem: Fortune's Weave—Wave 1 is out now!",
-      "date": "2026-10-15",
-      "url": "https://www.nintendo.com/us/whatsnew/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/2250x1266_EXP_availablenow_EN",
-      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/you-have-been-summoned-to-watch-the-new-legend-of-zelda-ocarina-of-time-overview-trailer/Ocarina_of_Time",
       "category": "ألعاب",
       "source": "Nintendo US"
-    },
-    {
-      "id": "640a03b4b3710415",
-      "title": "Step into a brand-new Just Dance experience!",
-      "date": "2026-10-13",
-      "url": "https://www.nintendo.com/us/whatsnew/step-into-a-brand-new-just-dance-experience/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/step-into-a-brand-new-just-dance-experience/2250x1266_availablenow_4",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-09T11:48:47.876892+00:00",
+  "newsUpdatedAt": "2026-11-09T22:30:23.543794+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
