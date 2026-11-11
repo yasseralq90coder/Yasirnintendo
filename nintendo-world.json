@@ -1211,7 +1211,7 @@
       "verifiedAt": "2026-11-11"
     }
   ],
-  "catalogUpdatedAt": "2026-11-11T16:18:38.546017+00:00",
+  "catalogUpdatedAt": "2026-11-11T22:51:02.306506+00:00",
   "news": [
     {
       "id": "210fad163b5b3f62",
@@ -1223,11 +1223,11 @@
       "source": "Nintendo US"
     },
     {
-      "id": "56e32cf7c480a5af",
-      "title": "Season 1 Arrives in Call of Duty: Modern Warfare 4 and Call of Duty: Warzone",
-      "date": "2026-11-09",
-      "url": "https://www.nintendo.com/us/whatsnew/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/MW4_VAULT_ART_S01_STANDARD_WZ_OPTION_02_B_16_9",
+      "id": "20321bdc21477acf",
+      "title": "Ready up for an RPG—the world needs you!",
+      "date": "2026-11-11",
+      "url": "https://www.nintendo.com/us/whatsnew/ready-up-for-an-rpg-the-world-needs-you/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ready-up-for-an-rpg-the-world-needs-you/1920x1080_Switch_News_RPGs_EN",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1241,11 +1241,11 @@
       "source": "Nintendo US"
     },
     {
-      "id": "88bcfbd5a1f1a17e",
-      "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
-      "date": "2026-11-05",
-      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
+      "id": "56e32cf7c480a5af",
+      "title": "Season 1 Arrives in Call of Duty: Modern Warfare 4 and Call of Duty: Warzone",
+      "date": "2026-11-09",
+      "url": "https://www.nintendo.com/us/whatsnew/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/MW4_VAULT_ART_S01_STANDARD_WZ_OPTION_02_B_16_9",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1259,21 +1259,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "08254dfab13fa8db",
-      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 3",
-      "date": "2026-11-03",
-      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-3/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "f85b025c42106dbc",
-      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 4",
-      "date": "2026-11-03",
-      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-4/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
-      "category": "ألعاب",
+      "id": "88bcfbd5a1f1a17e",
+      "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
+      "date": "2026-11-05",
+      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1290,6 +1281,24 @@
       "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 2",
       "date": "2026-11-02",
       "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "08254dfab13fa8db",
+      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 3",
+      "date": "2026-11-02",
+      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-3/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f85b025c42106dbc",
+      "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 4",
+      "date": "2026-11-02",
+      "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-4/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time/Top_Banner_EN",
       "category": "ألعاب",
       "source": "Nintendo US"
@@ -1313,20 +1322,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "8b018274cc25d092",
-      "title": "Pikmin in Nashville",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "8a9a1e7fe1c33543",
       "title": "My Nintendo October Wrap-Up",
       "date": "2026-10-29",
       "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "8b018274cc25d092",
+      "title": "Pikmin in Nashville",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1421,21 +1430,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "037e3fbb5bd37e6a",
-      "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
-      "date": "2026-10-19",
-      "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "70d7f93c2daa6037",
       "title": "Get up and move in Nintendo Switch Sports Resort!",
       "date": "2026-10-19",
       "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "037e3fbb5bd37e6a",
+      "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
+      "date": "2026-10-19",
+      "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/2250x1266_EXP_availablenow_EN",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "bd093199d52790ce",
-      "title": "Explore Bluey's world like never before in Bluey’s Happy Snaps, available now!",
-      "date": "2026-10-15",
-      "url": "https://www.nintendo.com/us/whatsnew/explore-blueys-world-like-never-before-in-blueys-happy-snaps-available-now/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/explore-blueys-world-like-never-before-in-blueys-happy-snaps-available-now/2250x1266_availablenow_5",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-11T16:18:38.575694+00:00",
+  "newsUpdatedAt": "2026-11-11T22:51:02.426976+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
