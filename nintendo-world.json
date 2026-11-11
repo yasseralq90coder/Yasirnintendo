@@ -1211,14 +1211,14 @@
       "verifiedAt": "2026-11-11"
     }
   ],
-  "catalogUpdatedAt": "2026-11-11T07:50:55.353486+00:00",
+  "catalogUpdatedAt": "2026-11-11T16:18:38.546017+00:00",
   "news": [
     {
-      "id": "65883cdaee8ece95",
-      "title": "Coming soon: Gift digital games to family group members",
-      "date": "2026-11-09",
-      "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/coming-soon-gift-digital-games-to-family-group-members/EN/4._Gift_on_HOME_screen_English",
+      "id": "210fad163b5b3f62",
+      "title": "The Legend of Zelda: Ocarina of Time for Nintendo Switch 2 sells over 5.2 million units worldwide in first four days",
+      "date": "2026-11-11",
+      "url": "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/OOT_Lead",
       "category": "ألعاب",
       "source": "Nintendo US"
     },
@@ -1229,6 +1229,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/MW4_VAULT_ART_S01_STANDARD_WZ_OPTION_02_B_16_9",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "65883cdaee8ece95",
+      "title": "Coming soon: Gift digital games to family group members",
+      "date": "2026-11-09",
+      "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/coming-soon-gift-digital-games-to-family-group-members/EN/4._Gift_on_HOME_screen_English",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/explore-blueys-world-like-never-before-in-blueys-happy-snaps-available-now/2250x1266_availablenow_5",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "922929e9c262a981",
-      "title": "Just arrived: Shop hundreds of the latest must-have Nintendo items!",
-      "date": "2026-10-14",
-      "url": "https://www.nintendo.com/us/whatsnew/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/just-arrived-shop-hundreds-of-the-latest-must-have-nintendo-items/1920x1080_Feature_Banner",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-11T07:50:55.440189+00:00",
+  "newsUpdatedAt": "2026-11-11T16:18:38.575694+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
