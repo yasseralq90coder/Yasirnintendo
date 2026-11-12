@@ -1211,8 +1211,44 @@
       "verifiedAt": "2026-11-12"
     }
   ],
-  "catalogUpdatedAt": "2026-11-12T12:54:52.773913+00:00",
+  "catalogUpdatedAt": "2026-11-12T20:55:50.170409+00:00",
   "news": [
+    {
+      "id": "52a51ff851bf37ea",
+      "title": "Nintendo announces Black Friday offers to help spread joy this holiday season",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/1920x1080_Black_Friday_EN",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "45529746eace5fa3",
+      "title": "See what’s sprouting in Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy, available now!",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/1920x1080_1",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "e7a01a7cff4238d2",
+      "title": "Set off on a great adventure with the Straw Hat Crew in Fortnite Chapter 7: Treasure Hunters",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/zhTW_FNBR_43-00_MSEE_KeyArt_Nintendo_SwitchNews_1920x1080",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f693e1578a5e3952",
+      "title": "It's almost the final lap! Join us for the Mario Kart World Open Nov. 2026 event!",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/MKG_MKW_FallCup2026_30005_NOV_July_1920_x_1080px",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
     {
       "id": "210fad163b5b3f62",
       "title": "The Legend of Zelda: Ocarina of Time for Nintendo Switch 2 sells over 5.2 million units worldwide in first four days",
@@ -1250,21 +1286,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "5406a465b4be13b8",
-      "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
-      "date": "2026-11-05",
-      "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/2250x1266_availablenow",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "88bcfbd5a1f1a17e",
       "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
       "date": "2026-11-05",
       "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "5406a465b4be13b8",
+      "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
+      "date": "2026-11-05",
+      "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/2250x1266_availablenow",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1376,21 +1412,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "2e4da9ea7cc2178a",
-      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
-      "category": "NSO",
-      "source": "Nintendo US"
-    },
-    {
       "id": "4151226702b02b45",
       "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
       "date": "2026-10-26",
       "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2e4da9ea7cc2178a",
+      "title": "New update for Nintendo Switch Online + Expansion Pack members!",
+      "date": "2026-10-26",
+      "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
+      "category": "NSO",
       "source": "Nintendo US"
     },
     {
@@ -1430,15 +1466,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "70d7f93c2daa6037",
-      "title": "Get up and move in Nintendo Switch Sports Resort!",
-      "date": "2026-10-19",
-      "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "037e3fbb5bd37e6a",
       "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
       "date": "2026-10-19",
@@ -1448,43 +1475,16 @@
       "source": "Nintendo US"
     },
     {
-      "id": "f92e7e66a671017c",
-      "title": "Join the Pumpkaboo’s Sweet Surprises! event in Pokémon Pokopia",
-      "date": "2026-10-17",
-      "url": "https://www.nintendo.com/us/whatsnew/join-the-pumpkaboos-sweet-surprises-event-in-pokemon-pokopia/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/join-the-pumpkaboos-sweet-surprises-event-in-pokemon-pokopia/PP_OCT_TOP",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "e83b47875603ad4c",
-      "title": "Get warmed up for the new and returning sports in Nintendo Switch Sports Resort!",
-      "date": "2026-10-16",
-      "url": "https://www.nintendo.com/us/whatsnew/get-warmed-up-for-the-new-and-returning-sports-in-nintendo-switch-sports-resort/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-warmed-up-for-the-new-and-returning-sports-in-nintendo-switch-sports-resort/2250x1266_sports_EN",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "3fea6847a7c379a1",
-      "title": "Icon elements inspired by the Halloween season are here for a limited time",
-      "date": "2026-10-15",
-      "url": "https://www.nintendo.com/us/whatsnew/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/icon-elements-inspired-by-halloween-are-here-for-a-limited-time/1920x1080_Missions_Rewards_Icons_Halloween_2026_EN",
-      "category": "NSO",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "50905f2133c5300d",
-      "title": "Paid DLC is coming to Fire Emblem: Fortune's Weave—Wave 1 is out now!",
-      "date": "2026-10-15",
-      "url": "https://www.nintendo.com/us/whatsnew/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/paid-dlc-is-coming-to-fire-emblem-fortunes-weave-wave-1-is-out-now/2250x1266_EXP_availablenow_EN",
+      "id": "70d7f93c2daa6037",
+      "title": "Get up and move in Nintendo Switch Sports Resort!",
+      "date": "2026-10-19",
+      "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
       "category": "نينتندو",
       "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-12T12:54:52.889944+00:00",
+  "newsUpdatedAt": "2026-11-12T20:55:50.260101+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
