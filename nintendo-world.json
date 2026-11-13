@@ -1211,7 +1211,7 @@
       "verifiedAt": "2026-11-13"
     }
   ],
-  "catalogUpdatedAt": "2026-11-13T17:52:00.065719+00:00",
+  "catalogUpdatedAt": "2026-11-13T23:41:06.550126+00:00",
   "news": [
     {
       "id": "52a51ff851bf37ea",
@@ -1220,6 +1220,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/1920x1080_Black_Friday_EN",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f693e1578a5e3952",
+      "title": "It's almost the final lap! Join us for the Mario Kart World Open Nov. 2026 event!",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/MKG_MKW_FallCup2026_30005_NOV_July_1920_x_1080px",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1238,15 +1247,6 @@
       "url": "https://www.nintendo.com/us/whatsnew/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/zhTW_FNBR_43-00_MSEE_KeyArt_Nintendo_SwitchNews_1920x1080",
       "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "f693e1578a5e3952",
-      "title": "It's almost the final lap! Join us for the Mario Kart World Open Nov. 2026 event!",
-      "date": "2026-11-12",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/MKG_MKW_FallCup2026_30005_NOV_July_1920_x_1080px",
-      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1484,7 +1484,7 @@
       "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-13T17:52:00.118576+00:00",
+  "newsUpdatedAt": "2026-11-13T23:41:06.645397+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
