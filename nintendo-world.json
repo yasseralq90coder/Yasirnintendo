@@ -1211,8 +1211,26 @@
       "verifiedAt": "2026-11-16"
     }
   ],
-  "catalogUpdatedAt": "2026-11-16T11:43:17.020412+00:00",
+  "catalogUpdatedAt": "2026-11-16T22:18:02.717330+00:00",
   "news": [
+    {
+      "id": "b8ff86c291d145d0",
+      "title": "Lady Brittany of House Broski heard Link’s call!",
+      "date": "2026-11-16",
+      "url": "https://www.nintendo.com/us/whatsnew/lady-brittany-of-house-broski-heard-links-call/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/lady-brittany-of-house-broski-heard-links-call/Still-wgameplay",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "5dae59f27d05a53c",
+      "title": "Join the Apples to Applin event in Pokémon Pokopia",
+      "date": "2026-11-16",
+      "url": "https://www.nintendo.com/us/whatsnew/join-the-apples-to-applin-event-in-pokemon-pokopia/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/join-the-apples-to-applin-event-in-pokemon-pokopia/PP_Nov_TOP01",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
     {
       "id": "52a51ff851bf37ea",
       "title": "Nintendo announces Black Friday offers to help spread joy this holiday season",
@@ -1232,20 +1250,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "45529746eace5fa3",
-      "title": "See what’s sprouting in Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy, available now!",
-      "date": "2026-11-12",
-      "url": "https://www.nintendo.com/us/whatsnew/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/1920x1080_1",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "e7a01a7cff4238d2",
       "title": "Set off on a great adventure with the Straw Hat Crew in Fortnite Chapter 7: Treasure Hunters",
       "date": "2026-11-12",
       "url": "https://www.nintendo.com/us/whatsnew/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/zhTW_FNBR_43-00_MSEE_KeyArt_Nintendo_SwitchNews_1920x1080",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "45529746eace5fa3",
+      "title": "See what’s sprouting in Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy, available now!",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/1920x1080_1",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1286,21 +1304,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "88bcfbd5a1f1a17e",
-      "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
-      "date": "2026-11-05",
-      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "5406a465b4be13b8",
       "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
       "date": "2026-11-05",
       "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "88bcfbd5a1f1a17e",
+      "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
+      "date": "2026-11-05",
+      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1385,15 +1403,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "2ec0655e2869bdb6",
-      "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "f99f239c3f9ac5e1",
       "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
       "date": "2026-10-27",
@@ -1408,6 +1417,15 @@
       "date": "2026-10-27",
       "url": "https://www.nintendo.com/us/whatsnew/jesser-vs-johnny-in-nintendo-switch-sports-resort/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/jesser-vs-johnny-in-nintendo-switch-sports-resort/A7R07132-Edit",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "2ec0655e2869bdb6",
+      "title": "Bring some monstrous aura to Tomodachi Life: Living the Dream",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1464,27 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/screaming-deals-save-on-select-digital-games/Screaming_Deals_-_EN",
       "category": "ألعاب",
       "source": "Nintendo US"
-    },
-    {
-      "id": "037e3fbb5bd37e6a",
-      "title": "Here's every Resident Evil game available for Nintendo Switch 2 or Nintendo Switch!",
-      "date": "2026-10-19",
-      "url": "https://www.nintendo.com/us/whatsnew/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/heres-every-resident-evil-game-available-for-nintendo-switch-2-or-nintendo-switch/1920x1080_ND_20260909_Switch2_RE-2-3-4_YT-Thumb_1080p_CLEAN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "70d7f93c2daa6037",
-      "title": "Get up and move in Nintendo Switch Sports Resort!",
-      "date": "2026-10-19",
-      "url": "https://www.nintendo.com/us/whatsnew/get-up-and-move-in-nintendo-switch-sports-resort/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-16T11:43:17.113095+00:00",
+  "newsUpdatedAt": "2026-11-16T22:18:02.768064+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
