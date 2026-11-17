@@ -1211,8 +1211,35 @@
       "verifiedAt": "2026-11-17"
     }
   ],
-  "catalogUpdatedAt": "2026-11-17T14:38:37.257116+00:00",
+  "catalogUpdatedAt": "2026-11-17T22:58:49.175926+00:00",
   "news": [
+    {
+      "id": "a7c5361903539d55",
+      "title": "Congrats to The Game Awards 2026 nominees",
+      "date": "2026-11-17",
+      "url": "https://www.nintendo.com/us/whatsnew/congrats-to-the-game-awards-2026-nominees/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/congrats-to-the-game-awards-2026-nominees/TGA26_KeyArt_16x9_wdate",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "ad7f5fd4b2607d48",
+      "title": "Nintendo NEW YORK and Nintendo SAN FRANCISCO are bringing the joy this holiday season!",
+      "date": "2026-11-17",
+      "url": "https://www.nintendo.com/us/whatsnew/nintendo-new-york-and-nintendo-san-francisco-are-bringing-the-joy-this-holiday-season/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "a80fe71379958a4b",
+      "title": "Play Nintendo Switch 2 and discover gift ideas at the Nintendo Switch 2 Holiday Experience, Starting Nov. 25",
+      "date": "2026-11-17",
+      "url": "https://www.nintendo.com/us/whatsnew/play-nintendo-switch-2-and-discover-gift-ideas-at-the-nintendo-switch-2-holiday-experience-starting-nov-25/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/play-nintendo-switch-2-and-discover-gift-ideas-at-the-nintendo-switch-2-holiday-experience-starting-nov-25/NS2HE_hero",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
     {
       "id": "b8ff86c291d145d0",
       "title": "Lady Brittany of House Broski heard Link’s call!",
@@ -1250,20 +1277,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "e7a01a7cff4238d2",
-      "title": "Set off on a great adventure with the Straw Hat Crew in Fortnite Chapter 7: Treasure Hunters",
-      "date": "2026-11-12",
-      "url": "https://www.nintendo.com/us/whatsnew/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/zhTW_FNBR_43-00_MSEE_KeyArt_Nintendo_SwitchNews_1920x1080",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "45529746eace5fa3",
       "title": "See what’s sprouting in Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy, available now!",
       "date": "2026-11-12",
       "url": "https://www.nintendo.com/us/whatsnew/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/1920x1080_1",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "e7a01a7cff4238d2",
+      "title": "Set off on a great adventure with the Straw Hat Crew in Fortnite Chapter 7: Treasure Hunters",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/zhTW_FNBR_43-00_MSEE_KeyArt_Nintendo_SwitchNews_1920x1080",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1286,15 +1313,6 @@
       "source": "Nintendo US"
     },
     {
-      "id": "65883cdaee8ece95",
-      "title": "Coming soon: Gift digital games to family group members",
-      "date": "2026-11-09",
-      "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/coming-soon-gift-digital-games-to-family-group-members/EN/4._Gift_on_HOME_screen_English",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "56e32cf7c480a5af",
       "title": "Season 1 Arrives in Call of Duty: Modern Warfare 4 and Call of Duty: Warzone",
       "date": "2026-11-09",
@@ -1304,11 +1322,11 @@
       "source": "Nintendo US"
     },
     {
-      "id": "5406a465b4be13b8",
-      "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
-      "date": "2026-11-05",
-      "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/2250x1266_availablenow",
+      "id": "65883cdaee8ece95",
+      "title": "Coming soon: Gift digital games to family group members",
+      "date": "2026-11-09",
+      "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/coming-soon-gift-digital-games-to-family-group-members/EN/4._Gift_on_HOME_screen_English",
       "category": "ألعاب",
       "source": "Nintendo US"
     },
@@ -1319,6 +1337,15 @@
       "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "5406a465b4be13b8",
+      "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
+      "date": "2026-11-05",
+      "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/2250x1266_availablenow",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1376,20 +1403,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "8a9a1e7fe1c33543",
-      "title": "My Nintendo October Wrap-Up",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "8b018274cc25d092",
       "title": "Pikmin in Nashville",
       "date": "2026-10-29",
       "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "8a9a1e7fe1c33543",
+      "title": "My Nintendo October Wrap-Up",
+      "date": "2026-10-29",
+      "url": "https://www.nintendo.com/us/whatsnew/my-nintendo-october-wrap-up-2026/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/my-nintendo-october-wrap-up-2026/NOA__News_WrapUp_Article_1920x1080_Oct2026_v2",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1403,20 +1430,20 @@
       "source": "Nintendo US"
     },
     {
-      "id": "f99f239c3f9ac5e1",
-      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
-      "date": "2026-10-27",
-      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "84a001a563f61d86",
       "title": "Jesser vs. Johnny in Nintendo Switch Sports Resort",
       "date": "2026-10-27",
       "url": "https://www.nintendo.com/us/whatsnew/jesser-vs-johnny-in-nintendo-switch-sports-resort/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/jesser-vs-johnny-in-nintendo-switch-sports-resort/A7R07132-Edit",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f99f239c3f9ac5e1",
+      "title": "Experience Vibrant Visuals in Minecraft for Nintendo Switch 2!",
+      "date": "2026-10-27",
+      "url": "https://www.nintendo.com/us/whatsnew/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/experience-vibrant-visuals-in-minecraft-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "نينتندو",
       "source": "Nintendo US"
     },
@@ -1430,21 +1457,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "4151226702b02b45",
-      "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "2e4da9ea7cc2178a",
       "title": "New update for Nintendo Switch Online + Expansion Pack members!",
       "date": "2026-10-26",
       "url": "https://www.nintendo.com/us/whatsnew/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-expansion-pack-members-october-2026/2250x1266_NSOExpansion_EN",
       "category": "NSO",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "4151226702b02b45",
+      "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
+      "date": "2026-10-26",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1455,36 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/call-of-duty-r-modern-warfare-r-4-is-out-now-for-nintendo-switch-2-stay-frosty/2250x1266_availablenow",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "0ebaa157145d3e98",
-      "title": "Grab your headband and get ready to move in Nintendo Switch Sports Resort!",
-      "date": "2026-10-22",
-      "url": "https://www.nintendo.com/us/whatsnew/grab-your-headband-and-get-ready-to-move-in-nintendo-switch-sports-resort/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/grab-your-headband-and-get-ready-to-move-in-nintendo-switch-sports-resort/image1_2250x1266",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "38c3d030a33db400",
-      "title": "Icon elements inspired by the Nintendo Switch Sports Resort game are here for a limited time",
-      "date": "2026-10-21",
-      "url": "https://www.nintendo.com/us/whatsnew/icon-elements-inspired-by-the-nintendo-switch-sports-resort-game-are-here-for-a-limited-time/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/icon-elements-inspired-by-the-nintendo-switch-sports-resort-game-are-here-for-a-limited-time/EN_CS-31751_-_NSO_App_On_Device_-_Icon_Element_Asset_Loc_-_Nintendo_Switch_Sports_Resort",
-      "category": "NSO",
-      "source": "Nintendo US"
-    },
-    {
-      "id": "bb47f90c799589dc",
-      "title": "Screaming Deals: Save on select digital games",
-      "date": "2026-10-20",
-      "url": "https://www.nintendo.com/us/whatsnew/screaming-deals-save-on-select-digital-games/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/screaming-deals-save-on-select-digital-games/Screaming_Deals_-_EN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-17T14:38:37.281058+00:00",
+  "newsUpdatedAt": "2026-11-17T22:58:50.328139+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
