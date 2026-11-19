@@ -1211,8 +1211,17 @@
       "verifiedAt": "2026-11-19"
     }
   ],
-  "catalogUpdatedAt": "2026-11-19T13:32:28.553374+00:00",
+  "catalogUpdatedAt": "2026-11-19T22:16:21.662377+00:00",
   "news": [
+    {
+      "id": "04c03b371a5fa25f",
+      "title": "Adventure Awaits: Save on a daring selection of digital games",
+      "date": "2026-11-19",
+      "url": "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/adventure-awaits-save-on-a-daring-selection-of-digital-games/1920x1080-EN",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
     {
       "id": "3efd5d40acf099ac",
       "title": "The Keepsake Sea sets sail in Disney Dreamlight Valley",
@@ -1286,12 +1295,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "f693e1578a5e3952",
-      "title": "It's almost the final lap! Join us for the Mario Kart World Open Nov. 2026 event!",
+      "id": "e7a01a7cff4238d2",
+      "title": "Set off on a great adventure with the Straw Hat Crew in Fortnite Chapter 7: Treasure Hunters",
       "date": "2026-11-12",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/MKG_MKW_FallCup2026_30005_NOV_July_1920_x_1080px",
-      "category": "ألعاب",
+      "url": "https://www.nintendo.com/us/whatsnew/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/zhTW_FNBR_43-00_MSEE_KeyArt_Nintendo_SwitchNews_1920x1080",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1304,12 +1313,12 @@
       "source": "Nintendo US"
     },
     {
-      "id": "e7a01a7cff4238d2",
-      "title": "Set off on a great adventure with the Straw Hat Crew in Fortnite Chapter 7: Treasure Hunters",
+      "id": "f693e1578a5e3952",
+      "title": "It's almost the final lap! Join us for the Mario Kart World Open Nov. 2026 event!",
       "date": "2026-11-12",
-      "url": "https://www.nintendo.com/us/whatsnew/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/set-off-on-a-great-adventure-with-the-straw-hat-crew-in-fortnite-chapter-7-treasure-hunters/zhTW_FNBR_43-00_MSEE_KeyArt_Nintendo_SwitchNews_1920x1080",
-      "category": "نينتندو",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/MKG_MKW_FallCup2026_30005_NOV_July_1920_x_1080px",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/bring-some-monstrous-aura-to-tomodachi-life-living-the-dream/2250x1266_Frank",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "4151226702b02b45",
-      "title": "Compete for prizes in the Splatoon 3 Golden Egg Feast 2026 tournament!",
-      "date": "2026-10-26",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/compete-for-prizes-in-the-splatoon-3-golden-egg-feast-2026-tournament/EVT_Splat3_GoldenEgg_NOV2026_MAINnoESRB_1920X1080_EN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-19T13:32:28.575789+00:00",
+  "newsUpdatedAt": "2026-11-19T22:16:21.722028+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
