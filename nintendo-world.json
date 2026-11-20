@@ -1211,23 +1211,23 @@
       "verifiedAt": "2026-11-20"
     }
   ],
-  "catalogUpdatedAt": "2026-11-20T13:10:22.900431+00:00",
+  "catalogUpdatedAt": "2026-11-20T21:16:08.368652+00:00",
   "news": [
-    {
-      "id": "04c03b371a5fa25f",
-      "title": "Adventure Awaits: Save on a daring selection of digital games",
-      "date": "2026-11-19",
-      "url": "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/adventure-awaits-save-on-a-daring-selection-of-digital-games/1920x1080-EN",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
     {
       "id": "54fa18e79f9abd1b",
       "title": "Get to know fearless bounty hunter Samus Aran with these games",
       "date": "2026-11-19",
       "url": "https://www.nintendo.com/us/whatsnew/get-to-know-fearless-bounty-hunter-samus-aran-with-these-games/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-to-know-fearless-bounty-hunter-samus-aran-with-these-games/2250x1266_Switch_News_samus",
+      "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "04c03b371a5fa25f",
+      "title": "Adventure Awaits: Save on a daring selection of digital games",
+      "date": "2026-11-19",
+      "url": "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/adventure-awaits-save-on-a-daring-selection-of-digital-games/1920x1080-EN",
       "category": "ألعاب",
       "source": "Nintendo US"
     },
@@ -1277,21 +1277,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "b8ff86c291d145d0",
-      "title": "Lady Brittany of House Broski heard Link’s call!",
-      "date": "2026-11-16",
-      "url": "https://www.nintendo.com/us/whatsnew/lady-brittany-of-house-broski-heard-links-call/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/lady-brittany-of-house-broski-heard-links-call/Still-wgameplay",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "5dae59f27d05a53c",
       "title": "Join the Apples to Applin event in Pokémon Pokopia",
       "date": "2026-11-16",
       "url": "https://www.nintendo.com/us/whatsnew/join-the-apples-to-applin-event-in-pokemon-pokopia/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/join-the-apples-to-applin-event-in-pokemon-pokopia/PP_Nov_TOP01",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "b8ff86c291d145d0",
+      "title": "Lady Brittany of House Broski heard Link’s call!",
+      "date": "2026-11-16",
+      "url": "https://www.nintendo.com/us/whatsnew/lady-brittany-of-house-broski-heard-links-call/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/lady-brittany-of-house-broski-heard-links-call/Still-wgameplay",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1349,21 +1349,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "56e32cf7c480a5af",
-      "title": "Season 1 Arrives in Call of Duty: Modern Warfare 4 and Call of Duty: Warzone",
-      "date": "2026-11-09",
-      "url": "https://www.nintendo.com/us/whatsnew/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/MW4_VAULT_ART_S01_STANDARD_WZ_OPTION_02_B_16_9",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "65883cdaee8ece95",
       "title": "Coming soon: Gift digital games to family group members",
       "date": "2026-11-09",
       "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/coming-soon-gift-digital-games-to-family-group-members/EN/4._Gift_on_HOME_screen_English",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "56e32cf7c480a5af",
+      "title": "Season 1 Arrives in Call of Duty: Modern Warfare 4 and Call of Duty: Warzone",
+      "date": "2026-11-09",
+      "url": "https://www.nintendo.com/us/whatsnew/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/season-1-arrives-in-call-of-duty-modern-warfare-4-and-call-of-duty-warzone/MW4_VAULT_ART_S01_STANDARD_WZ_OPTION_02_B_16_9",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1484,7 +1484,7 @@
       "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-20T13:10:23.028948+00:00",
+  "newsUpdatedAt": "2026-11-20T21:16:08.395846+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
