@@ -1211,8 +1211,17 @@
       "verifiedAt": "2026-11-25"
     }
   ],
-  "catalogUpdatedAt": "2026-11-25T08:49:52.348538+00:00",
+  "catalogUpdatedAt": "2026-11-25T19:25:45.891427+00:00",
   "news": [
+    {
+      "id": "e8214eb188b26bba",
+      "title": "Customize your style and wow the competition in Nintendo Switch Sports Resort!",
+      "date": "2026-11-25",
+      "url": "https://www.nintendo.com/us/whatsnew/customize-your-style-and-wow-the-competition-in-nintendo-switch-sports-resort/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/customize-your-style-and-wow-the-competition-in-nintendo-switch-sports-resort/2250x1266_style_EN",
+      "category": "نينتندو",
+      "source": "Nintendo US"
+    },
     {
       "id": "8102c146a9c94289",
       "title": "Mario Kart World update adds eight courses and more",
@@ -1286,21 +1295,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "a7c5361903539d55",
-      "title": "Congrats to The Game Awards 2026 nominees",
-      "date": "2026-11-17",
-      "url": "https://www.nintendo.com/us/whatsnew/congrats-to-the-game-awards-2026-nominees/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/congrats-to-the-game-awards-2026-nominees/TGA26_KeyArt_16x9_wdate",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "ad7f5fd4b2607d48",
       "title": "Nintendo NEW YORK and Nintendo SAN FRANCISCO are bringing the joy this holiday season!",
       "date": "2026-11-17",
       "url": "https://www.nintendo.com/us/whatsnew/nintendo-new-york-and-nintendo-san-francisco-are-bringing-the-joy-this-holiday-season/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/get-up-and-move-in-nintendo-switch-sports-resort/WNA-NY-SF-RetailStores-1920x1080",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "a7c5361903539d55",
+      "title": "Congrats to The Game Awards 2026 nominees",
+      "date": "2026-11-17",
+      "url": "https://www.nintendo.com/us/whatsnew/congrats-to-the-game-awards-2026-nominees/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/congrats-to-the-game-awards-2026-nominees/TGA26_KeyArt_16x9_wdate",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1340,21 +1349,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "f693e1578a5e3952",
-      "title": "It's almost the final lap! Join us for the Mario Kart World Open Nov. 2026 event!",
-      "date": "2026-11-12",
-      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/MKG_MKW_FallCup2026_30005_NOV_July_1920_x_1080px",
-      "category": "ألعاب",
-      "source": "Nintendo US"
-    },
-    {
       "id": "45529746eace5fa3",
       "title": "See what’s sprouting in Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy, available now!",
       "date": "2026-11-12",
       "url": "https://www.nintendo.com/us/whatsnew/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/see-whats-sprouting-in-pikmin-4-nintendo-switch-2-edition-dandori-academy-available-now/1920x1080_1",
       "category": "نينتندو",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "f693e1578a5e3952",
+      "title": "It's almost the final lap! Join us for the Mario Kart World Open Nov. 2026 event!",
+      "date": "2026-11-12",
+      "url": "https://www.nintendo.com/us/whatsnew/competitive-play-its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-almost-the-final-lap-join-us-for-the-mario-kart-world-open-nov-2026-event/MKG_MKW_FallCup2026_30005_NOV_July_1920_x_1080px",
+      "category": "ألعاب",
       "source": "Nintendo US"
     },
     {
@@ -1403,21 +1412,21 @@
       "source": "Nintendo US"
     },
     {
-      "id": "88bcfbd5a1f1a17e",
-      "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
-      "date": "2026-11-05",
-      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
-      "category": "نينتندو",
-      "source": "Nintendo US"
-    },
-    {
       "id": "5406a465b4be13b8",
       "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
       "date": "2026-11-05",
       "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/2250x1266_availablenow",
       "category": "ألعاب",
+      "source": "Nintendo US"
+    },
+    {
+      "id": "88bcfbd5a1f1a17e",
+      "title": "Make the 5th anniversary of Pikmin Bloom sparkle!",
+      "date": "2026-11-05",
+      "url": "https://www.nintendo.com/us/whatsnew/mobile-news-make-the-5th-anniversary-of-pikmin-bloom-sparkle/",
+      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/make-the-5th-anniversary-of-pikmin-bloom-sparkle/5th_1920x1080_20260930",
+      "category": "نينتندو",
       "source": "Nintendo US"
     },
     {
@@ -1473,18 +1482,9 @@
       "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/disguise-announces-new-yoshi-costumes-just-in-time-for-halloween/Yoshi_Press_release16x9_copy_20",
       "category": "نينتندو",
       "source": "Nintendo US"
-    },
-    {
-      "id": "8b018274cc25d092",
-      "title": "Pikmin in Nashville",
-      "date": "2026-10-29",
-      "url": "https://www.nintendo.com/us/whatsnew/pikmin-in-nashville/",
-      "cover": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/ncom/en_US/articles/2026/pikmin-in-nashville/1920X1080_pikmin-nashville_v2",
-      "category": "نينتندو",
-      "source": "Nintendo US"
     }
   ],
-  "newsUpdatedAt": "2026-11-25T08:49:52.443260+00:00",
+  "newsUpdatedAt": "2026-11-25T19:25:45.997849+00:00",
   "version": 1,
   "refreshErrors": [],
   "devices": [
